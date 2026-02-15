@@ -1,0 +1,13 @@
+Static Methods and Properties
+=============================
+Static Methods: Belong to the class, not the instance.
+
+Example on Static Methods and Properties
+========================================
+class MathUtil {
+  static add(a, b) {
+    return a + b;
+  }
+}
+console.log(MathUtil.add(2, 3)); // 5
+

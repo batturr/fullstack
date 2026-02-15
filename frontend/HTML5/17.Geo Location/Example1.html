@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Location Example</title>
+</head>
+    <body>
+        Latitude: <span id="span1"></span> <br>
+        Longitude: <span id="span2"></span>
+
+        <script>
+            navigator.geolocation.getCurrentPosition(fun1,fun2,{timeout:6000})
+            function fun1(event)
+            {
+                document.getElementById("span1").innerHTML = event.coords.latitude;
+                document.getElementById("span2").innerHTML = event.coords.longitude;
+            }
+            function fun2()
+            {
+                alert("Error")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+letter-spacing
+==============
+• This property specifies gap between letters. For example, in "ABC", the letter-spacing specifies gap between "A" and "B"; and also gap between "B" and "C".
+
+Syntax: letter-spacing: pixels;
+Example: letter-spacing: 10px;

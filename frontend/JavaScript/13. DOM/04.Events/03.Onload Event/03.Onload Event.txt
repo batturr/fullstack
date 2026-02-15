@@ -1,0 +1,18 @@
+JavaScript onload Event
+================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reference:
+https://www.javascripttutorial.net/javascript-dom/javascript-onload/

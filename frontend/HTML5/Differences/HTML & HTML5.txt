@@ -1,0 +1,17 @@
+Difference Between HTML and HTML5
+						HTML													    	HTML5
+1. Earlier version of HyperText Markup Language				    1. Fifth and current version of HTML
+2. Did not support audio and video without Flash player		    2. Supports audio and video using <audio> and <video> tags
+3. Requires external plugins (Flash, Silverlight) for media     3. No external plugins needed for media playback
+4. Does not allow JavaScript to run in the background		    4. Supports JavaScript background processing via Web Workers
+5. No drag-and-drop feature									    5. Supports drag-and-drop functionality
+6. Cannot draw shapes like circle, rectangle, triangle		    6. Can draw shapes using Canvas and SVG
+7. Compatible only with older browsers						    7. Compatible with all modern browsers (Chrome, Firefox, Safari, Edge, etc.)
+8. <html>, <head>, and <body> tags are mandatory			    8. These tags are optional in HTML5
+9. Less mobile friendly										    9. More mobile-friendly and supports responsive design
+10. Doctype declaration is long & complicated				    10. Doctype is short & simple: <!DOCTYPE html>
+11. No semantic structure elements like nav, header			    11. Introduces semantic tags like <nav>, <header>, <footer>, <article>, etc.
+12. Cannot access true geolocation information				    12. Can fetch user location using Geolocation API
+13. Does not handle incorrect syntax well					    13. More tolerant toward inaccurate/invalid syntax
+14. Older version — less fast, flexible, and efficient		    14. Faster, more flexible & more efficient
+15. Attributes like charset, async, ping are absent			    15. Attributes like charset, async, ping are supported

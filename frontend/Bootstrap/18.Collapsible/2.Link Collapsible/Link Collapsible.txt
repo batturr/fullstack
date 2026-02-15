@@ -1,0 +1,8 @@
+Link Collapsible
+================
+• It is used to display expandable / collapsible content, based on the link.
+• The content will be shown when the user clicks on the link.
+
+List of Classes
+===============
+• show : Shows the collapsible content by default, while page is loading.

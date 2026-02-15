@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors - Pseudo-Element Selectors Example</title>
+    <style>
+        /* Using ::before to add content before the h1 element */
+        h1::before {
+            content: "🌟 ";
+            color: orange;
+        }
+
+        /* Using ::after to add content after the h1 element */
+        h1::after {
+            content: " 🎉";
+            color: green;
+        }
+
+        /* Using ::first-letter to style the first letter of a paragraph */
+        p::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Using ::first-line to style the first line of a paragraph */
+        p::first-line {
+            font-style: italic;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors - Pseudo-Element Selectors Example</h1>
+    <p>This is an example paragraph demonstrating the use of pseudo-elements in CSS. Notice how the first letter and the first line of this paragraph are styled differently from the rest.</p>
+</body>
+</html>

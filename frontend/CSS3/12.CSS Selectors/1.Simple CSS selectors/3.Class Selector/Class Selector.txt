@@ -1,0 +1,8 @@
+Class Selector
+==============
+• It selects one or more elements, based on the class name.
+• We use same class for similar elements.
+• "." is the symbol of class selector.
+
+Syntax: .class
+Example: .c1

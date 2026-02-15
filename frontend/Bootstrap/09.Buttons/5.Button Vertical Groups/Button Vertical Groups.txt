@@ -1,0 +1,8 @@
+Button Vertical Groups
+======================
+• It is used to display vertically grouped buttons.
+• It reduces margin between buttons.
+
+List of Classes
+===============
+• btn-group-vertical : Vertical group of buttons

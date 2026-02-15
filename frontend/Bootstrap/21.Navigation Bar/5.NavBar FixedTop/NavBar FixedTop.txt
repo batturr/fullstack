@@ -1,0 +1,8 @@
+NavBar FixedTop
+===============
+• It is used to display a navbar always at the top of the page, even though the user has scrolled the page up / down.
+
+List of Classes
+===============
+• fixed-top : Fixes the navbar at top
+• fixed-bottom : Fixes the navbar at bottom

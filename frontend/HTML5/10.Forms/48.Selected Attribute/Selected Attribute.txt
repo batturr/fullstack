@@ -1,0 +1,5 @@
+Selected Attribute
+==================
+• The "selected" attribute of <option> tag must be set to the <option> tag, which must be by default submitted in the dropdownlist. 
+• If you don't specify "selected" attribute for any <option> tag, by default, the first <option> tag will be selected in the dropdownlist. 
+• The "selected" attribute has only one value, i.e. "selected".

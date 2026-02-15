@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Workers Example</title>
+</head>
+    <body>
+        <h1>Web Workers Example</h1>
+        <div id="div1"></div>
+
+        <script>
+            var worker = new Worker("worker.js");
+            worker.addEventListener("message",fun1);
+
+            function fun1(event)
+            {
+                document.getElementById("div1").innerHTML = event.data;
+            }
+        </script>
+    </body>
+</html>

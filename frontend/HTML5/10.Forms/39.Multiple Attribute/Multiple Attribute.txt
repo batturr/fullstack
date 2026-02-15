@@ -1,0 +1,6 @@
+Multiple Attribute
+==================
+• By default, the user can select only one file in <input type="file">. 
+• The "multiple" attribute allows the user select multiple files in the File Browse Button, created using <input type="file">.
+
+Syntax: <input type="file"  form="multiple"> 

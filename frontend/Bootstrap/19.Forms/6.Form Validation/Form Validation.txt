@@ -1,0 +1,14 @@
+Form Validation
+===============
+• It is used to display success message / error message, based on the value that is entered by the user.
+
+List of Classes
+===============
+• needs-validation          : Enables bootstrap validation
+• novalidate="novalidate"   : Disables HTML 5 built-in validation
+• valid-feedback            : Shows message if the value is valid
+• invalid-feedback          : Shows message if the value is invalid
+• valid-tooltip             : Shows tooltip message if the value is valid
+• invalid-tooltip           : Shows tooltip message if the value is invalid
+• required="required"       : Makes the field mandatory
+• pattern="reg exp"         : Specifies regular expression for validation

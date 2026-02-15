@@ -1,0 +1,9 @@
+Paragraphs:
+    • <p> tag is used to create a paragraph.
+    • Browsers display a line break, before and after each paragraph.
+    • Browsers display an empty line between paragraphs.
+    • It is a paired tag.
+        Syntax:
+            <p>paragraph here</p>
+        Example:
+            <p>Hello</p>

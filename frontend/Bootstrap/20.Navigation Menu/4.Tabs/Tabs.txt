@@ -1,0 +1,13 @@
+Tabs
+====
+• It is used to display a set of tabs and show the corresponding content below, when the user clicks on any one tab.
+
+List of Classes
+===============
+• nav-tabs : Enables tabs
+• data-bs-toggle="tab" : Represents link for tab
+• tab-content : Container for tabs
+• tab-pane : Represents a single tab
+• container : Represents a container tab
+• active : Represents hyperlink of current tab
+• fade : Shows the tab content with fade effect

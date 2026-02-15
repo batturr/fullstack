@@ -1,0 +1,8 @@
+Pagination Size
+===============
+• It is used to display pagination in large / small size.
+
+List of Classes
+===============
+• pagination-lg : Large size progress bar
+• pagination-sm : Small size progress bar

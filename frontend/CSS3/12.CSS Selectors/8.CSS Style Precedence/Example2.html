@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Style Precedence on !important Example</title>
+    <style>
+        p {
+            color: red !important;
+        }
+        div>p {
+            color: yellow;
+        }
+        .c1 {
+            color: blue;
+        }
+        #p1 {
+            color: hotpink;
+        }
+    </style>
+</head>
+    <body>
+        <h1>CSS Style Precedence on !important Example</h1>
+        <div>
+            <p id="p1" class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis possimus illum neque sint. In odio aperiam aut nesciunt reprehenderit dolores rerum assumenda facere dignissimos voluptate, hic expedita neque praesentium animi?</p>
+        </div>
+    </body>
+</html>

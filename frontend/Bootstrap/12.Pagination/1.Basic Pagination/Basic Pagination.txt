@@ -1,0 +1,10 @@
+Basic Pagination
+================
+• It is used to display page numbers.
+
+List of Classes
+===============
+• pagination : Enable pagination style
+• page-item : Page number
+• page-link : Page number link
+• active : Current Page

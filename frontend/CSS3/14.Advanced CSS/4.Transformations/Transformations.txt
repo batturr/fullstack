@@ -1,0 +1,8 @@
+Transformations
+===============
+• Transformations are used to display the element in a different visual dimension.
+• Types of transformations:
+    1. Rotate Transformation
+    2. Skew Transformation
+    3. Scale Transformation
+    4. Translate Transformation

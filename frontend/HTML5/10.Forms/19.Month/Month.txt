@@ -1,0 +1,4 @@
+Month 
+======
+• Used to create a month box, where the user can select a month. 
+Syntax: <input type="month"> 

@@ -1,0 +1,11 @@
+Text Alignment
+==============
+• We can apply text alignment, by using the following bootstrap css classes.
+• Default is "left alignment".
+
+List of Classes
+===============
+• text-start : Left alignment
+• text-center : Center alignment
+• text-end : Right alignment
+• text-justify : Justify alignment

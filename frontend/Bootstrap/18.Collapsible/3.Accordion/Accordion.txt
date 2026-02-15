@@ -1,0 +1,9 @@
+Accordion
+=========
+• It is used to display a group of collapsible items and show any one of them, when the user clicks it.
+• Out of few collapsible items, only one is visible to the user.
+
+List of Classes
+===============
+• show : Shows the card
+• data-ds-parent="id" : Specifies reference to the parent div

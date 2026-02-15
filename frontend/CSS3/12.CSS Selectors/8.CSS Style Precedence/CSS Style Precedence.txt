@@ -1,0 +1,14 @@
+CSS Style Precedence
+====================
+• The css styles are applied in the following order (lowest priority to highest priority).
+• The higher priority style overrides the same property’s value of the lower priority.
+
+1. Browser default style
+2. Tag Selector
+3. Direct Child Selector
+4. Child Selector
+5. Class Selector
+6. Attribute Selector
+7. ID Selector
+
+Note: “!important” is used to override the “style precedence”.

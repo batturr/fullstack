@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Offcanvas JavaScript API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="mb-4">Offcanvas JavaScript API</h1>
+
+        <!-- Control Panel -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">JavaScript Controls</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <button class="btn btn-primary w-100" onclick="showOffcanvas()">
+                            <i class="bi bi-eye"></i> Show Offcanvas
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-secondary w-100" onclick="hideOffcanvas()">
+                            <i class="bi bi-eye-slash"></i> Hide Offcanvas
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-info w-100" onclick="toggleOffcanvas()">
+                            <i class="bi bi-arrow-left-right"></i> Toggle Offcanvas
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-danger w-100" onclick="disposeOffcanvas()">
+                            <i class="bi bi-trash"></i> Dispose Offcanvas
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Log -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Event Log</h5>
+                <button class="btn btn-sm btn-outline-secondary" onclick="clearLog()">Clear Log</button>
+            </div>
+            <div class="card-body">
+                <div id="eventLog" class="bg-dark text-light p-3 rounded" style="height: 200px; overflow-y: auto; font-family: monospace;">
+                    <div class="text-muted">Events will appear here...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Configuration Demo -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Options Configuration</h5>
+            </div>
+            <div class="card-body">
+                <form id="optionsForm">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Backdrop</label>
+                            <select class="form-select" id="backdropOption">
+                                <option value="true">true</option>
+                                <option value="false">false</option>
+                                <option value="static">static</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Keyboard (ESC key)</label>
+                            <select class="form-select" id="keyboardOption">
+                                <option value="true">true</option>
+                                <option value="false">false</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Scroll</label>
+                            <select class="form-select" id="scrollOption">
+                                <option value="false">false</option>
+                                <option value="true">true</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success mt-3" onclick="applyOptions()">
+                        <i class="bi bi-check-circle"></i> Apply & Show
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Methods Demo -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Available Methods</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>show()</code></td>
+                                <td>Opens the offcanvas</td>
+                                <td><code>offcanvas.show()</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>hide()</code></td>
+                                <td>Closes the offcanvas</td>
+                                <td><code>offcanvas.hide()</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>toggle()</code></td>
+                                <td>Toggles the offcanvas</td>
+                                <td><code>offcanvas.toggle()</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>dispose()</code></td>
+                                <td>Destroys the offcanvas instance</td>
+                                <td><code>offcanvas.dispose()</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>getInstance()</code></td>
+                                <td>Gets the offcanvas instance</td>
+                                <td><code>bootstrap.Offcanvas.getInstance(element)</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>getOrCreateInstance()</code></td>
+                                <td>Gets or creates instance</td>
+                                <td><code>bootstrap.Offcanvas.getOrCreateInstance(element)</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="myOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Controlled Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i> This offcanvas is controlled via JavaScript API.
+            </div>
+            
+            <h6>Current Settings:</h6>
+            <ul id="currentSettings" class="list-group mb-3">
+                <li class="list-group-item">Backdrop: <strong id="currentBackdrop">true</strong></li>
+                <li class="list-group-item">Keyboard: <strong id="currentKeyboard">true</strong></li>
+                <li class="list-group-item">Scroll: <strong id="currentScroll">false</strong></li>
+            </ul>
+
+            <h6>Try these actions:</h6>
+            <ul>
+                <li>Click outside (if backdrop is true)</li>
+                <li>Press ESC key (if keyboard is true)</li>
+                <li>Use the control buttons</li>
+                <li>Scroll the page (if scroll is true)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Get offcanvas element
+        const offcanvasElement = document.getElementById('myOffcanvas');
+        let offcanvasInstance = null;
+
+        // Initialize with default options
+        function initOffcanvas(options = {}) {
+            // Dispose existing instance if any
+            if (offcanvasInstance) {
+                offcanvasInstance.dispose();
+            }
+            
+            // Create new instance
+            offcanvasInstance = new bootstrap.Offcanvas(offcanvasElement, options);
+            
+            // Update display
+            updateSettingsDisplay(options);
+        }
+
+        // Initialize on page load
+        initOffcanvas();
+
+        // Setup event listeners
+        offcanvasElement.addEventListener('show.bs.offcanvas', function (e) {
+            logEvent('show.bs.offcanvas', 'Offcanvas is about to be shown');
+        });
+
+        offcanvasElement.addEventListener('shown.bs.offcanvas', function (e) {
+            logEvent('shown.bs.offcanvas', 'Offcanvas is now visible');
+        });
+
+        offcanvasElement.addEventListener('hide.bs.offcanvas', function (e) {
+            logEvent('hide.bs.offcanvas', 'Offcanvas is about to be hidden');
+        });
+
+        offcanvasElement.addEventListener('hidden.bs.offcanvas', function (e) {
+            logEvent('hidden.bs.offcanvas', 'Offcanvas is now hidden');
+        });
+
+        // Control methods
+        function showOffcanvas() {
+            if (offcanvasInstance) {
+                offcanvasInstance.show();
+                logEvent('METHOD', 'Called: show()');
+            }
+        }
+
+        function hideOffcanvas() {
+            if (offcanvasInstance) {
+                offcanvasInstance.hide();
+                logEvent('METHOD', 'Called: hide()');
+            }
+        }
+
+        function toggleOffcanvas() {
+            if (offcanvasInstance) {
+                offcanvasInstance.toggle();
+                logEvent('METHOD', 'Called: toggle()');
+            }
+        }
+
+        function disposeOffcanvas() {
+            if (offcanvasInstance) {
+                offcanvasInstance.dispose();
+                offcanvasInstance = null;
+                logEvent('METHOD', 'Called: dispose() - Instance destroyed');
+                
+                // Reinitialize after a moment
+                setTimeout(() => {
+                    initOffcanvas();
+                    logEvent('SYSTEM', 'Offcanvas reinitialized');
+                }, 1000);
+            }
+        }
+
+        function applyOptions() {
+            const backdrop = document.getElementById('backdropOption').value;
+            const keyboard = document.getElementById('keyboardOption').value === 'true';
+            const scroll = document.getElementById('scrollOption').value === 'true';
+
+            const options = {
+                backdrop: backdrop === 'true' ? true : backdrop === 'false' ? false : 'static',
+                keyboard: keyboard,
+                scroll: scroll
+            };
+
+            initOffcanvas(options);
+            showOffcanvas();
+            logEvent('CONFIG', `Applied options: ${JSON.stringify(options)}`);
+        }
+
+        function updateSettingsDisplay(options) {
+            document.getElementById('currentBackdrop').textContent = options.backdrop ?? 'true';
+            document.getElementById('currentKeyboard').textContent = options.keyboard ?? 'true';
+            document.getElementById('currentScroll').textContent = options.scroll ?? 'false';
+        }
+
+        // Event logging
+        function logEvent(type, message) {
+            const logDiv = document.getElementById('eventLog');
+            const timestamp = new Date().toLocaleTimeString();
+            const entry = document.createElement('div');
+            entry.className = 'mb-1';
+            entry.innerHTML = `<span class="text-warning">[${timestamp}]</span> <span class="text-info">${type}:</span> ${message}`;
+            
+            // Remove "Events will appear here..." message if it exists
+            const placeholder = logDiv.querySelector('.text-muted');
+            if (placeholder) {
+                placeholder.remove();
+            }
+            
+            logDiv.appendChild(entry);
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        function clearLog() {
+            const logDiv = document.getElementById('eventLog');
+            logDiv.innerHTML = '<div class="text-muted">Log cleared...</div>';
+        }
+
+        // Log initial state
+        logEvent('SYSTEM', 'Page loaded - Offcanvas initialized with default options');
+    </script>
+</body>
+</html>

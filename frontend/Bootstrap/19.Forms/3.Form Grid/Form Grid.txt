@@ -1,0 +1,31 @@
+Form Grid
+=========
+• It is used to create a form, where the desired form elements appear side-by-side.
+
+List of Classes
+===============
+• form-row : Creates a grid in the form
+
+Key Features of the Update:
+===========================
+1.Responsive Design:
+====================
+- Used col-md- classes to make the form fields responsive.
+- Fields stack on smaller screens but display in columns on medium and larger screens.
+
+2.Form Validation:
+==================
+- Added required attributes to essential fields for basic client-side validation.
+
+3.Bootstrap 5 Standards:
+========================
+- Removed the deprecated form-row and replaced it with the generic row class.
+- Added form-label for proper alignment and labeling of form fields.
+
+4.Spacing:
+==========
+Used mb-3 classes for consistent vertical spacing between rows.
+
+5.Centered Header:
+==================
+Applied text-center and my-4 for a visually appealing header.

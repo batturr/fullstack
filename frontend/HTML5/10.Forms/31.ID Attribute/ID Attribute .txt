@@ -1,0 +1,9 @@
+ID Attribute
+=============
+• Represents identification name of the input element that can be used in html, css, and javascript to get the element programmatically. 
+• ID can be used to create <label> tag in html, ID selector in CSS, getElementById() function JavaScript etc.
+
+Note: The id name is case sensitive!
+Note: The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).
+
+Syntax: <input type="…" id="your id"> 

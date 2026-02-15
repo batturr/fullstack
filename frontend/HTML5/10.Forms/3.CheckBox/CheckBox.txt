@@ -1,0 +1,6 @@
+CheckBox
+========
+• Checkbox is used to display Yes/No type of option to the user. 
+• If the checkbox is checked, it means "yes". If the checkbox is unchecked, it means "no". 
+    
+    Syntax: <input type="checkbox">

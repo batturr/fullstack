@@ -1,0 +1,24 @@
+“container” class
+=================
+• It acts as “outer container” for the entire page.
+• It makes the web page responsive.
+• The entire content of the page should be inside the “container”.
+• It provides margin left and margin right for the page.
+
+Syntax:
+<div class=”container”>
+add content here
+</div>
+
+
+“container-fluid” class
+========================
+• It also acts as “outer container” for the entire page.
+• It also makes the web page responsive.
+• The entire content of the page should be inside the “container-fluid”.
+• It removes margin left and margin right for the page. It makes the content occupy the full available width of the web page.
+
+Syntax:
+<div class=”container”>
+add content here
+</div>

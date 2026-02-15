@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Handlers </title>
+</head>
+<body>
+    <!-- Example1 -->
+    <!-- <button onclick="alert('Button clicked!')">Click Me</button> -->
+    <!-- Example2 and Example -->
+    <button type="button" id="myButton">Click here!</button>
+
+    <script>
+        // Example2: Example in JavaScript
+        const button = document.getElementById('myButton');
+        button.onclick = function() {
+            alert('Button clicked!');
+        };
+
+        // Example3: Overwriting Behavior:
+        button.onclick = function() {
+            console.log('First handler');
+        };
+
+        button.onclick = function() {
+            console.log('Second handler'); // This overwrites the first one.
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+1.Header
+========
+• This tag represents header bar, which may include website logo, search box, main links etc.
+• It don't provide any styles by default; we have to apply styles manually, using CSS.
+
+Syntax: 
+    <header> 
+        Content here 
+    </header>
+
+2.Nav
+=====
+• This tag represents navigation bar, which may include top navigation menu.
+• It don't provide any styles by default; we have to apply styles manually, using CSS.
+
+Syntax: 
+    <nav> 
+        Content here 
+    </nav>
+
+3.Section
+==========
+• This tag represents specific section of the page (box or container), in which you can place some content.
+• It is mainly meant for representation of major parts of the page.
+• It don't provide any styles by default; we have to apply styles manually, using CSS.
+
+Syntax:
+    <section> 
+        Content here
+    </section>
+
+4.Footer
+========
+• This tag represents footer part of the web page, which may contain bottom information of the page such as copy rights information, links of other related sites etc. 
+• It don't provide any styles by default; we have to apply styles manually, using CSS.
+
+Syntax: 
+    <footer> 
+        Content here 
+    </footer>
+
+5.Aside
+=======
+• This tag represents right side bar of the web page, which may contain ads / other promotion information.
+• It don't provide any styles by default; we have to apply styles manually, using CSS.
+
+Syntax: 
+    <aside> 
+        Content here 
+    </aside> 
+

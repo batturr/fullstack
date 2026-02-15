@@ -1,0 +1,4 @@
+Week
+=====
+• Used to create a week box, where the user can select a week. 
+Syntax: <input type="week"> 

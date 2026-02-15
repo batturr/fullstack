@@ -1,0 +1,6 @@
+Number
+======
+• Used to create a numerical textbox, where the user can enter some number. 
+• It either prevents typing alphabets and special symbols, or shows error message when alphabets / special symbols are entered. 
+• Some browsers also display increase / decrease buttons for the number textbox. 
+Syntax: <input type="number"> 

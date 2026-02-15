@@ -1,0 +1,49 @@
+Headings:
+
+<h1>
+    • It is used to create first level heading (main heading). The headings are displayed in very large size in the output. Every browser assigns a specific size for each level of heading. The size of heading is decided by the browsers, not fixed.
+    • It is a paired tag.
+    Syntax:
+        <h1>heading here</h1>
+    Example:
+        <h1>Heading 1 here</h1>
+
+<h2>
+    • It is used to create second level heading (sub heading).
+    • It is a paired tag.
+    Syntax:
+        <h2>heading here</h2>
+    Example:
+        <h2>Heading 2 here</h2>
+
+<h3>
+    • It is used to create third level heading (sub heading).
+    • It is a paired tag.
+    Syntax:
+        <h3>heading here</h3>
+    Example:
+        <h3>Heading 3 here</h3>
+
+<h4>
+    • It is used to create third level heading (sub heading).
+    • It is a paired tag.
+    Syntax:
+        <h4>heading here</h4>
+    Example:
+        <h4>Heading 4 here</h4>
+
+<h5>
+    • It is used to create third level heading (sub heading).
+    • It is a paired tag.
+    Syntax:
+        <h5>heading here</h5>
+    Example:
+        <h5>Heading 5 here</h5>
+
+<h6>
+    • It is used to create third level heading (sub heading).
+    • It is a paired tag.
+    Syntax:
+        <h6>heading here</h6>
+    Example:
+        <h6>Heading 6 here</h6>

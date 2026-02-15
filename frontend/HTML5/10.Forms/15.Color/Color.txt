@@ -1,0 +1,5 @@
+Color
+======
+• Used to create a color box, where the user can select a color. 
+• The selected color can be applied to any element, by using JavaScript. 
+Syntax: <input type="color">

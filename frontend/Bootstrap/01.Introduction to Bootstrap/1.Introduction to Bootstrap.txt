@@ -1,0 +1,66 @@
+Introduction to Bootstrap
+=========================
+• “Bootstrap” is a “CSS framework”, developed by “Twitter” company, which is a collection of readymade “css classes”, which can be used in web pages to apply styles to the elements easily.
+• Bootstrap can be used without css knowledge also. To customize the bootstrap styles, CSS knowledge is required.
+• Bootstrap provides responsive web design by default.
+• Bootstrap was developed based on “jQuery” and "Popper".
+• jQuery is a JavaScript library, which provides a set of functions to perform DOM manipulations easily.
+• Popper is a JavaScript library, which provides a set of functions to display popup messages.
+
+Preparing Environment for Bootstrap
+===================================
+Downloading Bootstrap
+• Go to “http://getbootstrap.com”.
+• Select the latest version in the dropdownlist (Ex: v4.1). It by default, selects the latest version.
+• Click on “Download”.
+• Click on “Download” again under "Compiled CSS and JS".
+• Download the file “bootstrap-4.1.1.zip”.
+• Go to the downloaded location, right click on the “bootstrap-4.1.1.zip” file and click on “Extract All”.
+• After extracting, you will get extracted folder.
+• Copy the following files from “extracted folder (bootstrap-4.1.1)”, into “application folder (c:\bootstrap)”.
+    ▪ css\bootstrap.css
+    ▪ js\bootstrap.js
+
+Downloading jQuery
+==================
+• Go to “http://jquery.com”.
+• Click on “Download jQuery 3.3.1” (version number may vary).
+• Click on “Download the uncompressed, development jQuery 3.3.1”.
+• If required, press "Ctrl+S" to save the file. You will get a file “jquery-3.3.1.js”.
+• Copy and paste “jquery-3.3.1.js” file from Downloaded location into “c:\bootstrap” folder.
+
+Downloading Popper
+==================
+• Go to “https://unpkg.com/popper.js”.
+• If required, press "Ctrl+S" to save the file. You will get a file “popper.js”.
+• Copy and paste “popper.js” file from Downloaded location into “c:\bootstrap” folder.
+
+Importing Bootstrap
+===================
+<link rel="stylesheet" href="bootstrap.css">
+<script src="jquery-3.3.1.js"></script>
+<script src="popper.js"></script>
+<script src="bootstrap.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+• The "viewport meta tag" is used to set the actual width of the device as width of the web page.
+• It is must to make the web page responsive.
+• It also sets the initial zoom to "1" (actual size).
+
+Importing Bootstrap CDN
+=======================
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+Ref: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+https://getbootstrap.com/docs/5.3/getting-started/download/
+
+First Example on Bootstrap
+===========================
+Example.html
+Example2.html

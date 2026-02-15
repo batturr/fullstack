@@ -1,0 +1,106 @@
+Attribute Selector
+==================
+• It selects all the tags that are having specified attribute.
+• "[ ]" are the symbols of attribute selector.
+• We can use any attribute of any html tag.
+
+Types of Attribute selectors
+    1.The [attribute] selector
+    2.The [attribute="value"] selector
+    3.The [attribute^="value"] selector
+    4.The [attribute$="value"] selector
+    5.The [attribute*="value"] selector
+    6.The [attribute~="value"] selector
+
+
+1.The [attribute] selector
+==========================
+To use the attribute selector, use a pair of square brackets, [], to select the attribute you want.
+
+The general syntax for attribute selectors is the following:
+
+Syntax: element[attribute]
+
+This selector selects an element if the given attribute exists.
+
+In the following example, elements that have the attribute attr present are selected, regardless of the specific value of attr:
+
+Example: 
+
+a[attr] {
+    property: value;
+}
+
+In the example above, a elements with the attr attribute name are selected, regardless of the value of attr.
+
+2.The [attribute="value"] selector
+==================================
+You can specify the value of the attribute using the following syntax:
+
+Syntax: element[attribute="value"]
+Syntax: tag[attribute=”value”]
+Example: img[width=”120px”]
+
+So, if you want to style a elements with an attr attribute that has an exact value of 1, you would do the following:
+
+Example:
+
+a[attr="1"] {
+    property: value;
+}
+This code above matches a elements where the attr attribute name has an exact value of 1.
+
+3.The [attribute^="value"] selector
+======================================
+You could also specify that the value of the attribute starts with a specific character using the following syntax:
+
+element[attribute^="value"]
+For example, if you wanted to select and style any a elements that have an attr attribute with a value that starts with www, you would do the following:
+
+a[attr^="www"] {
+    property: value;
+}
+The code above selects any a elements where the attr attribute name has a value that starts with www.
+
+4.The [attribute$="value"] selector
+===================================
+You could also specify that the value of the attribute ends with a specific character using the following syntax:
+
+element[attribute$="value"]
+For example, if you wanted to select a elements that have an attr attribute name with a value that ends with .com, you would do the following:
+
+a[attr$=".com"] {
+    property: value;
+}
+
+5.The [attribute*="value"] selector
+===================================
+You can also specify that the attribute value contains a specific substring - this selector is known as the Attribute Contains Substring Selector and has the following syntax:
+
+element[attribute*="value"]
+In this case, the string value needs to be present in the attribute's value followed by any number of other characters - value doesn't need to be a whole word.
+
+For example, if you wanted to select a elements that have an attr attribute with a value that contains the string free, you would do the following:
+
+a[attr*="free"] {
+    property:value;
+}
+The code above selects a elements with an attr attribute name when the string free is present in the attribute's value - even as a substring (a substring is a word inside another word).
+
+As long as the attribute's value contains free, then the HTML element is selected - this could match an attr attribute with a value of free, freeCodeCamp, or freediving, for example.
+
+6.The [attribute~="value"] selector
+===================================
+You can also specify that the selector matches an attribute value that contains a whole word using the following syntax:
+
+element[attribute~= "value"]
+In this case, the string value needs to be a whole word.
+
+For example, if you wanted to select a elements that have an attr attribute name with a value that contains the word free, you would do the following:
+
+a[attr~= "free"] {
+    property: value;
+}
+The code above would match an attr attribute with a value of free that contains different kinds of whitespace.
+
+The code wouldn't select elements with an attr value of freeCodeCamp or freediving like you saw in an earlier example because free needs to be a whole word on its own - not a substring.

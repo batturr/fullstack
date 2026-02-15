@@ -1,0 +1,39 @@
+Methods
+========
+• Method is a function that manipulates data of the object.
+
+Syntax of Method
+================
+class classname
+{
+ methodname(arguments)
+    {
+
+    }
+}
+
+Example on Methods
+===================
+{
+  class Student {
+    constructor(a,b,c) {
+      this.studentid = a;
+      this.studentname = b;
+      this.marks = c;
+    }
+    result() {
+      if(this.marks>=35) {
+        return "Pass";
+      }
+      else {
+        return "Fail";
+      }
+    }
+  }
+  var s = new Student(101,"Prince",70);
+  console.log(s.studentid);
+  console.log(s.studentname);
+  console.log(s.marks);
+  console.log(s.result());
+}
+

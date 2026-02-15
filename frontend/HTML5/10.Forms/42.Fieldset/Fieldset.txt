@@ -1,0 +1,10 @@
+Fieldset
+========
+• <fieldset> tag is used to display a box around a set of fields. 
+• <fieldset> tag is a paired tag. 
+• Fieldset if used to group-up the set of form elements. For example, all the personal details of the user such as Firstname, Lastname, Email, Mobile etc., can be placed inside the fieldset. 
+• Inside a <form> tag, we can place any no. of <fieldset> tags.
+
+Syntax: <fieldset> Your textboxes here </fieldset>
+
+Example: <fieldset> <input type=”text”><br> <input type=”text”> </fieldset>

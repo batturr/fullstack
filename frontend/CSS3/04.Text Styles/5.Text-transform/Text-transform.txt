@@ -1,0 +1,11 @@
+text-transform
+==============
+• This property specifies uppercase / lowercase / title case for the text.
+• The default value is "none".
+• If the value is "none", the text appears normally.
+• If the value is "uppercase", the text appears UPPER CASE.
+• If the value is "lowercase", the text appears lower case.
+• If the value is "capitalize", the first letter of each word will be Capital.
+
+Syntax: text-transform: none | uppercase | lowercase | capitalize;
+Example: text-transform: underline;

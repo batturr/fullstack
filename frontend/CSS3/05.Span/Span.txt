@@ -1,0 +1,8 @@
+Span
+====
+• <span> represents a small amount of text, for which you can apply some special formatting.
+• <span> is a paired tag.
+• <span> tag doesn't apply any style by default; but we can apply any style for it.
+
+Syntax: <span>Your content here</span>
+Example: <span>Hello</span>

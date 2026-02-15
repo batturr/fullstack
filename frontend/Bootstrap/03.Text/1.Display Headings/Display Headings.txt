@@ -1,0 +1,10 @@
+Display Headings
+================
+• It is used to display headings with thin text and larger font size.
+
+List of Classes
+===============
+• display-1 : Display Heading 1
+• display-2 : Display Heading 2
+• display-3 : Display Heading 3
+• display-4 : Display Heading 4

@@ -1,0 +1,56 @@
+HTML Assignment – 3
+Basic Questions
+Create a simple HTML form with a single text input field for entering a username.
+Build a form with a password input field that hides typed characters.
+Make a form that includes two text fields: First Name and Last Name.
+Add a submit button in a form that sends data when clicked.
+Create a form with a reset button that clears the inputs.
+Create a form with radio buttons for selecting gender (Male/Female).
+Make a form with checkboxes for selecting hobbies (e.g., Reading, Sports, Coding).
+Add a form with a file upload input to let users upload a profile picture.
+Use the <label> tag to correctly label a text input field.
+Create a dropdown menu using <select> with options for choosing a country.
+Build a form that includes a textarea for user comments.
+Create a form with a button element labelled “Click Me”.
+Add a required attribute in a text input field for entering a name.
+Build a form with type=”email” input and test validation.
+Create a form with a number input for entering age.
+Add a date picker input to select a birthdate.
+Create a form with a time input for selecting appointment time.
+Add a colour input where users can pick a favourite color.
+Create a range input for selecting volume level (1-100).
+Use <fieldset> and <legend> to group personal details inputs (name, email).
+
+Intermediate Questions
+Create a login form with username and password fields, and a submit button.
+Create a contact form containing Name, Email, Phone, and Message fields.
+Add radio buttons for “Payment Method” (Credit Card, UPI, Cash on Delivery).
+Use checkboxes for selecting multiple languages (English, Hindi, French, Spanish).
+Create a form where the age input is restricted between 18-60 using min and max attributes.
+Build a form that has pattern validation for a 10-digit phone number.
+Create a file upload form where only PDF files are allowed using the accept attribute.
+Add a dropdown to select a user’s profession (Student, Teacher, Developer, Designer).
+Create a form that disables the submit button until terms & conditions are checked.
+Build a form using <fieldset> and <legend> for grouping address details.
+Create a form where email input must follow correct format (e.g., abc@mail.com).
+Add a placeholder attribute in inputs for guiding user entries.
+Create a form using password input with a “Confirm Password” field.
+Make a form with a reset button and test clearing inputs.
+Create a newsletter signup form with Name, Email, and a Subscribe button.
+Add a disabled input field in a form (show readonly behavior).
+Create a form with hidden input fields (like a user ID).
+Add a form where the range input shows values from 1 to 10 for rating experience.
+Design a colour picker form allowing users to set background colour.
+Build a form using tel input type for phone number formatting.
+
+Advanced Questions
+Create a registration form with full validation (Name, Email, Password, Confirm Password, Gender, Country).
+Make a form where passwords must meet a pattern (8+ characters, at least 1 capital, 1 number).
+Create a multi-step form: Step 1 (Personal Info), Step 2 (Contact Info), Step 3 (Submit).
+Build a survey form with a mix of text, radio, checkbox, dropdown, and textarea inputs.
+Create a job application form with File Upload restricted to only PDFs or DOCs.
+Create a form that disables submit if required fields are empty.
+Add ARIA labels and roles for accessibility in a form with multiple input types.
+Create a form where the date input must be today or later (for booking purposes).
+Build a profile settings form with Name, Profile Picture Upload, Colour Theme Picker, and Save button.
+Create a feedback form that includes star rating (radio buttons), comment box, and submit.

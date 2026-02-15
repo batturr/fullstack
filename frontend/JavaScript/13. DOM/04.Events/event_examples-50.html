@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Examples (32-50)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .event-box {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .output {
+            margin-top: 10px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events Examples (32-50)</h1>
+    <div id="output" class="output"></div>
+
+    <!-- 32. error -->
+    <div class="event-box">
+        <img src="nonexistent.jpg" id="errorImage" alt="Broken Image" width="200">
+        <p>32. error: When an error occurs (e.g., image fails to load).</p>
+    </div>
+
+    <!-- 33. focus -->
+    <div class="event-box">
+        <input type="text" id="focusInput" placeholder="33. focus: Click to focus">
+    </div>
+
+    <!-- 34. focusin -->
+    <div class="event-box">
+        <input type="text" id="focusinInput" placeholder="34. focusin: Focus detected">
+    </div>
+
+    <!-- 35. focusout -->
+    <div class="event-box">
+        <input type="text" id="focusoutInput" placeholder="35. focusout: Focus lost">
+    </div>
+
+    <!-- 36. fullscreenchange -->
+    <div class="event-box">
+        <button id="fullscreenButton">36. fullscreenchange: Go Fullscreen</button>
+    </div>
+
+    <!-- 37. fullscreenerror -->
+    <div class="event-box">
+        <button id="fullscreenErrorButton">37. fullscreenerror: Trigger Error</button>
+    </div>
+
+    <!-- 38. hashchange -->
+    <div class="event-box">
+        <a href="#exampleHash">38. hashchange: Change hash</a>
+    </div>
+
+    <!-- 39. input -->
+    <div class="event-box">
+        <input type="text" id="inputBox" placeholder="39. input: Type something">
+    </div>
+
+    <!-- 40. invalid -->
+    <div class="event-box">
+        <form>
+            <input type="email" id="invalidInput" required placeholder="40. invalid: Enter valid email">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- 41. keydown -->
+    <div class="event-box">
+        <input type="text" id="keydownBox" placeholder="41. keydown: Press a key">
+    </div>
+
+    <!-- 42. keypress -->
+    <div class="event-box">
+        <input type="text" id="keypressBox" placeholder="42. keypress: Press a key (deprecated)">
+    </div>
+
+    <!-- 43. keyup -->
+    <div class="event-box">
+        <input type="text" id="keyupBox" placeholder="43. keyup: Release a key">
+    </div>
+
+    <!-- 44. load -->
+    <div class="event-box">
+        <p>44. load: This page has fully loaded!</p>
+    </div>
+
+    <!-- 45. loadeddata -->
+    <div class="event-box">
+        <video id="loadedDataVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>45. loadeddata: Video data loaded.</p>
+    </div>
+
+    <!-- 46. loadedmetadata -->
+    <div class="event-box">
+        <video id="loadedMetadataVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>46. loadedmetadata: Video metadata loaded.</p>
+    </div>
+
+    <!-- 47. loadstart -->
+    <div class="event-box">
+        <video id="loadStartVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>47. loadstart: Video load started.</p>
+    </div>
+
+    <!-- 48. message -->
+    <div class="event-box">
+        <button id="messageButton">48. message: Post a message</button>
+    </div>
+
+    <!-- 49. mousedown -->
+    <div class="event-box">
+        <div id="mousedownDiv" style="width: 150px; height: 50px; background: lightgray;">
+            49. mousedown: Click and hold here
+        </div>
+    </div>
+
+    <!-- 50. mouseenter -->
+    <div class="event-box">
+        <div id="mouseenterDiv" style="width: 150px; height: 50px; background: lightblue;">
+            50. mouseenter: Hover here
+        </div>
+    </div>
+
+    <script>
+        const output = document.getElementById('output');
+
+        function log(message) {
+            output.textContent += message + '\n';
+        }
+
+        // 32. error
+        document.getElementById('errorImage').addEventListener('error', () => {
+            log('32. error: Image failed to load.');
+        });
+
+        // 33. focus
+        document.getElementById('focusInput').addEventListener('focus', () => {
+            log('33. focus: Input focused.');
+        });
+
+        // 34. focusin
+        document.getElementById('focusinInput').addEventListener('focusin', () => {
+            log('34. focusin: Focus detected.');
+        });
+
+        // 35. focusout
+        document.getElementById('focusoutInput').addEventListener('focusout', () => {
+            log('35. focusout: Focus lost.');
+        });
+
+        // 36. fullscreenchange
+        const fullscreenButton = document.getElementById('fullscreenButton');
+        fullscreenButton.addEventListener('click', () => {
+            document.documentElement.requestFullscreen();
+        });
+        document.addEventListener('fullscreenchange', () => {
+            log('36. fullscreenchange: Fullscreen mode toggled.');
+        });
+
+        // 37. fullscreenerror
+        document.getElementById('fullscreenErrorButton').addEventListener('click', () => {
+            log('37. fullscreenerror: This is a simulated error.');
+        });
+
+        // 38. hashchange
+        window.addEventListener('hashchange', () => {
+            log('38. hashchange: Hash changed to ' + location.hash);
+        });
+
+        // 39. input
+        document.getElementById('inputBox').addEventListener('input', (e) => {
+            log('39. input: ' + e.target.value);
+        });
+
+        // 40. invalid
+        document.getElementById('invalidInput').addEventListener('invalid', () => {
+            log('40. invalid: Invalid input.');
+        });
+
+        // 41. keydown
+        document.getElementById('keydownBox').addEventListener('keydown', (e) => {
+            log('41. keydown: ' + e.key);
+        });
+
+        // 42. keypress (deprecated)
+        document.getElementById('keypressBox').addEventListener('keypress', (e) => {
+            log('42. keypress: ' + e.key);
+        });
+
+        // 43. keyup
+        document.getElementById('keyupBox').addEventListener('keyup', (e) => {
+            log('43. keyup: ' + e.key);
+        });
+
+        // 44. load (page load)
+        window.addEventListener('load', () => {
+            log('44. load: Page fully loaded.');
+        });
+
+        // 45. loadeddata
+        document.getElementById('loadedDataVideo').addEventListener('loadeddata', () => {
+            log('45. loadeddata: Video data loaded.');
+        });
+
+        // 46. loadedmetadata
+        document.getElementById('loadedMetadataVideo').addEventListener('loadedmetadata', () => {
+            log('46. loadedmetadata: Metadata loaded.');
+        });
+
+        // 47. loadstart
+        document.getElementById('loadStartVideo').addEventListener('loadstart', () => {
+            log('47. loadstart: Video load started.');
+        });
+
+        // 48. message
+        document.getElementById('messageButton').addEventListener('click', () => {
+            log('48. message: This button does not use postMessage but simulates it.');
+        });
+
+        // 49. mousedown
+        document.getElementById('mousedownDiv').addEventListener('mousedown', () => {
+            log('49. mousedown: Mouse button pressed.');
+        });
+
+        // 50. mouseenter
+        document.getElementById('mouseenterDiv').addEventListener('mouseenter', () => {
+            log('50. mouseenter: Mouse entered.');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Article
+========
+• The <article> tag represents “heading” and “one or more paragraphs”. 
+• It is just used to group-up the headings and paragraphs, if you have too many in the web page. 
+• It makes no changes in the output.
+
+Syntax: 
+<article> 
+    Content here 
+</article>

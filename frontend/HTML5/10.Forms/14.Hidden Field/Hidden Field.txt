@@ -1,0 +1,7 @@
+Hidden Field
+============
+• Hidden field will not be appear in the web page; but will be submitted to the server. 
+• Hidden values are useful for the programmer to send browser / client details to server. 
+• Use hidden field when you want to submit some fixed value to server; that you don't want to accept from the user 
+
+Syntax: <input type="hidden" name="some name" value="some value">

@@ -1,0 +1,12 @@
+3. Inline Style Sheet
+=====================
+• The css styles will be defined inside the html tag itself.
+• This is NOT recommended in realtime.
+
+Drawbacks:.
+    a) HTML code will be cumbersome (confusing).
+    b) No style re-usability.
+
+Syntax:
+    <tag style=”property:value; property:value; …”>
+    </tag>

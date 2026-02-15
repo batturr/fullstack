@@ -1,0 +1,6 @@
+Border - shortcut
+=================
+• This property specifies border width, border style and border color, at-a-time, in shortcut way.
+
+Syntax: border: borderwidth borderstyle borderColor;
+Example: border: 5px solid red;

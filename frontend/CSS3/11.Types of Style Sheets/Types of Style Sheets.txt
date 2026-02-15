@@ -1,0 +1,5 @@
+• CSS style sheets are 3 types:
+    1. Internal Style Sheet / Embedded Style Sheet
+    2. External Style Sheet
+    3. Inline Style Sheet
+

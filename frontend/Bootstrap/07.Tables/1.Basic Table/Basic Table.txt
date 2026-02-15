@@ -1,0 +1,7 @@
+Basic Table
+===========
+• It is used to display table with expand width and padding, horizontal borders.
+
+List of Classes
+===============
+• table : bootstrap table style.

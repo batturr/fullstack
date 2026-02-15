@@ -1,0 +1,6 @@
+Reset Button
+============
+• Reset button clears the values of all fields (textboxes and others) within the current form. 
+• The reset button must be a part of the <form> tag; then only it can recognize the elements that are present inside the same form. 
+
+Syntax: <input type="reset">

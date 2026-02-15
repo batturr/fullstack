@@ -1,0 +1,11 @@
+• DOCTYPE is a directive in HTML, which tells the browser about the version of html that you are using in the web page.
+• Various versions of html have various DOCTYPE’s.
+
+1. HTML 4
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+2. XHTML
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+3. HTML 5
+    <!DOCTYPE html>

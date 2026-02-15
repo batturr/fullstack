@@ -1,0 +1,57 @@
+HTML Assignment – 2
+=====================
+Basic Questions
+Create an ordered list (<ol>) of 5 fruits.
+Create an unordered list (<ul>) of 5 countries.
+Create a nested list with one main item “Programming Languages” containing “JavaScript, Python, Java”.
+Make a description list (<dl>) of 3 terms with their definitions.
+Create an unordered list of your hobbies.
+Create a simple hyperlink using <a> that links to “https://www.google.com”.
+Add a link to an external website (e.g., YouTube).
+Create a relative link to a page called about.html.
+Create an anchor link that jumps to a section with the ID #contact.
+Make a link that opens in a new tab using target=”_blank”.
+Insert an image using <img> with src and alt attributes.
+Add an image with a title attribute that shows text on hover.
+Resize an image to 200px width and 150px height.
+Insert an image and make it clickable (link to Google).
+Add an image with a missing src and give it a proper alt text.
+Create a table with 2 rows and 2 columns.
+Add a table with a header row using <th>.
+Create a table with 3 columns: Name, Age, Country.
+Add borders to a table using border=”1″.
+Create a table with one cell spanning 2 columns using colspan.
+
+Intermediate Questions
+Create an ordered list of 5 car brands and change the numbering type (e.g., Roman numerals).
+Create an unordered list of 5 subjects and use a square bullet style.
+Make a nested list of “Frontend” (HTML, CSS, JavaScript) and “Backend” (Node.js, MongoDB, MySQL).
+Create a description list (<dl>) for 5 programming concepts.
+Create an anchor link at the top of the page that jumps to the bottom section.
+Add a download link for a file named resume.pdf.
+Create a link with both href and title attributes.
+Make a link to an external site and style it as bold text.
+Create a link that opens a YouTube video in a new tab.
+Add a relative link to images/picture.jpg.
+Insert an image with width=”50%” for responsive scaling.
+Use srcset to add two versions of the same image for responsive display.
+Create an image with both title and alt attributes.
+Insert an image and align it to the center using HTML attributes.
+Create an image that links to another section of the same page.
+Create a table with 4 rows and 3 columns showing “Students & Marks”.
+Add a table with both column headers (<th>) and data (<td>).
+Use rowspan to merge two rows in a table.
+Add cellspacing and cellpadding attributes to a table.
+Create a table with borders, column headers, and at least 5 rows of data.
+
+Advanced Questions
+Create a nested list that represents a menu (Main: Food → Fruits, Vegetables; Drinks → Tea, Coffee).
+Build a list of links inside an unordered list (like a navigation menu).
+Create an ordered list where one item itself contains an unordered list.
+Add multiple anchor links on the page for “Home, About, Contact” sections.
+Create an image that acts as a download link (click image → download file).
+Insert an image using srcset for desktop and mobile versions.
+Create an image map with clickable areas inside an image (e.g., world map linking to countries).
+Build a student result table with rowspan and colspan for subject-wise marks.
+Create a styled table with borders, background colors, and alternate row shading using CSS.
+Make a fully responsive table that scrolls horizontally on small screens.

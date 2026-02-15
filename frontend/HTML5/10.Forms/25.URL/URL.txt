@@ -1,0 +1,5 @@
+URL 
+===
+• Used to create a url textbox, where the user can enter a valid website url. Ex: http://www.google.com
+
+Syntax: <input type="url">

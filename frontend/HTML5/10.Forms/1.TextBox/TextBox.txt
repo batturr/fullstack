@@ -1,0 +1,7 @@
+TextBox
+=======
+• Textbox is used to accept a string value from the user. 
+• Textbox can accept email, mobile etc. 
+• The user can enter any no. of characters in the textbox. 
+
+Syntax: <input type="text">

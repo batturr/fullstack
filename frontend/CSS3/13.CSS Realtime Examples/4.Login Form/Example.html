@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Login Form Example</title>
+    <style>
+        .login {
+            border: 3px solid blue;
+            font-size: 20px;
+            border-radius: 10px;
+            width: 800px;
+            margin: auto;
+            box-shadow: 4px 4px 4px 2px black;
+            background-color: hotpink;
+        }
+        .login input {
+            font-size: 25px;
+        }
+        .login button {
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .c1 {
+            margin-bottom: 10px;
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-top: 3px;
+            height: 45px;
+        }
+        .c3 {
+            width: 250px;
+            float: left;
+            height: 45px;
+            text-align: right;
+        }
+        .c4 {
+            width: 500px;
+            float: left;
+            height: 45px;
+        }
+        .c2 {
+            width: 500px;
+            margin-left: 250px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>CSS Login Form Example</h1>
+        <div class="login">
+            <form>
+                <div class="c1">
+                    <div class="c3">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="c4">
+                        <input type="text" id="txtemail" name="email">
+                    </div>
+                </div>
+                <div class="c1">
+                    <div class="c3">
+                        <label for="passwprd">Password:</label>
+                    </div>
+                    <div class="c4">
+                        <input type="password"  name="password" id="txtpassword">
+                    </div>
+                </div>
+                <div class="c2">
+                    <input type="checkbox" id="chkRememberMe" value="yes">
+                    <label for="chkRememberMe">Remember Me</label>
+                </div>
+                <div class="c2">
+                    <button>Login</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

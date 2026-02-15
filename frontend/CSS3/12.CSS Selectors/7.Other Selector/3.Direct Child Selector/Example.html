@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Selectors - Direct Child selector Example</title>
+    <style>
+        /* selecting only <p> which are children of <div> */
+        div>p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+    <body>
+        <h1> CSS Selectors - Direct Child selector Example </h1>
+        <div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <b>
+                <p>Paragraph 4</p>
+                <p>Paragraph 5</p>
+            </b>
+        </div>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+    </body>
+</html>

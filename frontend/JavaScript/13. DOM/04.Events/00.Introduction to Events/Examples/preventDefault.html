@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScrpt Event preventDefault</title>
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.javascripttutorial.net/">JS Tutorial</a>
+    </div>
+    <script>
+        let link = document.querySelector('a');
+
+        link.addEventListener('click', function(event) {
+            console.log(event.cancelable); // true for most "click" events
+            console.log('clicked by Developer');
+            event.preventDefault(); // it will disable event function.
+        });
+    </script>
+</body>

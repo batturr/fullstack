@@ -1,0 +1,9 @@
+Hover Selector
+===============
+• It applies the style only when the user places the mouse pointer on the element, at run time.
+• It automatically removes the style, if the mouse pointer is moved outside the element.
+• It is also called as “pseudo class”. Whenever the selector starts with “:”, it is called as “pseudo class”.
+• Pseudo = unrealistic
+
+Syntax: tag:hover
+Example: p:hover

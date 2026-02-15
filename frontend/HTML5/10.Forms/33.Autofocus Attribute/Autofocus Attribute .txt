@@ -1,0 +1,6 @@
+Autofocus Attribute
+====================
+• Used to display the cursor directly in the specific textbox, when the web page opened in the browser.
+• You can use the "autofocus" attribute only once in the web page.
+
+Syntax: <input type="…"  autofocus="autofocus">

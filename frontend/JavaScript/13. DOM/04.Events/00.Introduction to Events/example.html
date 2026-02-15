@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Event Demo</title>
+</head>
+<body>
+    <div class="container">
+        <button name="btn" class='btn'>Click Me!</button>
+    </div>
+    <script>
+        let btn = document.querySelector('.btn');
+
+        function handleClick() {
+            alert('It was clicked by Python Developer..!');
+            console.log(event.type);
+        }
+        btn.addEventListener('click', handleClick);
+    </script>
+</body>

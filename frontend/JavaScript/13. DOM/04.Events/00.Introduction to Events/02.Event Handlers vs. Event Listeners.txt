@@ -1,0 +1,97 @@
+==========================================================================================
+                Event Handlers vs. Event Listeners
+==========================================================================================
+Both event handlers and event listeners are used to respond to events in JavaScript, but they differ in usage, functionality, and flexibility.
+
+==========================================================================================
+                            1. Event Handlers
+==========================================================================================
+An event handler is a property of an HTML element (or DOM object) that can be assigned a function. It is the older and simpler way of handling events.
+
+Key Characteristics:
+====================
+=> Only one event handler can be assigned to a specific event type per element. Assigning a new handler overwrites the previous one.
+=> Defined using attributes (`onclick`, `onchange`, etc.) in HTML or JavaScript.
+
+Example in HTML:
+================
+```
+<button onclick="alert('Button clicked!')">Click Me</button>
+```
+
+Example in JavaScript:
+======================
+const button = document.getElementById('myButton');
+button.onclick = function() {
+    alert('Button clicked!');
+};
+```
+
+Overwriting Behavior:
+=====================
+button.onclick = function() {
+    console.log('First handler');
+};
+
+button.onclick = function() {
+    console.log('Second handler'); // This overwrites the first one.
+};
+
+==========================================================================================
+                                2. Event Listeners
+==========================================================================================
+An event listener is a method (`addEventListener`) that allows you to attach multiple functions (listeners) to the same event type on an element. It provides more flexibility and is the modern way of handling events.
+
+Key Characteristics:
+====================
+=> You can attach multiple listeners for the same event type without overwriting existing ones.
+=> Supports advanced features like event capturing, bubbling, and options (e.g., `once`, `passive`).
+
+Example:
+========
+const button = document.getElementById('myButton');
+button.addEventListener('click', function() {
+    alert('First listener');
+});
+button.addEventListener('click', function() {
+    alert('Second listener');
+});
+```
+
+Advanced Options:
+=================
+button.addEventListener('click', function() {
+    alert('This listener will only fire once!');
+}, { once: true });
+```
+
+Removing an Event Listener:
+===========================
+function handler() {
+    alert('Listener removed!');
+}
+button.addEventListener('click', handler);
+button.removeEventListener('click', handler);
+
+Comparison Table
+============================================================================================================================
+| Feature                  | Event Handler                         | Event Listener                                         |
+|--------------------------|---------------------------------------|--------------------------------------------------------|
+| Usage                    | Assign a function to a property (e.g., `onclick`) | Use `addEventListener` to attach functions |
+| Multiple Handlers        | Overwrites the previous handler      | Allows multiple listeners for the same event            |
+| Flexibility              | Basic event handling                 | Advanced options (e.g., `once`, `passive`)              |
+| Removal                  | Can’t remove; just overwrite         | Use `removeEventListener`                               |
+| Event Flow (Bubbling/Capturing) | Not supported                 | Supports both bubbling and capturing                    |
+=============================================================================================================================
+
+Which One Should You Use?
+=========================
+- Use Event Handlers for simple, single-purpose event handling (e.g., quick inline scripts).
+- Use Event Listeners when:
+  - You need to attach multiple listeners to the same event.
+  - You want advanced control over the event flow (bubbling or capturing).
+  - You need to remove event listeners dynamically.
+
+Best Practice:
+===============
+Modern best practices recommend using `addEventListener` for better flexibility, maintainability, and alignment with newer web standards.

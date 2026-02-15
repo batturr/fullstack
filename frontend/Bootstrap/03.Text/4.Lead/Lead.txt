@@ -1,0 +1,7 @@
+Lead
+====
+• It is used to display a leading paragraph (in larger font size and more line height).
+
+List of Classes
+===============
+• lead : Paragraph with larger font size and larger line height

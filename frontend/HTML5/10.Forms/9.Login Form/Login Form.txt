@@ -1,0 +1,1 @@
+• Login form contains username and password with a submit button.

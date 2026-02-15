@@ -1,0 +1,9 @@
+padding
+=========
+• This property specifies the padding (gap) between border and content of the element.
+• You can specify the value in the form of pixels.
+• Inner margin is called as "padding".
+• Outer margin is called as "margin".
+
+Syntax: padding: pixels;
+Example: padding: 10px;

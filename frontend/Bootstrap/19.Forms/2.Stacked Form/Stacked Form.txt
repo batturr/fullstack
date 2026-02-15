@@ -1,0 +1,8 @@
+Stacked Form
+============
+• It is used to create a form, where the form elements appear line-by-line.
+
+List of Classes
+===============
+• form-text : Plain text in the form
+• form-control : Represents file browse button

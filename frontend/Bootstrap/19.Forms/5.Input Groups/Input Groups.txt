@@ -1,0 +1,10 @@
+Input Groups
+============
+• It is used to create a form element, with some text inside it.
+
+List of Classes
+===============
+• input-group : Container for input group (icon + form element)
+• input-group-prepend : Displays the icon at left side of form element
+• input-group-append : Displays the icon at right side of form element
+• input-group-text : Displays the text as icon.

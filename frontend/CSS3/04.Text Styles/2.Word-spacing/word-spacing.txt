@@ -1,0 +1,7 @@
+word-spacing
+============
+• This property specifies gap between words.
+• Words are identified with spaces. Space is the separator of words.
+
+Syntax: word-spacing: pixels;
+Example: word-spacing: 10px;

@@ -1,0 +1,7 @@
+Image Fluid
+===========
+• It is used to display reduce the size of the image automatically, if the page width is reduced.
+
+List of Classes
+===============
+• img-fluid : Image size automatically gets reduced if the screen width is reduced

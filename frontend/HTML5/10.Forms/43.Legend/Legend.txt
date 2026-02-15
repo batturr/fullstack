@@ -1,0 +1,9 @@
+Legend
+========
+• <legend> tag is used to display a title for the fieldset. 
+• <legend> tag is a paired tag. 
+• <legend> tag can be used only inside the <fieldset>.
+
+Syntax: <fieldset> <legend>title here</legend> Your textboxes here </fieldset>
+
+Example: <fieldset> <legend>User details</legend> <input type=”text”><br> <input type=”text”> </fieldset>

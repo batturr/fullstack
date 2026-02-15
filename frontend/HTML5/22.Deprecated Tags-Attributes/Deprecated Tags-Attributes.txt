@@ -1,0 +1,66 @@
+Deprecated / Removed Tags in HTML 5
+=========================================
+• The following tags have been removed in HTML 5.
+
+1. <acronym>
+    o Use <abbr> tag instead.
+2. <applet>
+    o Java applets is out-dated concept.
+3. <basefont>
+o Use CSS to set the default font.
+4. <big>
+    o Use CSS to increase text size.
+5. <center>
+    o Use CSS to set center alignment.
+6. <dir>
+    o Use <ul> or <ol> to display list of items.
+7. <font>
+    o Use CSS to set font.
+8. <frame>
+    o Use <iframe>.
+9. <frameset>
+    o Use <iframe>
+10. <noframes>
+    o Use <iframe>
+11. <strike>
+    o Use CSS to set strikeout.
+12. <tt>
+    o Use CSS to change font.
+13. <bgsound>
+    o Use <audio> tag to play audio.
+14. <marquee>
+    o Use CSS / jQuery for animations.
+15. <u>
+    o Use CSS to set underline.
+
+Deprecated / Removed Attributes in HTML 5
+=========================================
+• The following attributes have been removed in HTML 5.
+
+1 <body> 
+    background, bgcolor, link, alink, vlink, text 
+    Use CSS instead.
+2 <h1> to <h6> 
+    align 
+    Use CSS instead.
+3 <p> 
+    align 
+    Use CSS instead.
+4 <hr> 
+    align, noshade, size, width 
+    Use CSS instead.
+5 <input> 
+    align 
+    Use CSS instead.
+6 <img> 
+    align, border 
+    Use CSS instead.
+7 <table> 
+    align, bgcolor, cellpadding, cellspacing, width 
+    Use CSS instead.
+8 <td>, <th> 
+    align, valign, bgcolor, width, height 
+    Use CSS instead.
+9 <div> 
+    align 
+    Use CSS instead.

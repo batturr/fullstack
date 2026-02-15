@@ -1,0 +1,8 @@
+Hyperlink Styles
+================
+• It is used to apply styles to hyperlinks.
+
+a:link: Applies styles to unvisited hyperlinks.
+a:hover: Applies styles to hyperlinks, when we place mouse pointer on it.
+a:active: Applies styles to hyperlinks, when we click and hold it.
+a:hover: Applies styles to visited hyperlinks.

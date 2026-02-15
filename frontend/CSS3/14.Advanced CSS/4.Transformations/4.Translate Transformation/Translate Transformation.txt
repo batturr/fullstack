@@ -1,0 +1,6 @@
+4. Translate Transformation
+===========================
+• It changes the visual position of the element.
+
+Syntax: transform: translate(x, y);
+Example: transform: translate(30px, 30px);

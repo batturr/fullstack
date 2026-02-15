@@ -1,0 +1,18 @@
+Video
+===== 
+• The <video> tag plays a video file in the web page.
+• We have to maintain the video file in the following formats, because different browsers support different video formats:
+    • .mp4  : IE, Chrome, Firefox, Safari, Opera
+    • .webm : Chrome, Firefox, Opera
+    • .ogg  : Chrome, Firefox, Opera
+• The autoplay="autoplay" attribute starts playing the video file as soon as web page is loaded in the browser. 
+• The controls="controls" attribute displays video player skin in the web page.
+
+Syntax:
+<video autoplay=”autoplay” controls=”controls” width=”pixels” height=”pixels”>
+    <source src=”filename.mp4” type=”video/mp4”>
+    <source src=”filename.ogg” type=”video/ogg”>
+    <source src=”filename.webm” type=”video/webm”>
+</video>
+ 
+Note: The browsers play the first possible file.

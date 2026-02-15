@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .event-box {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .output {
+            margin-top: 10px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events Examples</h1>
+    <div id="output" class="output"></div>
+
+    <!-- onchange -->
+    <div class="event-box">
+        <label for="changeInput">1. onchange:</label>
+        <input type="text" id="changeInput" placeholder="Type something and press enter...">
+    </div>
+
+    <!-- onclick -->
+    <div class="event-box">
+        <button id="clickButton">2. onclick: Click me</button>
+    </div>
+
+    <!-- onmouseover -->
+    <div class="event-box">
+        <div id="hoverBox" style="width: 150px; height: 50px; background-color: lightblue;">3. onmouseover</div>
+    </div>
+
+    <!-- onmouseout -->
+    <div class="event-box">
+        <div id="mouseoutBox" style="width: 150px; height: 50px; background-color: lightgreen;">4. onmouseout</div>
+    </div>
+
+    <!-- onkeydown -->
+    <div class="event-box">
+        <input type="text" id="keydownInput" placeholder="5. onkeydown: Press a key...">
+    </div>
+
+    <!-- onload -->
+    <div class="event-box">
+        <p>6. onload: Fires when the page is fully loaded. (Check the output above.)</p>
+    </div>
+
+    <!-- abort -->
+    <div class="event-box">
+        <img id="abortImage" src="invalid.jpg" alt="Image that won't load" style="width: 100px; height: 100px;">
+        <p>7. abort: Fires when loading an image is aborted.</p>
+    </div>
+
+    <!-- afterprint -->
+    <div class="event-box">
+        <p>8. afterprint: Fires after the page is printed. (Try printing this page.)</p>
+    </div>
+
+    <!-- animation events -->
+    <div class="event-box" id="animatedBox" style="width: 100px; height: 50px; background: coral; animation: move 3s infinite;">
+        <p>9, 10, 11: CSS animation events</p>
+    </div>
+    <style>
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+
+    <!-- beforeprint -->
+    <div class="event-box">
+        <p>12. beforeprint: Fires before printing. (Try printing this page.)</p>
+    </div>
+
+    <!-- beforeunload -->
+    <div class="event-box">
+        <p>13. beforeunload: Triggers when you try to leave the page.</p>
+    </div>
+
+    <!-- blur -->
+    <div class="event-box">
+        <input type="text" id="blurInput" placeholder="14. blur: Click outside me to trigger blur.">
+    </div>
+
+    <!-- Additional events... -->
+
+    <script>
+        const output = document.getElementById('output');
+        function log(message) {
+            output.textContent += message + '\n';
+        }
+
+        // 1. onchange
+        document.getElementById('changeInput').addEventListener('change', (e) => {
+            log(`1. onchange: Value changed to "${e.target.value}"`);
+        });
+
+        // 2. onclick
+        document.getElementById('clickButton').addEventListener('click', () => {
+            log('2. onclick: Button clicked');
+        });
+
+        // 3. onmouseover
+        document.getElementById('hoverBox').addEventListener('mouseover', () => {
+            log('3. onmouseover: Mouse hovered');
+        });
+
+        // 4. onmouseout
+        document.getElementById('mouseoutBox').addEventListener('mouseout', () => {
+            log('4. onmouseout: Mouse moved away');
+        });
+
+        // 5. onkeydown
+        document.getElementById('keydownInput').addEventListener('keydown', (e) => {
+            log(`5. onkeydown: Key "${e.key}" pressed`);
+        });
+
+        // 6. onload
+        window.addEventListener('load', () => {
+            log('6. onload: Page loaded');
+        });
+
+        // 7. abort
+        document.getElementById('abortImage').addEventListener('abort', () => {
+            log('7. abort: Image loading aborted');
+        });
+
+        // 8. afterprint
+        window.addEventListener('afterprint', () => {
+            log('8. afterprint: Page has been printed');
+        });
+
+        // 9, 10, 11: CSS Animation events
+        const animatedBox = document.getElementById('animatedBox');
+        animatedBox.addEventListener('animationend', () => {
+            log('9. animationend: Animation completed');
+        });
+        animatedBox.addEventListener('animationiteration', () => {
+            log('10. animationiteration: Animation repeated');
+        });
+        animatedBox.addEventListener('animationstart', () => {
+            log('11. animationstart: Animation started');
+        });
+
+        // 12. beforeprint
+        window.addEventListener('beforeprint', () => {
+            log('12. beforeprint: Page is about to be printed');
+        });
+
+        // 13. beforeunload
+        window.addEventListener('beforeunload', (e) => {
+            e.preventDefault();
+            log('13. beforeunload: Page is about to be unloaded');
+            e.returnValue = '';
+        });
+
+        // 14. blur
+        document.getElementById('blurInput').addEventListener('blur', () => {
+            log('14. blur: Element lost focus');
+        });
+    </script>
+</body>
+</html>

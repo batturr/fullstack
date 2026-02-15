@@ -1,0 +1,8 @@
+Italic:
+    • <i> tag is used to display the text in italic.
+    • The text enclosed within the <i> tag will be display as italic .
+    • It is a paired tag.
+        Syntax:
+            <i>italic text</i>
+        Example:
+            <i>Hello</i>

@@ -1,0 +1,9 @@
+ProgressBar
+===========
+• <progress> tag is used to display the progress of a task. 
+• To move progressbar dynamically, we have to use JavaScript. 
+• Ex: Downloading progress, Uploading progress. 
+
+Syntax: 
+<progress min="minimum" max="maximum" value="some value"> 
+</progress>

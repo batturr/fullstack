@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors - CSS Combinator Example</title>
+    <style>
+        /* Descendant Combinator */
+        body img {
+            border: 2px solid red;
+        }
+
+        /* Direct Child Combinator */
+        body > img {
+            border: 2px solid blue;
+        }
+
+        /* General Sibling Combinator */
+        h1 ~ img {
+            border: 2px solid green;
+        }
+
+        /* Adjacent Sibling Combinator */
+        h1 + img {
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <h1> CSS Selectors - CSS Combinator Example </h1>
+    <img src="water-drop.jpg" alt="" width="140px">
+    <img src="water-drop.jpg" alt="" width="100px">
+    <img src="water-drop.jpg" alt="" width="130px">
+    <img src="water-drop.jpg" alt="" width="100px">
+    <img src="water-drop.jpg" alt="" width="100px">
+    <img src="water-drop.jpg" alt="" width="120px">
+    <img src="water-drop.jpg" alt="" width="120px">
+</body>
+</html>

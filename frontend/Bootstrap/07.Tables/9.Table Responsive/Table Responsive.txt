@@ -1,0 +1,8 @@
+Table Responsive
+================
+• It is used to display scrollbar for the table automatically, when the web page is resized.
+• This class can be applicable only for <div> tag that contains <table> tag.
+
+List of Classes
+===============
+• table-responsive : Table with scrollbar

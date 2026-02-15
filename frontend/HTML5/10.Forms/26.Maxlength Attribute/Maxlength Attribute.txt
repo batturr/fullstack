@@ -1,0 +1,7 @@
+Maxlength Attribute 
+====================
+• Specifies the maximum no. of characters that can be typed in the textbox. 
+• By default, the user can enter unlimited no. of characters in the textbox. 
+• Use "Maxlength" if you want to limit to specific no. of characters. 
+
+Syntax: <input type="text" maxlength="n"> 

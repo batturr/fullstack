@@ -1,0 +1,17 @@
+Basic Navigation Bar
+====================
+• It is used to display a complex navigation bar (NavBar) with few hyperlinks.
+• When the user clicks on any hyperlink, the corresponding web page (html file) will be opened.
+• NavBar can shrink when we reduce the width of the browser / in mobile devices, automatically.
+• NavBar supports to display website logo (text / image).
+• NavBar supports to display form elements such as textboxes etc.
+
+List of Classes
+===============
+• navbar : Creates a navbar
+• navbar-expand-sm : Expands the navigation bar
+• navbar-dark : Black color for navigation bar
+• navbar-nav : Navigation menu inside the navigation bar
+• nav-item : Nav menu item
+• nav-link : Link in the Nav menu item
+• active : Represents current Nav menu item

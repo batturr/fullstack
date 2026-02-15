@@ -1,0 +1,42 @@
+Types of colors
+===============
+• Colors can be represented in 3 formats.
+    1. Named colors
+    2. RGB
+    3. Hexadecimal number
+
+1. Named colors:
+================
+    ▪ We can write name of the color directly.
+    ▪ These are limited.
+    ▪ We can’t get exact shade of the color.
+    ▪ Ex: white, black, red, green, orange, pink etc.
+    ▪ It is not recommended in real-time.
+
+2. RGB:
+========
+    ▪ RGB formula specifies that the composition of 3 basic colors (red, green, blue), generates 16 million colors.
+    ▪ Syntax: rgb(red, green, blue)
+    ▪ Red = 0 to 255
+    ▪ Green = 0 to 255
+    ▪ Blue = 0 to 255
+
+    ▪ Example:
+        ▪ rgb(0, 0, 0) = black
+        ▪ rgb(255, 0, 0) = red
+        ▪ rgb(0, 255, 0) = green
+        ▪ rgb(0, 0, 255) = blue
+        ▪ rgb(255, 255, 0) = yellow
+        ▪ rgb(255, 255, 255) = white
+
+3. Hexadecimal format:
+======================
+▪ “Hexadecimal format” is the shortcut for “RGB”.
+▪ Hexadecimal number system supports 16 symbols as 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f.
+▪ Hexadecimal number should be 6 symbols long, with “#” prefix. First two symbols represent red; Second two symbols represent green; Third two symbols represent blue.
+▪ Syntax: #redgreenblue
+▪ Example:
+    ▪ #ffffff = white
+    ▪ #000000 = black
+    ▪ #ff0000 = red
+    ▪ “Hexadecimal format” is recommended in realtime.

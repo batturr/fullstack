@@ -1,0 +1,9 @@
+Static Page Template
+====================
+• It is used to create page template (layout).
+• Header: Contains company logo, website name, login, logout, search etc.
+• Nav: Contains menubar.
+• Container: Contains left column and page content.
+• Leftcol: Contains left side menu.
+• PageContent: Contains actual content of the page.
+• Footer: Contains bottom information and links for other related sites.

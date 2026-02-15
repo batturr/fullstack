@@ -1,0 +1,21 @@
+Carousel
+========
+• It is used to display image slide show with / without text.
+
+List of Classes
+===============
+• carousel : Creates Carousel
+• slide : Slide effect
+• data-ride="carousel" : Starts slideshow as soon as web page is loaded
+• data-interval="milli seconds" : Specifies slide time in the form of milli seconds
+• carousel-indicators : Indicators at bottom of carousel
+• data-target="#id" : Creates connection between indicator and carousel
+• data-slide-to="n" : Specifies slide number for the indicator
+• active : Represents current indicator
+• carousel-inner : Container for carousel slides
+• carousel-item : Carousel slide
+• data-slide="prev" : Previous button
+• data-slide="next" : Next button
+• carousel-control-prev : Link for previous button
+• carousel-control-prev-icon : Icon for previous button
+• carousel-caption : Carousel slide text

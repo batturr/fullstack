@@ -1,0 +1,13 @@
+Label
+=====
+• <label> tag is used to create field heading.
+• The label provides description for the textbox, what value should be entered in the textbox.
+• When the user clicks on the label, cursor will be appeared in the associated textbox automatically.
+• <label> is a paired tag.
+
+Syntax: <label for="id of textbox here">label text here</label>
+
+Example: <label for="txt1">Username</label>
+
+Attributes of <label> tag:
+1. for: Used to specify the id of the textbox that is associated with the textbox.

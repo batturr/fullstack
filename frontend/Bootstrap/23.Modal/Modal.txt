@@ -1,0 +1,20 @@
+Modal
+=====
+• It is used to display modal popup box with desired content.
+
+List of Classes
+================
+• data-bs-target="#id" : Creates connection between modal popup and button
+• modal : Modal container
+• data-bs-toggle="modal" : Show Modal popup when button is clciked
+• fade : Fade effect for modal popup
+• modal-dialog : Dialog modal popup
+• modal-lg : Large modal popup
+• modal-sm : Small modal popup
+• modal-dialog-centered : Shows dialog vertically centered
+• modal-content : Container for content of modal
+• modal-header : Header of modal
+• modal-body : Body of modal
+• modal-footer : Footer of modal
+• close : Style for close button
+• data-bs-dismiss="modal" : Closes the modal popup when the user clicks

@@ -1,0 +1,15 @@
+Hyperlinks:
+    • <a> tag is used to create a hyperlink. When the user clicks on the hyperlink, the specified web page or web site or file will be opened.
+    • The web basically contains links to other pages, so it is very common to use <a> tag in real-time.
+    • By default, every browser provides built-in style for each hyperlink, i.e. blue color + hand symbol for mouse cursor + underline. We can customize this style by using CSS.
+    • It is a paired tag.
+        Syntax:
+            <a href="target url here">link text here</a>
+        Example:
+            <a href="http://www.google.com">Google</a>
+        
+        Attributes:
+            1. href:
+                • It is used to specify the address of web page or web site that is to be opened when the user clicks on the hyperlink. It can contain address of an internet web site, local html file, local other type of file such as pdf or word document, image file etc.
+            2. target="_blank":
+                • It is used to open the target web page or web site in a separate browser tab.

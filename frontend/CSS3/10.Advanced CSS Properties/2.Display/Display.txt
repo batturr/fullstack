@@ -1,0 +1,11 @@
+display
+=======
+• This property specifies display mode of the element.
+• “display: block” is default for all the block level elements.
+• “display: inline” is default for all the inline elements.
+• “display: none” hides the element and its space will be reclaimed by other elements automatically.
+
+Syntax: display: block | inline | none;
+Example: display: none;
+
+

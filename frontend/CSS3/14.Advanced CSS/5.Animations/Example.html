@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Animations Example</title>
+    <style>
+        #div1 {
+            width: 300px;
+            height: 300px;
+            margin: 60px;
+            font-size: 35px;
+        }
+        #div1:hover {
+            cursor: pointer;
+            animation: myanimation 1s;
+        }
+        @keyframes myanimation {
+            0%{transform: translate(0px,0px);}
+            25%{transform: translate(50px,50px);}
+            50%{transform: translate(50px,100px);}
+            75%{transform: translate(0px,100px);}
+            100%{transform: translate(0px,0px);}
+        }
+    </style>
+</head>
+    <body>
+        <h1>CSS Animations Example</h1>
+        <div id="div1"> 
+            <img src="water-drop.jpg" alt="" width="300px">
+        </div>
+    </body>
+</html>

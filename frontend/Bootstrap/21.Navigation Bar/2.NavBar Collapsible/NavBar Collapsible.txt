@@ -1,0 +1,13 @@
+NavBar Collapsible
+==================
+• It is used to display a collapsible navbar. That means when the web page has been opened in small devices, the menu will be automatically converted into "=" icon. When the user clicks on this icon, the menu gets opened.
+
+List of Classes
+================
+• navbar-brand : Represents logo of navbar
+• navbar-toggler : Displays icon for Toggle button for navbar
+• data-toggle="collapse" : Toggle functionality for 
+• data-target="#id" : Creates connection with toggle button and nav menu
+• collapse : Collapses the menu, by default 
+• navbar-collapse : Avoids the position problem of collapse button
+• navbar-toggler-icon : Style for display icon

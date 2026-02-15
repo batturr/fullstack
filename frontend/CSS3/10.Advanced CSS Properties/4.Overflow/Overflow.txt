@@ -1,0 +1,9 @@
+overflow
+========
+• This property specifies how the text should be appear, which is outside the boundaries of the element.
+• “overflow: visible” shows the additional content outside the element, which doesn’t fit within the element.
+• “overflow: hidden” hides the additional content, which doesn’t fit within the element.
+• “overflow: auto” shows scrollbars automatically if necessary.
+
+Syntax: overflow: visible | hidden | auto;
+Example: overflow: auto;

@@ -1,0 +1,6 @@
+1. Rotate Transformation
+========================
+• It is used to rotate the element, based on the specifies no. of degrees. Ex: 45deg.
+
+Syntax: transform: rotate(degrees);
+Example: transform: rotate(45deg);

@@ -1,0 +1,9 @@
+Tooltip
+=======
+• It is used to display tooltip message when the user places mouse pointer on it.
+
+List of Classes
+===============
+• data-toggle="tooltip" : Enables tooltip for the element
+• data-placement="top | bottom | left | right" : Specifies position of tooltip
+• title : Tooltip text

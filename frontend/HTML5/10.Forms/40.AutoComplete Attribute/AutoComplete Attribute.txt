@@ -1,0 +1,7 @@
+AutoComplete Attribute
+=======================
+• Browser automatically stores the history of textbox values when the form is submitted; and display the same in the textbox that has same name. 
+• The "autocomplete" attribute disables this feature, for security purpose.
+
+Syntax 1: <input type="text"  autocomplete="off"> 
+Syntax 2: <form autocomplete="off"> </form>

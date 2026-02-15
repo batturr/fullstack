@@ -1,0 +1,11 @@
+Tabs with DropDown
+==================
+• It is used to display dropdown menu in the tabs.
+
+List of Classes
+===============
+• dropdown : Enables Dropdown
+• dropdown-toggle : Shows Caret symbol
+• data-bs-toggle="dropdown" : Shows dropdown, when the link is clicked
+• dropdown-menu : Represents the dropdown menu to show
+• dropdown-item : Represents dropdown menu item

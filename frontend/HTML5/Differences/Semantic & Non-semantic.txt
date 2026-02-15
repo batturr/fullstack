@@ -1,0 +1,8 @@
+Difference Between Semantic and Non semantic tags
+			Non Semantic Tags														Semantic Tags
+1. html 1 to 3 versions tags are non semantic tags (Old Version)	1. html 4&5 versions are semantic tags (New Version)
+2. Tags that do not provide any information about the content		2. Tags that clearly describe the meaning of the content inside them
+    Examples: <div>, <span>												Examples: <header>, <footer>, <article>, <section>, <nav>, <aside>
+3. Just for layout or styling										3. Shows the structure and meaning of the page
+4. Not very helpful 												4. Helps search engines and screen readers
+5. Harder to understand												5. Easy to understand for developers

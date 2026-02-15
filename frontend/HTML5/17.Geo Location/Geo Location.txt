@@ -1,0 +1,16 @@
+Geo Location
+============
+• “Geo Location” concept is used to identify the current location of the client device.
+• Geo Location returns latitude, longitude values of the client device location, based on which you can display maps, driving directions, traffic, address etc.
+
+Steps for development of Geo Location:
+======================================
+• Send request to server to get geo location:
+    navigator.geolocation.getCurrentPosition(successcallback, failurecallback, { timeout: milli 
+    seconds } );
+• Receive the latitude, longitude values:
+    function successcallback(event)
+    { 
+        event.coords.latitude
+        event.coords.longitude
+    }

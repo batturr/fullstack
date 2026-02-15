@@ -1,0 +1,8 @@
+text-indent
+===========
+• This property specifies left margin for the first line of the paragraph.
+• It is rare to use in real-time.
+• Use text-indent if you want to start first line of the paragraph from right side.
+
+Syntax: text-indent: pixels;
+Example: text-indent: 10px;

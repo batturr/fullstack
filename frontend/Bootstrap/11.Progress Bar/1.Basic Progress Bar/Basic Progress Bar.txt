@@ -1,0 +1,9 @@
+Basic Progress Bar
+==================
+• It is used to display progress bar, based on the given width and height.
+
+List of Classes
+===============
+• progress : Progress bar container
+• progress-bar : Progress
+• mx-auto : Center alignment

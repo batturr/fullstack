@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Novalidate Attribute Example </title>
+</head>
+    <body>
+        <h1> Novalidate Attribute Example </h1>
+        <form action="http://localhost/someaddress" novalidate="novalidate" method="get">
+            <label for="txt1"> E-mail:</label> <br>
+            <input type="email" name="email" id="txt1" required="required"> <br>
+            <label for="txt2">Age:</label> <br>
+            <input type="number" name="age" id="txt2" min="18" max="70"> <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

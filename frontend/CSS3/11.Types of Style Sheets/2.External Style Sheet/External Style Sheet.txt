@@ -1,0 +1,8 @@
+2. External Style Sheet
+========================
+• The css styles are defined in a separate “.css” file and html tags are defined in the “.html” file.
+• We can link (connect) the css file with html file.
+• Advantage: It supports re-usability. That means, the css file can be called in many html files.
+
+Syntax to import css file:
+<link href=”filename.css” rel=”stylesheet”>

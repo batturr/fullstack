@@ -1,0 +1,19 @@
+==================================================================================
+                                Introduction to JavaScript 6
+==================================================================================
+• "JavaScript 6" version in released in 2015, which is also called as "EcmaScript 6 or ES 6".
+• JavaScript 6 is the superset of JavaScript 5, which contains the following new features:
+1. Classes
+2. Constructors
+3. Inheritance
+4. Method Overriding
+5. Set and Get Methods
+6. Default Arguments
+7. Arrow Functions
+8. Let
+9. Const
+10. Rest
+11. Destructuring
+12. Multiline Strings
+13. String Interpolation
+14. Reading Elements from Array

@@ -1,0 +1,5 @@
+Option Groups
+=============
+• <optgroup> tag is used to group-up the <option> tags inside the <select> tag.
+• The <select> tag can contain many <optgroup> tags; the <optgroup> tag contains many <option> tags.
+• Use <optgroup> tag, if you have too many no. of options in the dropdownlist.

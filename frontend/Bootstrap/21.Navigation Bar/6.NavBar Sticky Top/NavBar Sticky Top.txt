@@ -1,0 +1,23 @@
+NavBar Sticky Top
+=================
+• By default, the navbar appears in the middle of the page; and the navbar will be displayed always at the top of the page, only when the user has scrolled the page up / down.
+
+List of Classes
+===============
+• sticky-top : Fixes the navbar at top when subsequent content is scrolled
+
+1.Replace fixed-top with sticky-top:
+====================================
+- While fixed-top keeps the navbar fixed at the top even when scrolling, sticky-top provides a better user experience by allowing the navbar to remain at the top after scrolling past it. For your use case, sticky-top is more appropriate unless the navbar should always stay visible.
+
+Add Padding for Content Below Navbar:
+====================================
+When using sticky-top or fixed-top, ensure there's enough padding below the navbar to avoid content overlap.
+
+Remove Unnecessary <br> Tags:
+====================================
+Use Bootstrap's spacing utilities (e.g., mt-5) to manage spacing instead of <br> tags for cleaner HTML.
+
+Jumbotron Update:
+====================================
+The jumbotron class is deprecated in Bootstrap 5. Use utilities like py-5 and bg-light instead.

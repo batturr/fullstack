@@ -1,0 +1,28 @@
+Mixins
+======
+Combine behaviors from multiple classes.
+
+Example on Mixins
+==================
+const CanFly = {
+  fly() {
+    console.log(`${this.name} is flying.`);
+  }
+};
+
+const CanSwim = {
+  swim() {
+    console.log(`${this.name} is swimming.`);
+  }
+};
+
+class Bird {
+  constructor(name) {
+    this.name = name;
+  }
+}
+Object.assign(Bird.prototype, CanFly, CanSwim);
+
+const duck = new Bird('Duck');
+duck.fly();
+duck.swim();

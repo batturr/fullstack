@@ -1,0 +1,17 @@
+“width” and “height” properties
+===============================
+“width” property
+================
+• This property specifies horizontal size of the element.
+• You can specify the value in the form of pixels or percentages.
+
+Syntax: width: pixels;
+Example: width: 200px;
+
+“height” property
+================
+• This property specifies vertical size of the element.
+• You can specify the value in the form of pixels or percentages.
+
+Syntax: height: pixels;
+Example: height: 100px

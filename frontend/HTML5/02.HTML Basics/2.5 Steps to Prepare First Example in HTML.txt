@@ -1,0 +1,25 @@
+1. Installing Visual Studio Code
+2. Creating HTML Program
+3. Executing HTML Program
+
+1. Installing Visual Studio Code
+    “Visual Studio Code” is the recommended editor for html, css, javascript and many other languages /frameworks.
+    Go to https://code.visualstudio.com
+
+
+
+2. Creating HTML Program
+
+<html>
+    <head>
+        <title> Welcome </title>
+    </head>
+    <body>
+        Hello World
+    </body>
+</html>
+
+
+3. Executing HTML Program
+
+    • Go to “Computer” or “This PC” and go to “c:\html” folder.

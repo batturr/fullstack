@@ -1,0 +1,64 @@
+The Document Object
+====================
+=> When an HTML document is loaded into a web browser, it becomes a document object.
+=> The document object is the root node of the HTML document.
+=> The document object is a property of the window object.
+
+The document object is accessed with:
+window.document or just document
+
+Examples:
+=========
+let url = window.document.URL;
+or
+let url = document.URL;
+
+=====================================================================================================================
+                                    Document Object Properties and Methods
+=====================================================================================================================
+
+1.activeElement	        => Returns the currently focused element in the document
+2.addEventListener()	=> Attaches an event handler to the document
+3.adoptNode()	        => Adopts a node from another document
+4.baseURI           	=> Returns the absolute base URI of a document
+5.body	                => Sets or returns the document's body (the <body> element)
+6.characterSet      	=> Returns the character encoding for the document
+7.close()	            => Closes the output stream previously opened with document.open()
+8.cookie	            => Returns all name/value pairs of cookies in the document
+9.createAttribute()	    => Creates an attribute node
+10.createComment()	    => Creates a Comment node with the specified text
+11.createDocumentFragment()	=> Creates an empty DocumentFragment node
+12.createElement()	    => Creates an Element node
+13.createEvent()	    => Creates a new event
+14.createTextNode() 	=> Creates a Text node
+15.defaultView      	=> Returns the window object associated with a document, or null if none is available.
+16.designMode	        => Controls whether the entire document should be editable or not.
+17.doctype	            => Returns the Document Type Declaration associated with the document
+18.documentElement  	=> Returns the Document Element of the document (the <html> element)
+19.documentURI      	=> Sets or returns the location of the document
+20.domain	            => Returns the domain name of the server that loaded the document
+21.embeds	            => Returns a collection of all <embed> elements the document
+22.forms	            => Returns a collection of all <form> elements in the document
+23.getElementById()	    => Returns the element that has the ID attribute with the specified value
+24.getElementsByClassName()=> 	Returns an HTMLCollection containing all elements with the specified class name
+25.getElementsByName()	=> Returns an live NodeList containing all elements with the specified name
+26.getElementsByTagName()	=> Returns an HTMLCollection containing all elements with the specified tag name
+27.hasFocus()	        => Returns a Boolean value indicating whether the document has focus
+28.head	                => Returns the <head> element of the document
+29.images           	=> Returns a collection of all <img> elements in the document
+30.implementation   	=> Returns the DOMImplementation object that handles this document
+31.importNode()     	=> Imports a node from another document
+32.lastModified     	=> Returns the date and time the document was last modified
+33.links	            => Returns a collection of all <a> and <area> elements in the document that have a href attribute
+34.normalize()      	=> Removes empty Text nodes, and joins adjacent nodes
+35.open()           	=> Opens an HTML output stream to collect output from document.write()
+36.querySelector()  	=> Returns the first element that matches a specified CSS selector(s) in the document
+37.querySelectorAll()	=> Returns a static NodeList containing all elements that matches a specified CSS selector(s) in the document
+38.readyState	        => Returns the (loading) status of the document
+39.referrer         	=> Returns the URL of the document that loaded the current document
+40.removeEventListener() => Removes an event handler from the document (that has been attached with the addEventListener() method)
+41.scripts	            => Returns a collection of <script> elements in the document
+42.title	            => Sets or returns the title of the document
+43.URL              	=> Returns the full URL of the HTML document
+44.write()	            => Writes HTML expressions or JavaScript code to a document
+45.writeln()	        => Same as write(), but adds a newline character after each statement

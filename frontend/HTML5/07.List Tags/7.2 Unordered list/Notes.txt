@@ -1,0 +1,70 @@
+1. UNORDERED LIST (<ul>)
+✔ Definition
+
+An unordered list displays items with bullets (•).
+Used when order does NOT matter.
+
+✔ Syntax
+<ul>
+  <li>Item</li>
+  <li>Item</li>
+</ul>
+
+✔ Bullet Styles (using type)
+
+You can change the bullet style:
+
+Type	Bullet
+disc (default)	●
+circle	○
+square	■
+
+Example:
+
+<ul type="square">
+  <li>Apple</li>
+  <li>Mango</li>
+</ul>
+
+✔ Uses
+Menus
+Points
+Features list
+Any unordered data
+
+
+
+NESTED LISTS (Lists inside Lists)
+Example:
+<ul>
+  <li>Frontend
+      <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+      </ol>
+  </li>
+  <li>Backend</li>
+</ul>
+
+
+✔ Both <ul> and <ol> can be nested inside each other.
+
+🔵 4. <li> List Item Tag
+
+Common for both <ul> and <ol>.
+
+✔ Definition
+
+<li> defines each item inside the list.
+
+✔ Syntax
+<li>Item Name</li>
+   
+             
+              Final Notes Summary
+
+| List Type        | Tag    | Shows              |
+| ---------------- | ------ | ------------------ |
+| Ordered List     | `<ol>` | 1, 2, 3…           |
+| Unordered List   | `<ul>` | •, ○, ■            |
+| Description List | `<dl>` | Term + Description |

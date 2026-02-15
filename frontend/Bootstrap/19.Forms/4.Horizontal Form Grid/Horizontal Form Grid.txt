@@ -1,0 +1,29 @@
+Horizontal Form Grid
+====================
+• It is used to create a form, where the labels and form elements appear side-by-side.
+
+List of Classes
+===============
+• form-row : Creates a grid in the form
+• col-sm-n : Specifies no. of columns in all devices above extra small devices
+• col-form-label : Makes vertical alignment center
+• offset-sm-n : Specifies no. of columns to leave empty
+
+Improvements:
+1.Bootstrap 5 Standards:
+========================
+- Replaced the deprecated form-row with row.
+- Used form-select for the dropdown.
+
+2.Responsiveness:
+=================
+- Added col-lg-8 for the form container, ensuring it's responsive and centered.
+
+3.Semantic HTML:
+================
+- Corrected label for attributes to align with input ids for accessibility.
+- Used required attributes where applicable.
+
+4.Alignment:
+============
+- Used offset-sm-2 for proper alignment of "Remember Me" and the submit button.

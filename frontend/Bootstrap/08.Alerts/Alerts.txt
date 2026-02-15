@@ -1,0 +1,18 @@
+Alerts
+======
+• It is used to display alert message (short message) at the top of the web page.
+
+List of Classes
+===============
+• alert : Represents alert
+• fade : Show alert with fade
+• show : Displays the alert
+• close : Displays close button
+• alert-primary : Blue color
+• alert-success : Green color
+• alert-info : Light blue color
+• alert-warning : Orange color
+• alert-danger : Red color
+• alert-secondary : Grey color
+• alert-light : Light grey color
+• alert-dark : Black color

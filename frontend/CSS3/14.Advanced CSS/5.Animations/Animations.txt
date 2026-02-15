@@ -1,0 +1,19 @@
+Animations
+============
+• Animations are “group of transitions”, which will be performed one after another.
+• Transition contains two points only (starting point + ending point).
+• Animation contains multiple points of milestones.
+
+• Syntax:
+selector
+{
+animation: animationname seconds;
+}
+@keyframes animationname
+{
+0% { property:value; property:value; … },
+25% { property:value; property:value; … },
+50% { property:value; property:value; … },
+75% { property:value; property:value; … },
+100% { property:value; property:value; … }
+}

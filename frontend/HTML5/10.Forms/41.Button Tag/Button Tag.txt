@@ -1,0 +1,9 @@
+Button Tag 
+==============
+• <button> tag is used to display a submit button with image and text. 
+• The <button> tag is a contain, inside which you can place any content text or other html tags. 
+• <button> is a paired tag. 
+
+Syntax: <button> <img src="image file path here"> Text here </button> 
+
+Example: <button> <img src="ok.png"><br> OK </button>

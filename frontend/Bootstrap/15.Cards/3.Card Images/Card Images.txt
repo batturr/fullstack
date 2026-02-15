@@ -1,0 +1,10 @@
+Card Images
+===========
+• It is used to display cards with images.
+
+List of Classes
+===============
+• card-img-top : Represents card image at top
+• card-img-bottom : Represents card image at bottom
+• card-title : Title of the card
+• card-text : Normal text of the card

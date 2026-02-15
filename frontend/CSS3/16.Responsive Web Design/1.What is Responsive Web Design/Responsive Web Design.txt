@@ -1,0 +1,5 @@
+What is Responsive Web Design
+=============================
+• “Responsive Web Design” (RWD) is used to make the web page automatically fit based on the current device resolution.
+• It is used to display the content differently on different devices, based on the screen resolution.
+• We divide the devices into 4 types, based on the browser width:

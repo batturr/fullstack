@@ -1,0 +1,26 @@
+padding - sides
+===============
+“padding-top” property
+======================
+• This property specifies the top padding.
+Syntax: padding-top: pixels;
+Example: padding-top: 10px;
+
+“padding-right” property
+========================
+• This property specifies the right padding.
+Syntax: padding-right: pixels;
+Example: padding-right: 10px;
+
+“padding-bottom” property
+=========================
+• This property specifies the bottom padding.
+Syntax: padding-bottom: pixels;
+Example: padding-bottom: 10px;
+
+“padding-left” property
+=======================
+• This property specifies the left padding.
+Syntax: padding-left: pixels;
+Example: padding-left: 10px;
+

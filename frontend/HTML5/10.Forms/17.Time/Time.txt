@@ -1,0 +1,5 @@
+Time
+=====
+• Used to create a time box, where the user can enter time (hours, minutes and seconds).
+
+Syntax: <input type="time">

@@ -1,0 +1,7 @@
+font-family
+============
+• This property specifies name of the font. You refer the font family names from notepad.
+• It is recommended to specify multiple font family names; if specified browser tries the subsequent font if the previous font is not found / not supported in the browser.
+
+Syntax: font-family: “fontname”;
+Example: font-family: “Arial”;

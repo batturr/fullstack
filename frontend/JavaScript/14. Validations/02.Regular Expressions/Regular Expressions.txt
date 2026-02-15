@@ -1,0 +1,177 @@
+Regular Expressions
+• Regular expression represents “pattern” of the value.
+• Regular expressions are useful in validations, to check whether it is matching with the specified pattern or not.
+
+
+Here’s a list of commonly used **JavaScript Regular Expressions** with examples for each.
+
+---
+
+### **1. Matching Digits**
+- **Regex**: `/\d+/`
+- **Explanation**: Matches one or more digits (0-9).
+- **Example**:
+  ```javascript
+  const str = "There are 123 apples";
+  const result = str.match(/\d+/); // ["123"]
+  ```
+
+---
+
+### **2. Matching Non-Digits**
+- **Regex**: `/\D+/`
+- **Explanation**: Matches one or more non-digit characters.
+- **Example**:
+  ```javascript
+  const str = "123abc";
+  const result = str.match(/\D+/); // ["abc"]
+  ```
+
+---
+
+### **3. Matching Whitespace**
+- **Regex**: `/\s+/`
+- **Explanation**: Matches one or more whitespace characters (spaces, tabs, newlines).
+- **Example**:
+  ```javascript
+  const str = "Hello    World";
+  const result = str.match(/\s+/); // ["    "]
+  ```
+
+---
+
+### **4. Matching Non-Whitespace**
+- **Regex**: `/\S+/`
+- **Explanation**: Matches one or more non-whitespace characters.
+- **Example**:
+  ```javascript
+  const str = "Hello World";
+  const result = str.match(/\S+/g); // ["Hello", "World"]
+  ```
+
+---
+
+### **5. Matching Word Characters**
+- **Regex**: `/\w+/`
+- **Explanation**: Matches one or more word characters (letters, digits, or underscores).
+- **Example**:
+  ```javascript
+  const str = "My_var123";
+  const result = str.match(/\w+/g); // ["My_var123"]
+  ```
+
+---
+
+### **6. Matching Non-Word Characters**
+- **Regex**: `/\W+/`
+- **Explanation**: Matches one or more non-word characters.
+- **Example**:
+  ```javascript
+  const str = "Hello, World!";
+  const result = str.match(/\W+/g); // [", ", "!"]
+  ```
+
+---
+
+### **7. Matching Email Addresses**
+- **Regex**: `/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/`
+- **Explanation**: Matches valid email addresses.
+- **Example**:
+  ```javascript
+  const str = "Contact me at example@mail.com";
+  const result = str.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
+  // ["example@mail.com"]
+  ```
+
+---
+
+### **8. Matching URLs**
+- **Regex**: `/https?:\/\/[^\s]+/`
+- **Explanation**: Matches HTTP or HTTPS URLs.
+- **Example**:
+  ```javascript
+  const str = "Visit https://example.com";
+  const result = str.match(/https?:\/\/[^\s]+/); // ["https://example.com"]
+  ```
+
+---
+
+### **9. Matching Hexadecimal Colors**
+- **Regex**: `/#[0-9a-fA-F]{6}|#[0-9a-fA-F]{3}/`
+- **Explanation**: Matches 3- or 6-character hexadecimal color codes.
+- **Example**:
+  ```javascript
+  const str = "Color code is #FF5733";
+  const result = str.match(/#[0-9a-fA-F]{6}|#[0-9a-fA-F]{3}/); // ["#FF5733"]
+  ```
+
+---
+
+### **10. Matching Specific Word Boundaries**
+- **Regex**: `/\bword\b/`
+- **Explanation**: Matches the exact word "word" as a whole.
+- **Example**:
+  ```javascript
+  const str = "A word is a word.";
+  const result = str.match(/\bword\b/g); // ["word", "word"]
+  ```
+
+---
+
+### **11. Replacing All Occurrences**
+- **Regex**: `/pattern/g`
+- **Example**: Replace all "cat" with "dog".
+  ```javascript
+  const str = "cat and cat";
+  const result = str.replace(/cat/g, "dog"); // "dog and dog"
+  ```
+
+---
+
+### **12. Validate Phone Numbers**
+- **Regex**: `/^\d{3}-\d{3}-\d{4}$/`
+- **Explanation**: Matches phone numbers in the format `123-456-7890`.
+- **Example**:
+  ```javascript
+  const phone = "123-456-7890";
+  const isValid = /^\d{3}-\d{3}-\d{4}$/.test(phone); // true
+  ```
+
+---
+
+### **13. Matching Alphanumeric Strings**
+- **Regex**: `/^[a-zA-Z0-9]+$/`
+- **Explanation**: Matches strings with only letters and numbers.
+- **Example**:
+  ```javascript
+  const str = "ABC123";
+  const isAlphanumeric = /^[a-zA-Z0-9]+$/.test(str); // true
+  ```
+
+---
+
+### **14. Matching Optional Characters**
+- **Regex**: `/colou?r/`
+- **Explanation**: Matches both "color" and "colour".
+- **Example**:
+  ```javascript
+  const str = "The color and colour are correct.";
+  const result = str.match(/colou?r/g); // ["color", "colour"]
+  ```
+
+---
+
+### **15. Matching Repeating Patterns**
+- **Regex**: `/a{3}/`
+- **Explanation**: Matches exactly three occurrences of "a".
+- **Example**:
+  ```javascript
+  const str = "aaab";
+  const result = str.match(/a{3}/); // ["aaa"]
+  ```
+
+
+Reference:
+https://www.geeksforgeeks.org/javascript-regexpregular-expression/
+https://www.programiz.com/javascript/regex
+https://javascript.info/regular-expressions

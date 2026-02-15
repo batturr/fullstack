@@ -1,0 +1,7 @@
+Universal Selector
+==================
+• It selects all the tags in the web page (including <html>, <head>, <body> etc.)
+• It is used to apply global styles.
+
+Syntax: *
+Example: *

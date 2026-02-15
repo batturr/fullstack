@@ -1,0 +1,14 @@
+JavaScript dispatchEvent
+============================
+
+
+
+
+
+
+
+
+
+
+Reference:
+https://www.javascripttutorial.net/javascript-dom/javascript-dispatchevent/

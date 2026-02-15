@@ -1,0 +1,16 @@
+Prototypes and Prototype Chain
+===============================
+JavaScript’s inheritance is prototype-based.
+
+Example on Prototypes and Prototype Chain
+=========================================
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.greet = function() {
+  console.log(`Hello, my name is ${this.name}.`);
+};
+
+const john = new Person('John');
+john.greet();

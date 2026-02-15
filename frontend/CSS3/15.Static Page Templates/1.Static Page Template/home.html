@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example on Static Page Template</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #outercontainer {
+            background-color: yellow;
+            width: 100%;
+            margin: auto;
+        }
+        #header {
+            background-color: red;
+            height: 200px;
+            width: 100%;
+        }
+        #nav {
+            background-color: aqua;
+            height: 80px;
+            width: 100%;
+        }
+        #container {
+            height: 500px;
+            width: 100%;
+        }
+        #leftcol {
+            height: 500px;
+            background-color: #66ccff;
+            width: 20%;
+            float: left;
+        }
+        #pagecontent {
+            height: 500px;
+            background-color: #ccffcc;
+            width: 80%;
+            float: left;
+        }
+        #footer {
+            height: 50px;
+            background-color: #ff0099;
+            width: 100%;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="outercontainer">
+        <div id="header">
+            Header
+        </div>
+
+        <div id="nav">
+            Nav
+        </div>
+
+        <div id="container">
+            <div id="leftcol">
+                LeftCol
+            </div>
+            <div id="pagecontent">
+                Page content
+            </div>
+        </div>
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+• Registration form contains username, password and other fields with a submit button.

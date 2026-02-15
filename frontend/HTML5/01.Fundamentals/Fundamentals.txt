@@ -1,0 +1,36 @@
+Application:
+    • It is a program that runs based on the operating system.
+    • Program is a collection of statements (instructions) to the system.
+    • For example, a statement instructs the computer to store a value. Another statement instructs the computer to do addition of numbers.
+    • Examples: Notepad, MS Word, Google, Facebook, Flipkart etc.
+
+Client:
+    • It is a machine or device (desktop, laptop, tablet, phone or Smart TV), which can access the data
+    from server.
+    • The device which is used by the user is called as "client".
+
+Browser:
+    • It is software (tool) installed on the client, to see the output of the web page. User gives input in the
+    browser and gets the output in the browser.
+    • The browser sends a request to server to get web page.
+    • Browser provides navigation among web pages.
+    • Browser executes the html, css, javascript programs and displays corresponding output to the user.
+    • Browsers are developed by different companies. For example, "Chrome" browser was developed by "Google" company.
+        Important browsers:
+            ▪ Google Chrome
+            ▪ Mozilla Firefox
+            ▪ Microsoft Internet Explorer
+            ▪ Microsoft Edge
+            ▪ Apple Safari
+            ▪ Opera
+
+Web application:
+    • It is a set of programs that are running on the browser to interact with the user.
+    • It is responsible to store information temporarily.
+    • It is responsible to interact with server i.e. sending request to server and get response from server.
+
+Http
+    • Http stands for “Hypertext Transfer Protocol”.
+    • It is a protocol, which provides a set of rules to send request to server and get response from server.
+    • Http protocol defines "request format" and "response format".
+    • Http protocol defines HTTP status codes, Http Content Types etc.

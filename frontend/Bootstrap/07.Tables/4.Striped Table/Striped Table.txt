@@ -1,0 +1,7 @@
+Striped Table
+=============
+• It is used to display table with alternate row background
+
+List of Classes
+===============
+• table-striped : Table with alternate row background.

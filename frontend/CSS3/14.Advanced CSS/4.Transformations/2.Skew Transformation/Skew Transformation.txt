@@ -1,0 +1,6 @@
+2. Skew Transformation
+======================
+• It wrists the element.
+
+Syntax: transform: skew(degrees);
+Example: transform: skew(30deg);

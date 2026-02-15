@@ -1,0 +1,163 @@
+==========================================================================================
+                            JavaScript Events
+==========================================================================================
+=> HTML events are "things" that happen to HTML elements.
+=> When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+=> DOM Events allow JavaScript to add event listener or event handlers to HTML elements.
+
+HTML Events
+============
+An HTML event can be something the browser does, or something a user does.
+
+Here are some examples of HTML events:
+
+=> An HTML web page has finished loading
+=> An HTML input field was changed
+=> An HTML button was clicked
+
+Often, when events happen, you may want to do something.
+
+JavaScript lets you execute code when events are detected.
+
+HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+
+With single quotes:
+====================
+<element event='some JavaScript'>
+
+With double quotes:
+===================
+<element event="some JavaScript">
+
+In the following example, an onclick attribute (with code), is added to a <button> element:
+
+Example:
+========
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+In the example above, the JavaScript code changes the content of the element with id="demo".
+
+In the next example, the code changes the content of its own element (using this.innerHTML):
+
+Example:
+========
+<button onclick="this.innerHTML = Date()">The time is?</button>
+
+JavaScript code is often several lines long. It is more common to see event attributes calling functions:
+
+Example:
+========
+<button onclick="displayDate()">The time is?</button>
+
+=================================================================================================
+JavaScript Event Handlers
+=================================================================================================
+Event handlers can be used to handle and verify user input, user actions, and browser actions:
+
+=> Things that should be done every time a page loads
+=> Things that should be done when the page is closed
+=> Action that should be performed when a user clicks a button
+=> Content that should be verified when a user inputs data
+
+Many different methods can be used to let JavaScript work with events:
+
+=> HTML event attributes can execute JavaScript code directly
+=> HTML event attributes can call JavaScript functions
+=> You can assign your own event handler functions to HTML elements
+=> You can prevent events from being sent or being handled
+
+=================================================================================================
+                                  DOM Events Methods
+=================================================================================================
+1.onchange	        =>  An HTML element has been changed
+2.onclick	        =>  The user clicks an HTML element
+3.onmouseover       =>  The user moves the mouse over an HTML element	
+4.onmouseout	    =>  The user moves the mouse away from an HTML element
+5.onkeydown	        =>  The user pushes a keyboard key
+6.onload	        =>  The browser has finished loading the page
+7.abort	            =>  The loading of a media is aborted
+8.afterprint	    =>  A page has started printing
+9.animationend	    =>  A CSS animation has completed
+10.animationiteration	=>  A CSS animation is repeated
+11.animationstart	=>  A CSS animation has started
+12.beforeprint	    =>  A page is about to be printed
+13.beforeunload	    =>  Before a document is about to be unloaded
+14.blur	            =>  An element loses focus
+15.canplay	        =>  The browser can start playing a media (has buffered enough to begin)
+16.canplaythrough	=>  The browser can play through a media without stopping for buffering
+17.change	        =>  The content of a form element has changed
+18.click	        =>  An element is clicked on
+19.contextmenu	    =>  An element is right-clicked to open a context menu
+20.copy	            =>  The content of an element is copied
+21.cut	            =>  The content of an element is cut
+22.dblclick	        =>  An element is double-clicked
+23.drag	            =>  An element is being dragged
+24.dragend	        =>  Dragging of an element has ended
+25.dragenter	    =>  A dragged element enters the drop target
+26.dragleave	    =>  A dragged element leaves the drop target
+27.dragover	        =>  A dragged element is over the drop target
+28.dragstart	    =>  Dragging of an element has started
+29.drop	            =>  A dragged element is dropped on the target
+30.durationchange	=>  The duration of a media is changed
+31.ended	        =>  A media has reach the end ("thanks for listening")
+32.error	        =>  An error has occurred while loading a file
+33.focus	        =>  An element gets focus
+34.focusin	        =>  An element is about to get focus
+35.focusout	        =>  An element is about to lose focus
+36.fullscreenchange =>  An element is displayed in fullscreen mode	
+37.fullscreenerror	=>  An element can not be displayed in fullscreen mode
+38.hashchange	    =>  There has been changes to the anchor part of a URL
+39.input	        =>  An element gets user input
+40.invalid	        =>  An element is invalid
+41.keydown	        =>  A key is down
+42.keypress	        =>  A key is pressed
+43.keyup	        =>  A key is released
+44.load	            =>  An object has loaded
+45.loadeddata	    =>  Media data is loaded
+46.loadedmetadata	=>  Meta data (like dimensions and duration) are loaded
+47.loadstart	    =>  The browser starts looking for the specified media
+48.message	        =>  A message is received through the event source
+49.mousedown	    =>  The mouse button is pressed over an element
+50.mouseenter	    =>  The pointer is moved onto an element
+51.mouseleave	    =>  The pointer is moved out of an element
+52.mousemove	    =>  The pointer is moved over an element
+53.mouseover	    =>  The pointer is moved onto an element
+54.mouseout	        =>  The pointer is moved out of an element
+55.mouseup	        =>  A user releases a mouse button over an element
+56.mousewheel	    =>  Deprecated. Use the wheel event instead
+57.offline	        =>  The browser starts working offline
+58.online	        =>  The browser starts working online
+59.open	            =>  A connection with the event source is opened
+60.pagehide	        =>  User navigates away from a webpage
+61.pageshow	        =>  User navigates to a webpage
+62.paste	        =>  Some content is pasted in an element
+63.pause	        =>  A media is paused
+64.play	            =>  The media has started or is no longer paused
+65.playing	        =>  The media is playing after being paused or buffered
+66.popstate	        =>  The window's history changes
+67.progress	        =>  The browser is downloading media data
+68.ratechange	    =>  The playing speed of a media is changed
+69.resize	        =>  The document view is resized
+70.reset	        =>  A form is reset
+71.scroll	        =>  An scrollbar is being scrolled
+72.search	        =>  Something is written in a search field
+73.seeked	        =>  Skipping to a media position is finished
+74.seeking	        =>  Skipping to a media position is started
+75.select	        =>  User selects some text
+76.show	            =>  A <menu> element is shown as a context menu
+77.stalled	        =>  The browser is trying to get unavailable media data
+78.storage	        =>  A Web Storage area is updated
+79.submit	        =>  A form is submitted
+80.suspend	        =>  The browser is intentionally not getting media data
+81.timeupdate	    =>  The playing position has changed (the user moves to a different point in the media)
+82.toggle	        =>  The user opens or closes the <details> element
+83.touchcancel	    =>  The touch is interrupted
+84.touchend	        =>  A finger is removed from a touch screen
+85.touchmove	    =>  A finger is dragged across the screen
+86.touchstart	    =>  A finger is placed on a touch screen
+87.transitionend	=>  A CSS transition has completed
+88.unload	        =>  A page has unloaded
+89.volumechange	    =>  The volume of a media is changed (includes muting)
+90.waiting	        =>  A media is paused but is expected to resume (e.g. buffering)
+91.wheel	        =>  The mouse wheel rolls up or down over an element
+

@@ -1,0 +1,52 @@
+JavaScript Classes
+==================
+=> "Object" is a "physical item", which is a collection of properties (details) and methods (manipulations).
+=> "Class" is a "model" of objects, which defines the list of properties and methods of the objects.
+=> ECMAScript 2015, also known as ES6, introduced JavaScript Classes.
+=> JavaScript Classes are templates for JavaScript Objects.
+=> Use the keyword class to create a class.
+=> Always add a method named constructor().
+=> The constructor method is called automatically when a new object is created.
+=> A JavaScript class is not an object.
+=> It is a template for JavaScript objects.
+
+Steps for working with Classes and Objects
+===========================================
+Create a class
+==============
+class classname
+{
+
+}
+
+Create an object
+================
+new classname();
+
+Example on Classes and Objects
+==============================
+class Student {
+}
+var s = new Student();
+console.log(s)
+
+Note: without new keyword will get below error.
+Uncaught TypeError: class constructors must be invoked with 'new'
+
+{
+  class Greeting{
+    sayHello(name) {
+      console.log(`Hello, ${name}`);
+    }
+    
+    sayGoodbye(name) {
+      console.log(`Goodbye, ${name}!`);
+  	}
+  }
+  // Create an instance of the class
+  const greet = new Greeting();
+  
+  // Call the methods
+  greet.sayHello('Prince');   // Output: Hello, Alice!
+  greet.sayGoodbye('Prince'); // Output: Goodbye, Alice!
+}

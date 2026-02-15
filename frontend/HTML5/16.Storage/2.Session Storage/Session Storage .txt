@@ -1,0 +1,18 @@
+Session Storage
+================
+• “Session Storage” is used to store some data in the browser memory temporarily, until the browser gets closed. 
+• Session storage also can store string data only, much like local storage. 
+• Session storage data is also visible in the browser's developer tools (Inspect Element option). 
+Ex: Facebook stores your email and password after login. 
+
+Setting data into Session Storage
+=================================
+sessionStorage.property = value;
+(or) 
+sessionStorage.setItem(“property”, “value”); 
+
+Getting data from Session Storage
+===================================
+sessionStorage.property 
+(or) 
+sessionStorage.getItem(“property”);

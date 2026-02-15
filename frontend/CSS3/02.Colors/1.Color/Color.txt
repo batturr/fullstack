@@ -1,0 +1,7 @@
+color
+=====
+• This property specifies text color (font color) of the element.
+• You can specify any color of your choice.
+
+Syntax: color: colorname;
+Example: color: green;

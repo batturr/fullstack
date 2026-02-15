@@ -1,0 +1,11 @@
+Image Submit Button
+===================
+• "Image Submit button" is used to submit the form to the server page. 
+• When the user clicks on the image submit button 
+• It also submits the clicked position (X and Y co-ordinates) will be submitted to the server, along with the values of other form elements. 
+• The "src" attribute is used to specify the path of the image in case of <input type="image">. It by default, refers to the same folder. 
+• It is recommended to place the image file in the same folder, where the html file is present. Example on Image Submit Button 
+• The "width" attribute is used to specify the width of the image in case of <input type="image">. It represents the value in the form of pixels. 
+• The "height" attribute is used to specify the height of the image in case of <input type="image">. It represents the value in the form of pixels. 
+
+Syntax: <input type="image" src="filename.extension"> 

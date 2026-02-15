@@ -1,0 +1,89 @@
+2. ORDERED LIST (<ol>)
+✔ Definition
+
+An ordered list shows items in numbered sequence.
+Used when order is important.
+
+✔ Syntax
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ol>
+
+✔ Numbering Types
+
+Use the type attribute:
+
+Type	Output
+1	1, 2, 3
+A	A, B, C
+a	a, b, c
+I	I, II, III
+i	i, ii, iii
+
+Example:
+
+<ol type="A">
+  <li>HTML</li>
+  <li>CSS</li>
+</ol>
+
+✔ Start From a Specific Number
+<ol start="5">
+  <li>Step</li>
+  <li>Next</li>
+</ol>
+
+✔ Reverse the List
+<ol reversed>
+  <li>Gold</li>
+  <li>Silver</li>
+  <li>Bronze</li>
+</ol>
+
+✔ Uses
+Steps
+Instructions
+Ranking
+Timelines
+Recipes
+
+
+
+
+
+
+
+
+NESTED LISTS (Lists inside Lists)
+Example:
+<ul>
+  <li>Frontend
+      <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+      </ol>
+  </li>
+  <li>Backend</li>
+</ul>
+
+
+✔ Both <ul> and <ol> can be nested inside each other.
+
+🔵 4. <li> List Item Tag
+
+Common for both <ul> and <ol>.
+
+✔ Definition
+
+<li> defines each item inside the list.
+
+✔ Syntax
+<li>Item Name</li>
+   
+              Final Notes Summary
+| List Type        | Tag    | Shows              |
+| ---------------- | ------ | ------------------ |
+| Ordered List     | `<ol>` | 1, 2, 3…           |
+| Unordered List   | `<ul>` | •, ○, ■            |
+| Description List | `<dl>` | Term + Description |

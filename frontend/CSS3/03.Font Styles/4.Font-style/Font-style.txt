@@ -1,0 +1,9 @@
+font-style
+===========
+• This property applies italic
+• The default value is "normal".
+• If the value is "normal", the text appears normally.
+• If the value is "italic", the text appears italic.
+
+Syntax: font-style: normal | italic;
+Example: font-style: italic;

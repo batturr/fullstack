@@ -1,0 +1,7 @@
+Hover Table
+===========
+• It is used to display table with background color change on row hover.
+
+List of Classes
+===============
+• table-hover : Table row background color gets changed on hover

@@ -1,0 +1,16 @@
+Inline Form
+===========
+• It is used to create a simple form (with limited no. of elements), where the elements appear side-by-side.
+
+List of Classes
+===============
+• form-inline : Creates inline form
+• form-group : Wrapper for label and form element
+• form-control : Represents form element
+• mr-n : Margin right
+• mb-n : Margin bottom
+• mt-n : Margin top
+• ml-n : Margin left
+• form-check : Wrapper for checkbox / radio button
+• form-check-label : Label for checkbox / radio button
+• form-check-input : Checkbox / Radio buttn

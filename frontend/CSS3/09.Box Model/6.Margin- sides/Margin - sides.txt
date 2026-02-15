@@ -1,0 +1,25 @@
+Margin - sides
+===============
+“margin-top” property
+=====================
+• This property specifies the top margin (gap) between element to element.
+Syntax: margin-top: pixels;
+Example: margin-top: 10px;
+
+“margin-right” property
+=======================
+• This property specifies the right margin (gap) between element to element.
+Syntax: margin-right: pixels;
+Example: margin-right: 10px;
+
+“margin-bottom” property
+========================
+• This property specifies the bottom margin (gap) between element to element.
+Syntax: margin-bottom: pixels;
+Example: margin-bottom: 10px;
+
+“margin-left” property
+======================
+• This property specifies the left margin (gap) between element to element.
+Syntax: margin-left: pixels;
+Example: margin-left: 10px;

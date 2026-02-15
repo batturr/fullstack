@@ -1,0 +1,5 @@
+Search 
+======
+• Used to create a search box, where the user can enter some search text. It also displays clear button 
+(X) to clear the text inside the search box. 
+Syntax: <input type="search">

@@ -1,0 +1,237 @@
+BOOTSTRAP 5.3+ - TEXT COLORS
+=============================
+
+Overview
+--------
+• Used to set the color of text content
+• Provides predefined semantic color classes for different purposes
+• Based on the requirement, use any available color class
+• Can customize using CSS variables or custom CSS
+
+Text Color Classes (Bootstrap 5.3+)
+===================================
+
+Primary Colors:
+• text-primary       : Blue (#0d6efd) - Main action/attention
+• text-secondary     : Gray (#6c757d) - Secondary information
+• text-success       : Green (#198754) - Positive/Success
+• text-danger        : Red (#dc3545) - Error/Negative
+• text-warning       : Orange (#ffc107) - Warnings/Alerts
+• text-info          : Cyan (#0dcaf0) - Information/Help
+
+Special Text Colors:
+• text-dark          : Dark gray (#212529) - Dark text
+• text-light         : Light gray (#f8f9fa) - Light text (use on dark backgrounds)
+• text-body          : Default (#212529) - Body text color
+• text-muted         : Gray (#6c757d) - Muted/disabled text
+• text-white         : White (#ffffff) - White text
+• text-white-50      : White with 50% opacity - Semi-transparent white
+• text-black-50      : Black with 50% opacity - Semi-transparent black
+
+Syntax Examples
+===============
+
+Basic Text Colors:
+  <p class="text-primary">Primary text color</p>
+  <p class="text-success">Success message</p>
+  <p class="text-danger">Error message</p>
+  <p class="text-warning">Warning message</p>
+  <p class="text-info">Information text</p>
+  <p class="text-secondary">Secondary text</p>
+  <p class="text-dark">Dark text</p>
+  <p class="text-light bg-dark p-2">Light text on dark background</p>
+  <p class="text-muted">Muted/disabled text</p>
+
+Opacity Variants (NEW in Bootstrap 5.3+):
+=========================================
+Bootstrap 5.3+ introduces opacity control without needing custom CSS:
+
+• text-opacity-100   : Full opacity (100%)
+• text-opacity-75    : 75% opacity
+• text-opacity-50    : 50% opacity
+• text-opacity-25    : 25% opacity
+
+Usage:
+  <p class="text-primary text-opacity-100">100% opacity</p>
+  <p class="text-primary text-opacity-75">75% opacity</p>
+  <p class="text-primary text-opacity-50">50% opacity</p>
+  <p class="text-primary text-opacity-25">25% opacity</p>
+
+Use Cases
+=========
+
+1. text-primary
+   • Primary actions (buttons, important links)
+   • Main headings
+   • Key information
+
+2. text-success
+   • Success messages
+   • Positive actions
+   • Confirmation status
+
+3. text-danger
+   • Error messages
+   • Validation failures
+   • Delete/warning actions
+
+4. text-warning
+   • Warning messages
+   • Alerts
+   • Caution information
+
+5. text-info
+   • Tips and help text
+   • Information boxes
+   • Helpful hints
+
+6. text-secondary
+   • Less important text
+   • Timestamps
+   • Secondary labels
+
+7. text-muted
+   • Disabled states
+   • Placeholder text
+   • Inactive elements
+
+8. text-dark
+   • Regular body text
+   • Default text color
+   • Strong emphasis
+
+9. text-light
+   • Only use on dark backgrounds
+   • Light themes
+   • Inverted color schemes
+
+Bootstrap 5.3+ CSS Variables
+=============================
+All colors are defined as CSS custom properties:
+
+:root {
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-danger: #dc3545;
+  --bs-warning: #ffc107;
+  --bs-info: #0dcaf0;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-white: #ffffff;
+}
+
+Customize colors by overriding CSS variables:
+  <style>
+    :root {
+      --bs-primary: #ff6b6b;     /* Change primary to custom color */
+      --bs-success: #51cf66;     /* Change success to custom color */
+    }
+  </style>
+
+Dark Mode Support (Bootstrap 5.3+)
+==================================
+Bootstrap 5.3+ includes built-in dark mode support:
+
+Enable dark mode:
+  <html data-bs-theme="dark" lang="en">
+
+In dark mode, colors automatically adjust for better contrast:
+• Backgrounds become darker
+• Text becomes lighter
+• All colors remain accessible
+
+Complete Example
+================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Colors Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-primary">Welcome</h1>
+    
+    <p class="text-success"><i class="bi bi-check-circle"></i> Your account is active</p>
+    <p class="text-danger"><i class="bi bi-exclamation-circle"></i> Please fix the errors below</p>
+    <p class="text-warning"><i class="bi bi-exclamation-triangle"></i> Warning: Proceed with caution</p>
+    <p class="text-info"><i class="bi bi-info-circle"></i> New features available</p>
+    
+    <!-- Opacity variants -->
+    <p class="text-primary text-opacity-75">75% opacity primary text</p>
+    <p class="text-primary text-opacity-50">50% opacity primary text</p>
+    <p class="text-primary text-opacity-25">25% opacity primary text</p>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+Accessibility & Best Practices
+===============================
+
+✓ DO:
+  • Use semantic colors (primary for main actions, danger for errors)
+  • Maintain sufficient contrast ratio (4.5:1 for normal text)
+  • Combine colors with icons or text labels
+  • Test with color blindness simulators
+  • Use opacity variants for subtle emphasis
+
+✗ DON'T:
+  • Rely solely on color to convey information
+  • Use low contrast combinations
+  • Mix too many different colors
+  • Ignore accessibility standards (WCAG)
+  • Override colors without purpose
+
+Key Improvements from Bootstrap 4 to 5.3+
+==========================================
+
+1. Opacity utilities - Easy opacity control without custom CSS
+2. CSS variables - All colors customizable via CSS custom properties
+3. Dark mode - Built-in dark mode support
+4. Better contrast - Improved WCAG AA/AAA compliance
+5. New color utilities - text-body-secondary, etc.
+
+Migration Notes
+===============
+
+Bootstrap 4 → Bootstrap 5.3+
+=============================
+• .text-muted → .text-muted (unchanged, still works)
+• No changes to basic text-primary, text-success, etc.
+• NEW: text-opacity-25/50/75 classes available
+• NEW: data-bs-theme attribute for dark mode
+
+Resources
+=========
+• Official Docs: https://getbootstrap.com/docs/5.3/utilities/colors/
+• Bootstrap CSS Variables: https://getbootstrap.com/docs/5.3/customize/css-variables/
+• Accessibility Guide: https://getbootstrap.com/docs/5.3/getting-started/accessibility/
+• WCAG Standards: https://www.w3.org/WAI/WCAG21/quickref/
+• Bootstrap Icons: https://icons.getbootstrap.com/
+
+CDN Links (Bootstrap 5.3.2)
+===========================
+
+CSS:
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+JavaScript:
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+Icons (optional):
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+Summary
+=======
+• Bootstrap provides 8 main semantic text colors
+• All colors include opacity variants (25%, 50%, 75%)
+• Dark mode automatically adjusts text colors
+• Colors are defined as CSS variables for easy customization
+• Follow WCAG guidelines for accessibility
+• Combine colors with text or icons for clarity

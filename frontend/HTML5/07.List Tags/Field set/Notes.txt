@@ -1,0 +1,110 @@
+# 🔵 **1. What is `<fieldset>`?**
+
+`<fieldset>` is a **form tag** used to **group related form elements** inside a form.
+
+It places a **box (border)** around the grouped inputs to show they belong together.
+
+---
+
+# 🔵 **2. Why do we use `<fieldset>`? (Purpose)**
+
+* Groups related inputs
+* Makes forms look organized
+* Improves readability
+* Adds a visible border around the section
+* Helps screen readers → improves accessibility
+* Used for sections like **Personal Info**, **Login Info**, **Address**, etc.
+
+---
+
+# 🔵 **3. Syntax**
+
+```html
+<fieldset>
+   ... form controls ...
+</fieldset>
+```
+
+---
+
+# 🔵 **4. `<legend>` (Title for Fieldset)**
+
+`<legend>` gives a **heading** to the fieldset box.
+
+```html
+<fieldset>
+    <legend>Personal Details</legend>
+</fieldset>
+```
+
+---
+
+# 🔵 **5. Example with Inputs**
+
+```html
+<form>
+  <fieldset>
+    <legend>User Info</legend>
+
+    Name: <input type="text"><br><br>
+    Email: <input type="email"><br><br>
+    Age: <input type="number">
+  </fieldset>
+</form>
+```
+
+---
+
+# 🔵 **6. Attributes of `<fieldset>`**
+
+| Attribute  | Use                                     |
+| ---------- | --------------------------------------- |
+| `disabled` | Disables all inputs inside the fieldset |
+| `form`     | Associates fieldset with a form         |
+| `name`     | Gives a name to the fieldset            |
+
+### Example:
+
+```html
+<fieldset disabled>
+    <legend>Disabled Section</legend>
+    <input type="text" value="You cannot edit this">
+</fieldset>
+```
+
+---
+
+# 🔵 **7. Where is `<fieldset>` used?**
+
+✔ Registration forms
+✔ Login forms
+✔ Survey forms
+✔ Application forms
+✔ Address section
+✔ Payment section
+
+---
+
+
+
+# 🔵 **9. Visual Appearance**
+
+* Shows a **border box**
+* `<legend>` appears at top left of box
+* Helps users identify form sections
+
+---
+
+             Summary
+
+| Tag          | Category | Purpose                        |
+| ------------ | -------- | ------------------------------ |
+| `<fieldset>` | Form Tag | Group form elements            |
+| `<legend>`   | Form Tag | Provide title for the fieldset |
+
+---
+
+If you want, I can provide:
+✔ a PDF of these notes
+✔ an advanced form using fieldsets
+✔ practice questions on form tags

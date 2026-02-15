@@ -1,0 +1,16 @@
+Submit Button
+=============
+• Submit button is used to submit the form to the server page. 
+• While submitting the form, all the input parameter names and their values will be sent to the server 
+program as "query string". Ex:   ?param1=value&param2=value. 
+• The query string shown above contains "names" and "values". The names are specified by the developer by using "name" attribute; "value" will be entered by the user. 
+• The server program receives the submitted values and do some process such as storing the data into database. 
+• For every form, it is recommended to create a submit button. But the <input type="submit"> creates a normal (simple submit button) 
+
+Syntax: <input type="submit">
+
+Name Attribute 
+===============
+• Name attribute represents programmatic name of the input element that will be submitted to the server. Based on the “name”, we can get the value of the element in the server side program.
+
+Syntax: <input type="…" name="any name">

@@ -1,0 +1,14 @@
+list-style-type for <ol>
+========================
+• This property specifies type of numbering for the <ol> tag.
+• If the value is "none", no numbering will be displayed.
+• If the value is "decimal", the numbers will be "1, 2, 3 …".
+• If the value is "decimal-leading-zero", the numbers will be "01, 02, 03, …".
+• If the value is "lower-alpha", the numbers will be "a, b, c, …".
+• If the value is "upper-alpha", the numbers will be "A, B, C, …".
+• If the value is "lower-roman", the numbers will be "i, ii, iii, …".
+• If the value is "upper-roman", the numbers will be "I, II, III, …".
+• If the value is "lower-greek", the numbers will be Greek letters.
+
+Syntax: list-style-type: none | decimal | decimal-leading-zero | lower-alpha | upper-alpha | lower-roman | upper-roman | lower-greek;
+Example: list-style-type: decimal;

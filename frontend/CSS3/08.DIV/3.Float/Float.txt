@@ -1,0 +1,8 @@
+float
+=====
+• This property displays the elements side-by-side.
+• If the value is "left", the elements will be displayed side-by-side, starting from "left", towards "right".
+• If the value is "right", the elements will be displayed side-by-side, staring from "right", towards "left".
+
+Syntax: float: left | right;
+Example: float: left;

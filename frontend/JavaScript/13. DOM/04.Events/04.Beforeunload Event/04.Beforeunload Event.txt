@@ -1,0 +1,17 @@
+JavaScript beforeunload Event
+================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reference:
+https://www.javascripttutorial.net/javascript-dom/javascript-beforeunload-event/

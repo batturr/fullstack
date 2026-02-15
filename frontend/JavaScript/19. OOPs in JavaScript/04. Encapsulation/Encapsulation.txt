@@ -1,0 +1,30 @@
+Encapsulation
+==============
+Definition: Bundling data (properties) and methods within a class while restricting direct access to some of the class’s components.
+
+Use private fields (introduced in ES6+).
+
+Example on Encapsulation
+========================
+{
+  class BankAccount {
+    #balance = 0;
+
+    constructor(accountNumber) {
+      this.accountNumber = accountNumber;
+    }
+
+    deposit(amount) {
+      if (amount > 0) {
+        this.#balance += amount;
+      }
+    }
+
+    getBalance() {
+      return this.#balance;
+    }
+  }
+  const account = new BankAccount(12345);
+  account.deposit(500);
+  console.log(account.getBalance()); // 500
+}

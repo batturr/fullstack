@@ -1,0 +1,69 @@
+Constructors
+============
+=> Constructor is a special method in the class, that executes every time when we created an object for the class.
+=> Constructor's name should be "constructor".
+=> Constructor can receive arguments; but can't return any value.
+=> It is not possible to call the constructor without creating an object.
+=> Constructors are mainly used to create an initialize properties in the class.
+=> Parameterized Constructor is a constructor that receives one or more arguments (parameters) and initializes the same to the respective properties.
+
+Syntax of Constructor
+=====================
+class classname
+{
+ constructor(arguments)
+    {
+      
+    }
+}
+
+Examples
+=================
+1.
+{
+  class Student {
+    constructor() {
+      this.studentid = 101;
+      this.studentname = "Prince";
+      this.marks = 70;
+    }
+  }
+  var s = new Student();
+  console.log(s.studentid);
+  console.log(s.studentname);
+  console.log(s.marks);
+}
+
+2.
+{
+  class Person {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    greet() {
+      console.log(`Hello, my name is ${this.name}.`);
+    }
+  }
+  const john = new Person('John', 30);
+  john.greet();
+}
+
+3. Example on Parameterized Constructors
+========================================
+{
+  class Student {
+    constructor(a,b,c) {
+      this.studentid = a;
+      this.studentname = b;
+      this.marks = c;
+    }
+  }
+  var s = new Student(101,"Prince",80);
+  console.log(s.studentid);
+  console.log(s.studentname);
+  console.log(s.marks);
+}
+
+

@@ -1,0 +1,9 @@
+ID Selector
+===========
+• It selects a single instance of the tag, based on the id.
+• “ID” is “identification name”.
+• “ID” should be unique (can’t be duplicate) in the web page.
+• # is symbol of ID selector.
+
+Syntax: #id
+Example: #p1

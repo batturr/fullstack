@@ -1,0 +1,8 @@
+Background-attachment
+=====================
+• This property specifies whether the background image should be scrolled along with the text, when the user uses the scrollbars of the web page.
+• If the value is "scroll", the background image will be scrolled along with the text.
+• If the value is "fixed", the background image will not be scrolled along with the text; Only the text will be scrolled; background image will be constantly appears.
+
+Syntax: background-attachment: scroll | fixed;
+Example: background-attachment: scroll;

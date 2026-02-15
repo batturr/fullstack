@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Class Selectors Example</title>
+    <style>
+        /* Pseudo-class selectors for links */
+        a:link {
+            color: blue; /* default color for unvisited links */
+        }
+        a:visited {
+            color: purple; /* color for visited links */
+        }
+        a:hover {
+            color: red; /* color when hovering over a link */
+            text-decoration: underline;
+        }
+        a:active {
+            color: orange; /* color when actively clicking the link */
+        }
+
+        /* Pseudo-class selectors for inputs */
+        input:focus {
+            background-color: lightblue; /* background color when input is focused */
+        }
+        input:disabled {
+            background-color: lightgray; /* background color for disabled input */
+        }
+        input:checked {
+            outline: 2px solid green; /* outline when checkbox or radio is checked */
+        }
+
+        /* Pseudo-class selectors for position */
+        p:first-child {
+            font-weight: bold; /* styling the first child paragraph */
+        }
+        p:last-child {
+            color: green; /* styling the last child paragraph */
+        }
+        li:nth-child(odd) {
+            background-color: #f9f9f9; /* styling odd numbered list items */
+        }
+        li:nth-child(even) {
+            background-color: #e0e0e0; /* styling even numbered list items */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-Class Selectors Example</h1>
+
+    <!-- Links -->
+    <h2>Link Pseudo-Classes</h2>
+    <a href="#">This is an unvisited link</a><br>
+    <a href="#">This is a visited link</a><br>
+
+    <!-- Inputs -->
+    <h2>Input Pseudo-Classes</h2>
+    <input type="text" placeholder="Focus me!"><br>
+    <input type="checkbox" checked> Checked checkbox<br>
+    <input type="radio" checked> Checked radio<br>
+    <input type="text" disabled placeholder="Disabled input"><br>
+
+    <!-- Position-based elements -->
+    <h2>Position Pseudo-Classes</h2>
+    <p>This is the first paragraph (first-child).</p>
+    <p>This is another paragraph.</p>
+    <p>This is the last paragraph (last-child).</p>
+
+    <h3>Numbered List</h3>
+    <ul>
+        <li>First item (odd)</li>
+        <li>Second item (even)</li>
+        <li>Third item (odd)</li>
+        <li>Fourth item (even)</li>
+        <li>Fifth item (odd)</li>
+    </ul>
+</body>
+</html>

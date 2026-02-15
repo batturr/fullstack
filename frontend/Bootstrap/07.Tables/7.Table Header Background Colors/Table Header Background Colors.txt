@@ -1,0 +1,9 @@
+Table Header Background Colors
+==============================
+• It is used to display table header row with dark / light colors.
+• These classes can be applicable only for <thead> tag.
+
+List of Classes
+===============
+• table-dark : Black color
+• table-light : Light Grey color

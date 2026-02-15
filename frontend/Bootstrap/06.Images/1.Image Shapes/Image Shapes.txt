@@ -1,0 +1,9 @@
+Image Shapes
+============
+• It is used to display images with rounded corners.
+
+List of Classes
+===============
+• rounded : Rounded corners
+• rounded-circle : Circle-shaped image
+• img-thumbnail : Bordered image

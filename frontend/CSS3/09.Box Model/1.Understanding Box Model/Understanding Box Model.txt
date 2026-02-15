@@ -1,0 +1,30 @@
+Understanding Box Model
+=======================
+• Box model is combination of "padding, border and margin".
+• All visible elements are displayed based on box model in the web page.
+
+border-style
+============
+• This property specifies type of the border, around the element.
+• The default value is "none".
+• "Solid" is recommended.
+• Depending on the requirement, you can use any of the other borders.
+
+Syntax: border-style: none | solid | dotted | dashed | double | inset | outset | ridge | groove;
+Example: border-style: solid;
+
+border-width
+============
+• This property specifies thickness of the border.
+• You can specify the border width in the form of pixels.
+
+Syntax: border-width: pixels;
+Example: border-width: 5px;
+
+border-color
+============
+• This property specifies color of the border.
+• You can specify any color.
+
+Syntax: border-color: any color;
+Example: border-color: red;

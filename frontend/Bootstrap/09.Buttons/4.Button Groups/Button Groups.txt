@@ -1,0 +1,8 @@
+Button Groups
+=============
+• It is used to display grouped buttons.
+• It reduces margin between buttons.
+
+List of Classes
+===============
+• btn-group : Group of buttons

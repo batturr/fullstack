@@ -1,0 +1,9 @@
+Horizontal Ruler
+================
+• <hr> tag is used to display a horizontal line (horizontal ruler). 
+• It acts as separation between two parts of the web page 
+• It is an unpaired tag. 
+
+Syntax: <hr> 
+
+Example: <hr>

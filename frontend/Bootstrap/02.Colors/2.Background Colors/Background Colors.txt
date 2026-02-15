@@ -1,0 +1,148 @@
+BOOTSTRAP 5.3+ - BACKGROUND COLORS
+===================================
+
+Overview
+--------
+• Used to set background colors of HTML elements
+• Provides 8 semantic background color classes
+• NEW: Opacity variants (10%, 25%, 50%, 75%, 100%)
+• NEW: Dark mode support with automatic color adjustments
+• All colors defined as CSS custom properties
+
+Primary Background Color Classes
+================================
+• bg-primary     : Blue (#0d6efd) - Primary/main content
+• bg-secondary   : Gray (#6c757d) - Secondary content
+• bg-success     : Green (#198754) - Success states
+• bg-danger      : Red (#dc3545) - Error/danger states
+• bg-warning     : Orange (#ffc107) - Warning/alert states
+• bg-info        : Cyan (#0dcaf0) - Information states
+• bg-light       : Light Gray (#f8f9fa) - Light backgrounds
+• bg-dark        : Dark Gray (#212529) - Dark backgrounds
+
+Special Colors
+==============
+• bg-white       : White background
+• bg-body        : Body background color
+• bg-transparent : Transparent background
+
+Opacity Utilities (NEW in Bootstrap 5.3+)
+==========================================
+Control background color transparency:
+• bg-opacity-10  : 10% opacity
+• bg-opacity-25  : 25% opacity
+• bg-opacity-50  : 50% opacity
+• bg-opacity-75  : 75% opacity
+• bg-opacity-100 : Full opacity
+
+Basic Syntax Examples
+=====================
+<div class="bg-primary">Primary background</div>
+<div class="bg-success">Success background</div>
+<div class="bg-danger">Danger background</div>
+<div class="bg-warning">Warning background</div>
+<div class="bg-info">Info background</div>
+<div class="bg-dark">Dark background</div>
+
+With Padding & Text Color:
+<div class="bg-primary p-3 text-white">Primary with white text</div>
+<div class="bg-warning p-3 text-dark">Warning with dark text</div>
+
+With Opacity (NEW):
+<div class="bg-primary bg-opacity-75 p-3">75% opacity primary</div>
+<div class="bg-success bg-opacity-50 p-3">50% opacity success</div>
+
+With Border & Rounded:
+<div class="bg-primary border rounded p-3 text-white">Styled primary</div>
+
+With Shadow:
+<div class="bg-success shadow p-3 text-white">Success with shadow</div>
+
+Accessibility Combinations
+==========================
+Recommended text color pairings:
+• bg-primary → text-white or text-light
+• bg-secondary → text-white or text-light
+• bg-success → text-white or text-light
+• bg-danger → text-white or text-light
+• bg-warning → text-dark (yellow needs dark text)
+• bg-info → text-dark or text-white
+• bg-light → text-dark (light needs dark text)
+• bg-dark → text-white or text-light
+
+CSS Custom Properties (NEW in Bootstrap 5.3+)
+==============================================
+All colors available as CSS variables:
+--bs-primary: #0d6efd
+--bs-secondary: #6c757d
+--bs-success: #198754
+--bs-danger: #dc3545
+--bs-warning: #ffc107
+--bs-info: #0dcaf0
+--bs-light: #f8f9fa
+--bs-dark: #212529
+
+Override to customize:
+<style>
+  :root {
+    --bs-primary: #ff6b6b;
+    --bs-success: #51cf66;
+  }
+</style>
+
+Dark Mode Support (NEW in Bootstrap 5.3+)
+=========================================
+Enable with: <html data-bs-theme="dark">
+
+Benefits:
+• Colors automatically invert for readability
+• Reduced eye strain
+• Modern user experience
+• WCAG accessibility maintained
+
+Real-World Use Cases
+====================
+• Hero sections: bg-primary, bg-dark
+• Success messages: bg-success
+• Error alerts: bg-danger
+• Warning boxes: bg-warning
+• Info sections: bg-info
+• Section separators: bg-light
+• Navigation bars: bg-dark, bg-primary
+• Card backgrounds: bg-white, bg-light
+• Badges: bg-primary, bg-danger
+• Progress bars: bg-success, bg-warning
+
+What's New in Bootstrap 5.3+
+============================
+✓ Opacity utilities (bg-opacity-*)
+✓ Dark mode support (data-bs-theme)
+✓ CSS custom properties for all colors
+✓ Improved WCAG AA/AAA compliance
+✓ Enhanced color contrast
+• Syntax remains same from Bootstrap 4
+
+Best Practices
+==============
+✓ Use semantic colors appropriately
+✓ Maintain 4.5:1 contrast ratio minimum
+✓ Combine colors with text or icons
+✓ Test in both light and dark modes
+✓ Use opacity for subtle effects
+✓ Follow WCAG accessibility guidelines
+✗ Don't rely on color alone for meaning
+✗ Don't use poor contrast combinations
+
+CDN (Bootstrap 5.3.2)
+====================
+CSS:
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+JavaScript:
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+Resources
+=========
+• Docs: https://getbootstrap.com/docs/5.3/utilities/colors/
+• CSS Variables: https://getbootstrap.com/docs/5.3/customize/css-variables/
+• Accessibility: https://getbootstrap.com/docs/5.3/getting-started/accessibility/

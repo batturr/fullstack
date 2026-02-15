@@ -1,0 +1,15 @@
+Every html program should have the following syntax:
+
+<html>
+ <head>
+    Non Content here
+ </head>
+ <body>
+    Content here
+ </body>
+</html>
+
+Explanation:
+    • The <html> tag represents starting and ending point of the HTML program. The <html> tag contains two child tags, those are <head> and <body>
+    • The <head> tag represents non-content information of the web page. The information that doesn't appear in the web page is called as "non-content".
+    • The <body> tag represents content information of the web page. The information that appears in the web page is called as "content".

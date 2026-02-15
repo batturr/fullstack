@@ -1,0 +1,5 @@
+Tabindex Attribute 
+===================
+• Specifies tab order. It defines tab sequence. 
+• When the user presses TAB key on the keyboard, the cursor jumps to the next form element which is having next higher Tabindex. 
+Syntax: <input type="text" tabindex="n">

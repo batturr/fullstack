@@ -1,0 +1,10 @@
+Basic List Groups
+=================
+• It is used to display items (text / hyperlinks) as a list.
+
+List of Classes
+===============
+• list-group : Represents the list
+• list-group-flush : Remove borders for the list group
+• list-group-item : Represents single item
+• list-group-item-action : Hover style for the item

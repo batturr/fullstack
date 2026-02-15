@@ -1,0 +1,7 @@
+Table Small
+===========
+• It is used to display table with small size (less padding).
+
+List of Classes
+===============
+• table-sm : Table with Less padding

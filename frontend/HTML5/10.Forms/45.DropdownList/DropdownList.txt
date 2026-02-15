@@ -1,0 +1,24 @@
+DropdownList
+============
+• <select> tag is used to create a dropdownlist or listbox. 
+• DropDownList is used to display few options to the user and allow the user to select any one of them. 
+• ListBox is used to display few options to the user and allow the user to select one or more of them. 
+• Inside <select> tag, you should use <option> tags. Each <option> tag represents an option in the dropdownlist. 
+• <select>, <option> tags are paired tags.
+
+Syntax: <select name="name here"> 
+            <option value="short name here">Full name here</option>
+            <option value="short name here">Full name here</option> 
+            …  
+        </select>
+
+Example:
+    <select name="PaymentMode"> 
+        <option value="Select">Select</option> 
+        <option value="DC">Debit Card</option> 
+        <option value="CC">Credit Card</option> 
+        <option value="NB">Net Banking</option> 
+    </select>
+
+Attributes of <select> tag: 
+1. multiple="multiple": Used to convert the dropdownlist as listbox. 

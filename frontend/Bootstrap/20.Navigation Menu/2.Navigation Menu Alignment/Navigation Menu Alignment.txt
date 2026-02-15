@@ -1,0 +1,11 @@
+Navigation Menu Alignment
+=========================
+• It is used to set alignment for the simple navigation bar.
+• Default is left alignment.
+• You can set center / right alignment.
+
+List of Classes
+===============
+• justify-content-center : Displays navigation menu with center aligment
+• justify-content-end : Displays navigation menu with right alignment
+

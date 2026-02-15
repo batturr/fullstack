@@ -1,0 +1,10 @@
+Border Radius
+=============
+• It is used to apply rounded corners for any html element.
+• Syntax: border-radius: pixels;
+
+• Example: border-radius: 10px;
+Border Radius – Cornerwise
+
+• Syntax: border-radius: topleft topright bottomright bottomleft;
+• Example: border-radius: 10px 20px 15px 5px;

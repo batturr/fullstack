@@ -1,0 +1,4 @@
+General Button
+==============
+• When the user clicks on the general button, nothing happens by default, but you can call “JavaScript Click event” when the user clicks on the button. 
+Syntax: <input type="button" value="some text">

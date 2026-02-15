@@ -1,0 +1,14 @@
+JavaScript Mouse Events
+=========================
+
+
+
+
+
+
+
+
+
+
+Reference:
+https://www.javascripttutorial.net/javascript-dom/javascript-mouse-events/

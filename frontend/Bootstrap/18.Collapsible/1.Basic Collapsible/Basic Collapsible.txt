@@ -1,0 +1,10 @@
+Basic Collapsible
+=================
+• It is used to display expandable / collapsible content.
+• The content will be shown when the user clicks on the button / link.
+
+List of Classes
+===============
+• collapse : Represents collapsible container.
+• data-bs-toggle="collapse" : Enables collapsible content, when button is clicked
+• data-bs-target="#id" : Connects the button with collapsible container.

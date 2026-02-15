@@ -1,0 +1,57 @@
+HTML Assignment – 5
+====================
+Basic Questions
+Write HTML that includes a <meta> viewport tag for mobile optimization.
+Create an example using localStorage-related attributes (Explain conceptually, no JS).
+Make a sample HTML page with a <meta name=”description”>.
+Write HTML with a <meta name=”keywords”>.
+Add a <meta name=”robots”> tag with index, follow.
+Create HTML showing a <header> and <footer> with semantic content.
+Add a <picture> element showing two images for different screen sizes.
+Write HTML with an <img> that uses loading=”lazy”.
+Create a simple responsive <img> with width=”100%”.
+Make a webpage with a responsive <video> that adjusts to small screens.
+Create SEO meta tags for a personal profile page (title, description).
+Add Open Graph tags (og:title, og:description, og:image) in the <head>.
+Create meta tags for a Twitter card (twitter:card, twitter:title).
+Add <meta charset=”UTF-8″> tag in an HTML page.
+Create an <article> with a heading and paragraph inside <main>.
+Display an <address> element with contact information.
+Insert two semantic <section> blocks with headings inside <main>.
+Use <time> tag to represent specific dates.
+Write HTML that includes role attributes like role=”navigation”.
+Create an HTML page with lang=”en” for accessibility.
+
+Intermediate Questions
+Create a blog page with a <header>, <main>, <article>, <aside>, <footer>.
+Write HTML for a <picture> element with 3 different versions of an image (small, medium, large).
+Add three images in a page using loading=”lazy”.
+Create an HTML page that is mobile-optimized with the viewport tag and responsive image.
+Add <meta name=”robots” content=”noindex, nofollow”> to prevent indexing.
+Write correct Open Graph meta tags for a product page.
+Create a Twitter Card meta configuration for a blog post.
+Insert semantic HTML with <nav>, <section>, <article>, <footer>.
+Add <meta http-equiv=”refresh” content=”30″> to refresh a page every 30 seconds.
+Write HTML using <input type=”email”> and <input type=”date”>.
+Use <input type=”range”> to create a slider input.
+Create a form with required fields using only HTML5 validation (required, pattern).
+Add alternate text (alt) to three images for accessibility.
+Create a simple accessible HTML page using ARIA roles (role=”banner”, role=”main”).
+Demonstrate a semantic page with <header>, <nav>, <main> and <aside> arranged properly.
+Write HTML that includes WCAG practices: alt text, headings, and correct roles.
+Create a <meta name=”viewport” content=”width=device-width, initial-scale=1.0″> example.
+Add <link rel=”sitemap” type=”application/xml” href=”sitemap.xml”> to an HTML document.
+Create <article> with <time> showing publication date and author’s <address>.
+Write a clean HTML structure for a portfolio page (title, bio, projects section).
+
+Advanced Questions
+Build a responsive homepage with <header>, <nav>, <main>, <footer> and a <picture> element that adapts images.
+Create a semantic blog post page with <article>, <time>, <section> and <aside> for related links.
+Add SEO meta tags, Open Graph tags, and Twitter card tags in the <head> of a webpage.
+Create a responsive portfolio website layout (bio + projects + contact) using <main>, <article>, <section>.
+Build a simple landing page that includes <meta viewport> + <picture> + loading=”lazy” for optimized performance.
+Create a business profile webpage with contact info in <address> and Open Graph/Twitter meta tags.
+Structure a news page with <header>, <article> (3 posts with <time>), <aside> (ads/related news), <footer>.
+Create a multi-device optimized page (viewport + responsive images + lazy loading + clean semantics).
+Write an accessible e-commerce product page using ARIA roles, semantic elements, and alt text.
+Build a semantic + SEO-friendly + responsive HTML page (with <picture> images, lazy loading, meta tags, and ARIA roles together).

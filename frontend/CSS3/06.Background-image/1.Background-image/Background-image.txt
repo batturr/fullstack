@@ -1,0 +1,7 @@
+Background-image
+================
+• This property specifies background image of the element.
+• It is recommended to place the background image file in the current folder.
+
+Syntax: background-image: url(“filename.extension”);
+Example: background-image: url(“sample.png”);

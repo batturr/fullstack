@@ -1,0 +1,3 @@
+Menubar
+=======
+• Menubar is a collection of hyperlinks arranged vertically / horizontally.

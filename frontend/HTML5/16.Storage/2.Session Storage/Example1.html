@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage Example</title>
+</head>
+    <body>
+        <h1>Session Storage Example</h1>
+        <form action="">
+            Name: <br>
+            <input type="text" id="username"> <br>
+            Email: <br>
+            <input type="text" id="email"> <br>
+            <input type="text" id="button1" value="Set data into session storage">
+            <input type="text" id="button2" value="Get data from session storage">
+        </form>
+
+        <script>
+            document.getElementById("button1").addEventListener("click",fun1)
+            function fun1()
+            {
+                var username = document.getElementById("username").value;
+                var email = document.getElementById("email").value;
+
+                sessionStorage.username = username;
+                sessionStorage.email = email;
+
+                document.getElementById("username").value = "";
+                document.getElementById("email").value = "";
+                alert("Saved")
+            }
+
+            document.getElementById("button2").addEventListener("click",fun2);
+            function fun2()
+            {
+                var username = sessionStorage.username;
+                var email = sessionStorage.email;
+                document.getElementById("username").value = username;
+                document.getElementById("email").value = email;
+            }
+        </script>
+    </body>
+</html>

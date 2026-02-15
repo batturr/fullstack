@@ -1,0 +1,56 @@
+Canvas
+==================
+• Canvas concept is used to create graphics in the web page programmatically.
+• Canvas graphics can be created using JavaScript.
+• Canvas is optional & mostly not used in 95% of regular websites.
+• Canvas is rare to use
+
+Creating Canvas Container
+==========================
+<canvas id=”canvas1” style=”border:4px solid black” width=”pixels” height=”pixels”>
+</canvas>
+
+Get context of canvas
+=====================
+Context = It is an object, which is used to write graphics on the canvas.
+var ctx = document.getElementById(“id”).getContext(“2d”);
+
+strokeStyle
+==============
+It specifies color of the stroke (line).
+ctx.strokeStyle = “color name”;
+
+lineWidth
+==========
+It specifies thickness of the stroke (line).
+ctx.lineWidth = pixels;
+
+strokeRect
+===========
+It draws a rectangle, with a line.
+ctx.strokeRect(x, y, width, height);
+
+fillStyle
+=========
+It specifies fill color.
+ctx.fillStyle = “color name”;
+
+fillRect
+========
+It draws a filled rectangle.
+ctx.fillRect(x, y, width, height);
+
+In the JavaScript strokeRect method, the values represent the position and dimensions of a rectangle. The syntax is:
+
+context.strokeRect(x, y, width, height);
+
+For c.strokeRect(200, 50, 200, 200):
+
+200 (first value) is the x coordinate, which sets the rectangle’s starting point along the horizontal axis.
+50 (second value) is the y coordinate, which sets the rectangle’s starting point along the vertical axis.
+200 (third value) is the width of the rectangle.
+200 (fourth value) is the height of the rectangle.
+
+In summary:
+The rectangle starts at (200, 50).
+It has a width of 200 units and a height of 200 units.

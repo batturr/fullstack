@@ -1,0 +1,10 @@
+Strikeout:
+    • <strike> tag is used to display the text in strikeout.
+    • The <strike> tag to display un-important text.
+    • It is a paired tag.
+    • The <strike> tag was used in HTML 4 to define strikethrough text. And Not Supported in HTML5.
+    • Use the <del> tag to define deleted text. Eg: <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+        Syntax:
+            <strike>strikeout text</strike>
+        Example:
+            <strike>Hello</strike>

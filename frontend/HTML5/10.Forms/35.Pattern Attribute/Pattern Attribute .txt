@@ -1,0 +1,18 @@
+Pattern Attribute
+=================
+• Used to apply a regular expression for the textbox for validation purpose.
+• Regular expression represents “pattern” of the value.
+• Ex: Alphabets only allowed, numbers only allowed etc.
+
+Syntax: <input type="text"  pattern="regular expression here">
+
+Eg: <input type="text" pattern="^[a-zA-Z]*$" title="Only alphabets allowed">
+
+^: Asserts the start of the input string.
+[a-zA-Z]: This is a character set that allows any letter from a to z (lowercase) and A to Z (uppercase).
+*: This means "zero or more" of the preceding characters (in this case, any letter from the set [a-zA-Z]).
+$: Asserts the end of the input string.
+
+Example behavior:
+Allowed: "abc", "XYZ", "Hello", ""
+Disallowed: "123", "abc123", "hello!", " " (space)

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScrpt Event stopPropagation</title>
+</head>
+<body>
+    <div class="container">
+        <button name="btn" id='btn'>Click Me!</button>
+    </div>
+    <script>
+        let btn = document.querySelector('#btn');
+
+        btn.addEventListener('click', function(event) {
+            console.log('The button was clicked!');
+            event.stopPropagation(); // if we enable this line next event will not run, below event will not execute beacause of stopPropagation
+        });
+
+        document.body.addEventListener('click',function(event) {
+            console.log('The body was clicked!');
+        });
+    </script>
+</body>

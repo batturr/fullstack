@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Location with area name Example</title>
+</head>
+    <body>
+        <h1>Geo Location with area name Example</h1>
+        <div id="div1">div 1</div>
+        <div id="div2">div 2</div>
+        <div id="div3">div 3</div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+        <script>
+            window.navigator.geolocation.getCurrentPosition(onsuccess,onerror,{timeout:5000});
+
+            function onsuccess(event)
+            {
+                document.getElementById("div1").innerHTML = event.coords.latitude;
+                document.getElementById("div2").innerHTML = event.coords.longitude;
+
+                var geocoder = new google.maps.Geocoder();
+                var latlng = new google.maps.LatLng(event.coords,event.coords.longitude);
+                geocoder.geocode({"latLng":latlng},fun3);
+
+                function fun3(results)
+                {
+                    document.getElementById("div3").innerText = results[0].formatted_address;
+                }
+            }
+
+            function onerror()
+            {
+
+            }
+        </script>
+    </body>
+</html>

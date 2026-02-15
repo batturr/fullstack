@@ -1,0 +1,5 @@
+File Browse Button
+===================
+• Browse button is used for “attachment” option. 
+• For example, you can upload image files / documents in gmail or facebook . 
+Syntax: <input type="file">

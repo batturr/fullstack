@@ -1,0 +1,97 @@
+⭐ 1.Introduction
+Tables display data in rows + columns.
+Used for marks, prices, schedules, reports, etc.
+
+⭐ 2. Why Tables Are Used
+Organize data neatly
+Compare values
+Look like Excel
+Useful for reports & statements
+
+⭐ 3. Main Table Tags
+| Tag         | Purpose                 |
+| ----------- | ----------------------- |
+| `<table>`   | Starts table            |
+| `<tr>`      | Row                     |
+| `<th>`      | Header (bold, centered) |
+| `<td>`      | Data cell               |
+| `<caption>` | Table title             |
+| `<thead>`   | Header section          |
+| `<tbody>`   | Body section            |
+| `<tfoot>`   | Footer section          |
+
+
+⭐ 4. Basic Syntax
+<table border="1">
+  <tr>
+    <th>H1</th>
+    <th>H2</th>
+  </tr>
+  <tr>
+    <td>D1</td>
+    <td>D2</td>
+  </tr>
+</table>
+
+⭐ 5. Table Sections
+caption → Title
+thead → Column headings
+tbody → Main rows
+tfoot → Summary/footer
+Must use <tr><td>
+
+⭐ 6. Table Attributes
+| Attribute     | Meaning                 |
+| ------------- | ----------------------- |
+| `border`      | Table border            |
+| `cellpadding` | Space **inside** cell   |
+| `cellspacing` | Space **between** cells |
+| `align`       | Center/left align table |
+| `width`       | Set table width         |
+
+
+⭐ 7. Cell Attributes
+colspan → merge columns
+<td colspan="3">
+rowspan → merge rows
+<td rowspan="2">
+
+⭐ 8. Example Table (Short)
+<table border="1">
+  <caption>Student Table</caption>
+  <thead>
+    <tr><th>Name</th><th>Class</th><th>Marks</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Rahul</td><td>10th</td><td>85</td></tr>
+    <tr><td>Asha</td><td>10th</td><td>90</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="3">Total: 2</td></tr>
+  </tfoot>
+</table>
+
+⭐ 9. <th> vs <td>
+| Feature        | `<th>`       | `<td>` |
+| -------------- | ------------ | ------ |
+| Purpose        | Title        | Data   |
+| Style          | Bold, center | Normal |
+| Screen readers | Header       | Normal |
+
+
+⭐ 10. cellpadding vs cellspacing
+| Term        | Meaning                 |
+| ----------- | ----------------------- |
+| cellpadding | Space **inside** cell   |
+| cellspacing | Space **between** cells |
+
+⭐ 11. Don’t Use Tables For
+Website layout
+Use Flexbox or Grid instead
+
+⭐ 12. Common Mistakes
+❌ <tfoot> directly having text
+✔ Use <tr><td>
+❌ Using <th> everywhere
+✔ Only for headings
+❌ Missing closing tags

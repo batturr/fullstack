@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Table Styles Example</title>
+    <style>
+        #table1 {
+            background-color: yellow;
+            font-size: 25px;
+            font-family: 'Tahoma';
+        }
+        #table1 tr {
+            background-color: lightblue;
+        }
+        #table1 tr:nth-child(1) {
+            background-color: aqua;
+        }
+        #table1 tr td {
+            background-color: hotpink;
+        }
+        #table1 tr td {
+            padding: 10px;
+        }
+        #table1 tr th {
+            padding: 10px;
+        }
+        #table1 tr:hover {
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+    </style>
+</head>
+    <body>
+        <h1>CSS Table Styles Example</h1>
+        <table id="table1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>alex@example.com</td>
+            </tr>
+        </table>
+    </body>
+</html>

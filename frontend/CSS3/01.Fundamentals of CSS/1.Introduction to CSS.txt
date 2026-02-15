@@ -1,0 +1,20 @@
+Introduction to CSS
+====================
+• CSS stands for “Cascading Style Sheet”.
+• CSS is a “styling language”, which is used to apply styles to the html elements in the web page.
+• CSS styles include with backgrounds, colors, margins, borders, paddings, alignments etc.
+• A CSS style can overlap other CSS style; that's why it is called as "cascading" style sheets
+
+Syntax of CSS
+=============
+<style type="text/css">
+    CSS Code here
+ </style>
+
+ Syntax of CSS Style Definition:
+ ===============================
+ selector
+ {
+    property:value;
+    property:value;
+ }

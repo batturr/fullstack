@@ -1,0 +1,19 @@
+Span
+====
+• <span> represents a small amount of text, for which you can apply some special formatting. 
+• <span> tag doesn't provide any style by default, but we can apply style to the span tag, by using CSS. 
+• The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+• The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+• The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+• <span> is a paired tag. 
+• Do not start on a new line
+• Take only the required width
+• You cannot set width/height
+• Used for text formatting
+
+Syntax: <span>Your content here</span>
+
+Examples:
+<span>, <a>, <strong>, <em>, <img>
+
+Example:  <span>Hello</span>

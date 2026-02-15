@@ -1,0 +1,6 @@
+Post Submission
+================
+• Form submission is of two types: Get | POST. 
+• In case of "Get" submission, the parameters are visible in the browser's location bar. 
+• In case of "Post" submission, the parameters are sent in secret mode; and are not visible in the browser's location bar.
+• By default its a GET method

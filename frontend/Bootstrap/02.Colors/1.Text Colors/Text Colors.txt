@@ -1,0 +1,17 @@
+Text Colors
+===========
+• It is used to set colors of the text.
+• Based on the requirement, the developer can use any of the available colors.
+• If you want other color, you can use CSS.
+
+List of Classes
+===============
+• text-primary : Blue text color
+• text-success : Green text color
+• text-info : Light blue text color
+• text-warning : Orange text color
+• text-danger : Red text color
+• text-muted : Grey color
+• text-secondary : Darker grey text color
+• text-dark : Dark grey text color
+• text-light : Light grey text color

@@ -1,0 +1,21 @@
+==================================================================================================================
+                                    Types of JavaScript
+==================================================================================================================
+• JavaScript program can be created in two ways:
+    1. Internal JavaScript / Embedded JavaScript
+    2. External JavaScript
+
+==================================================================================================================
+                                    1. Internal JavaScript
+==================================================================================================================
+• Both “html code” and “javascript code” will be written in the same “.html” file.
+• Advantage: Easy to understand.
+• Disadvantage: The javascript code that is written in “.html” file can’t be used in another html file.
+• All the previous programs are the examples of “Internal JavaScript”.
+
+==================================================================================================================
+                                    2. External JavaScript
+==================================================================================================================
+• The javascript code will be written in “.js” file and will be called in one or more “.html” files.
+• Advantage: We can call the same “.js” file from many html files (re-usability).
+• In realtime, external JavaScript is recommended.

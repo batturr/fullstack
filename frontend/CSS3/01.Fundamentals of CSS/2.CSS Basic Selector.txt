@@ -1,0 +1,32 @@
+CSS Basic Selectors
+===================
+• “Select” is a syntax to select the desired elements.
+• CSS supports many selectors. The most important css selectors are:
+1. Tag Selector
+2. ID Selector
+
+1. Tag Selector
+===============
+• The “tag selector” selects all the instances of specific tag.
+• Use tag selector to select multiple elemens.
+
+Syntax: tagname
+Example: p
+
+2. ID Selector
+==============
+• The “id selector” selects a single tag, based on the “id”.
+• “ID” is the “identification name”; it must be unique.
+• Use ID selector to select a exact single element.
+• "#" is the symbol of "ID".
+
+Syntax: #id
+Example: #p1
+
+CSS - Properties
+================
+• “Properties” are “details” or “settings” of html tag.
+• Every property contains a value.
+
+Syntax: property: value;
+Example: color: green;

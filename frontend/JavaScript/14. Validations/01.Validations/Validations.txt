@@ -1,0 +1,175 @@
+Validations
+=============
+• Validation is a process of checking the form input values, whether those are correct or not.
+• If all the form input values are correct, then we will allow the form to be submitted to the server.
+• If any one of the form input values are incorrect, then we will stop submitting the form and display 
+appropriate error message to the user.
+• Validations are done using JavaScript.
+Common Examples of Validations:
+1. The value can’t be blank.
+2. The value should be in the proper format. Ex: phone number, email etc.
+3. The value should be within the given range (minimum and maximum).
+Ex: Amount should be in between 1000 and 10000 etc.
+Syntax for Validations
+document.getElementById(“form id”).addEventListener(“submit”, functionname);
+function functionname(event)
+{
+if (condition)
+{
+//show error message
+event.preventDefault( );
+}
+else
+{
+//hide error message
+}
+}
+
+
+Here are examples of JavaScript validations using regular expressions to check various input formats:
+
+---
+
+### **1. Validate Email Address**
+- **Regex**: `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`
+- **Example**:
+  ```javascript
+  const email = "example@mail.com";
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); // true
+  ```
+
+---
+
+### **2. Validate Phone Number**
+- **Regex**: `/^\d{10}$/` (for a 10-digit number)
+- **Example**:
+  ```javascript
+  const phone = "1234567890";
+  const isValidPhone = /^\d{10}$/.test(phone); // true
+  ```
+
+For a formatted phone number (e.g., `123-456-7890`):
+- **Regex**: `/^\d{3}-\d{3}-\d{4}$/`
+- **Example**:
+  ```javascript
+  const phone = "123-456-7890";
+  const isValidPhone = /^\d{3}-\d{3}-\d{4}$/.test(phone); // true
+  ```
+
+---
+
+### **3. Validate Password Strength**
+Password must contain:
+- At least 8 characters.
+- One uppercase letter, one lowercase letter, one digit, and one special character.
+
+- **Regex**: `/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/`
+- **Example**:
+  ```javascript
+  const password = "StrongP@ss1";
+  const isValidPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password); // true
+  ```
+
+---
+
+### **4. Validate Username**
+Username must:
+- Be 3-16 characters long.
+- Contain only letters, numbers, underscores, or hyphens.
+
+- **Regex**: `/^[a-zA-Z0-9_-]{3,16}$/`
+- **Example**:
+  ```javascript
+  const username = "user_123";
+  const isValidUsername = /^[a-zA-Z0-9_-]{3,16}$/.test(username); // true
+  ```
+
+---
+
+### **5. Validate URL**
+- **Regex**: `/^(https?:\/\/)?([^\s$.?#].[^\s]*)$/`
+- **Example**:
+  ```javascript
+  const url = "https://example.com";
+  const isValidURL = /^(https?:\/\/)?([^\s$.?#].[^\s]*)$/.test(url); // true
+  ```
+
+---
+
+### **6. Validate Hexadecimal Color Code**
+- **Regex**: `/^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$/`
+- **Example**:
+  ```javascript
+  const color = "#FF5733";
+  const isValidColor = /^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$/.test(color); // true
+  ```
+
+---
+
+### **7. Validate Date Format (YYYY-MM-DD)**
+- **Regex**: `/^\d{4}-\d{2}-\d{2}$/`
+- **Example**:
+  ```javascript
+  const date = "2024-12-31";
+  const isValidDate = /^\d{4}-\d{2}-\d{2}$/.test(date); // true
+  ```
+
+---
+
+### **8. Validate Time Format (HH:MM)**
+- **Regex**: `/^([01]\d|2[0-3]):([0-5]\d)$/`
+- **Example**:
+  ```javascript
+  const time = "23:59";
+  const isValidTime = /^([01]\d|2[0-3]):([0-5]\d)$/.test(time); // true
+  ```
+
+---
+
+### **9. Validate Credit Card Number**
+- **Regex**: `/^\d{16}$/`
+- **Example**:
+  ```javascript
+  const cardNumber = "1234567812345678";
+  const isValidCard = /^\d{16}$/.test(cardNumber); // true
+  ```
+
+---
+
+### **10. Validate ZIP Code (US)**
+- **Regex**: `/^\d{5}(-\d{4})?$/`
+- **Example**:
+  ```javascript
+  const zip = "12345-6789";
+  const isValidZip = /^\d{5}(-\d{4})?$/.test(zip); // true
+  ```
+
+---
+
+### **11. Validate IP Address (IPv4)**
+- **Regex**: `/^(\d{1,3}\.){3}\d{1,3}$/`
+- **Example**:
+  ```javascript
+  const ip = "192.168.1.1";
+  const isValidIP = /^(\d{1,3}\.){3}\d{1,3}$/.test(ip); // true
+  ```
+
+---
+
+### **12. Validate Only Alphabets**
+- **Regex**: `/^[A-Za-z]+$/`
+- **Example**:
+  ```javascript
+  const name = "JohnDoe";
+  const isValidName = /^[A-Za-z]+$/.test(name); // true
+  ```
+
+---
+
+### **13. Validate Only Numbers**
+- **Regex**: `/^\d+$/`
+- **Example**:
+  ```javascript
+  const number = "12345";
+  const isValidNumber = /^\d+$/.test(number); // true
+  ```

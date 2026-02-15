@@ -1,0 +1,4 @@
+Range 
+======
+• Used to create a slider, based on the specific range (minimum to maximum). Ex: price range, volume. 
+Syntax: <input type="range" min="minimum" max="maximum"> 

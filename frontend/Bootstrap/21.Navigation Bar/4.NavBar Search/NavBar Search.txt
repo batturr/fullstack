@@ -1,0 +1,9 @@
+NavBar Search
+=============
+• It is used to display a search box for the navigation bar.
+
+List of Classes
+================
+• d-flex : Inline form
+• form-control : Form textbox
+• me-auto : to align navigation links to the left and the search form to the right.

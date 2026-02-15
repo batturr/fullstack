@@ -1,0 +1,8 @@
+margin
+======
+• This property specifies the margin (gap) between element to element, surrounding the element.
+• For example, if two <div> tags are display side-by-side, the gap between them is called as "margin".
+• You can specify the value in the form of pixels.
+
+Syntax: margin: pixels;
+Example: margin: 10px

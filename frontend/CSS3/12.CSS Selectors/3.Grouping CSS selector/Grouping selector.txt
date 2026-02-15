@@ -1,0 +1,12 @@
+Grouping Selector
+=================
+• With the grouping selector, you can target and style more than one element at once.
+• It selects the specified group of tags.
+• "," is the symbol of grouping selector.
+
+Syntax: tag1,tag2,tag3,…
+Example: div,p,h2
+
+div, p, span {
+    property: value;
+}

@@ -1,0 +1,6 @@
+Multiple Transformations
+========================
+• We can apply more than one transformation at-a-time.
+
+Syntax: transform: rotate(degrees) scale(n) translate(x, y) skew(degrees);
+Example: transform: rotate(40deg) scale(1.5) translate(30px, 30px) skew(20deg);

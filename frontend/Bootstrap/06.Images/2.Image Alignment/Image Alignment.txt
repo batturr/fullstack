@@ -1,0 +1,10 @@
+Image Alignment
+===============
+• It is used to specify horizontal alignment of the image.
+
+List of Classes
+===============
+• float-start : Left alignment
+• float-end : Right alignment
+• mx-auto : Center alignement
+• d-block : Display the image as a block; this is needed to apply "mx-auto".

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .event-box {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .output {
+            margin-top: 10px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events Examples</h1>
+    <div id="output" class="output"></div>
+
+    <!-- 15. canplay -->
+    <div class="event-box">
+        <video id="canplayVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>15. canplay: Video can start playing.</p>
+    </div>
+
+    <!-- 16. canplaythrough -->
+    <div class="event-box">
+        <video id="canplaythroughVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>16. canplaythrough: Video can play through without buffering.</p>
+    </div>
+
+    <!-- 17. change -->
+    <div class="event-box">
+        <label for="changeSelect">17. change:</label>
+        <select id="changeSelect">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+        </select>
+    </div>
+
+    <!-- 18. click -->
+    <div class="event-box">
+        <button id="clickButton">18. click: Click me</button>
+    </div>
+
+    <!-- 19. contextmenu -->
+    <div class="event-box">
+        <div id="contextMenuDiv" style="width: 150px; height: 50px; background: lightgray;">
+            19. contextmenu: Right-click here
+        </div>
+    </div>
+
+    <!-- 20. copy -->
+    <div class="event-box">
+        <p id="copyText">20. copy: Highlight and copy this text.</p>
+    </div>
+
+    <!-- 21. cut -->
+    <div class="event-box">
+        <input type="text" id="cutInput" value="21. cut: Highlight and cut this text.">
+    </div>
+
+    <!-- 22. dblclick -->
+    <div class="event-box">
+        <button id="dblclickButton">22. dblclick: Double-click me</button>
+    </div>
+
+    <!-- 23. drag -->
+    <div class="event-box">
+        <div id="dragItem" draggable="true" style="width: 100px; height: 50px; background: orange;">
+            23. drag: Drag me
+        </div>
+    </div>
+
+    <!-- 24. dragend -->
+    <div class="event-box">
+        <p>24. dragend: Dragging has ended (drag the orange box).</p>
+    </div>
+
+    <!-- 25-29. dragenter, dragleave, dragover, dragstart, drop -->
+    <div class="event-box" id="dropZone" style="width: 200px; height: 100px; background: lightblue;">
+        Drag and drop here (25-29 events)
+    </div>
+
+    <!-- 30. durationchange -->
+    <div class="event-box">
+        <video id="durationChangeVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>30. durationchange: The duration of the video has changed.</p>
+    </div>
+
+    <!-- 31. ended -->
+    <div class="event-box">
+        <video id="endedVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>31. ended: Video has ended.</p>
+    </div>
+
+    <!-- Additional events -->
+
+    <script>
+        const output = document.getElementById('output');
+        function log(message) {
+            output.textContent += message + '\n';
+        }
+
+        // 15. canplay
+        document.getElementById('canplayVideo').addEventListener('canplay', () => {
+            log('15. canplay: Video is ready to play.');
+        });
+
+        // 16. canplaythrough
+        document.getElementById('canplaythroughVideo').addEventListener('canplaythrough', () => {
+            log('16. canplaythrough: Video can play through without buffering.');
+        });
+
+        // 17. change
+        document.getElementById('changeSelect').addEventListener('change', (e) => {
+            log(`17. change: Selected option is "${e.target.value}".`);
+        });
+
+        // 18. click
+        document.getElementById('clickButton').addEventListener('click', () => {
+            log('18. click: Button clicked.');
+        });
+
+        // 19. contextmenu
+        document.getElementById('contextMenuDiv').addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            log('19. contextmenu: Right-click detected.');
+        });
+
+        // 20. copy
+        document.getElementById('copyText').addEventListener('copy', () => {
+            log('20. copy: Text copied.');
+        });
+
+        // 21. cut
+        document.getElementById('cutInput').addEventListener('cut', () => {
+            log('21. cut: Text cut.');
+        });
+
+        // 22. dblclick
+        document.getElementById('dblclickButton').addEventListener('dblclick', () => {
+            log('22. dblclick: Button double-clicked.');
+        });
+
+        // 23-29 Drag and drop events
+        const dragItem = document.getElementById('dragItem');
+        const dropZone = document.getElementById('dropZone');
+
+        dragItem.addEventListener('dragstart', () => log('28. dragstart: Dragging started.'));
+        dragItem.addEventListener('drag', () => log('23. drag: Element being dragged.'));
+        dragItem.addEventListener('dragend', () => log('24. dragend: Dragging ended.'));
+
+        dropZone.addEventListener('dragenter', () => log('25. dragenter: Element entered drop zone.'));
+        dropZone.addEventListener('dragleave', () => log('26. dragleave: Element left drop zone.'));
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            log('27. dragover: Element over drop zone.');
+        });
+        dropZone.addEventListener('drop', () => log('29. drop: Element dropped.'));
+    </script>
+</body>
+</html>

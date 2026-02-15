@@ -1,0 +1,11 @@
+Textarea
+========
+• <textarea> tag is used to create a multi-line textbox. 
+• Ex: Comments, Description etc. 
+• <textarea> tag is a paired tag. 
+• The user can resize the textarea, at run time, in the browser.
+
+Syntax: <textarea name="name here" rows="no. of rows" cols="no. of columns"> </textarea> 
+
+Example:
+<textarea name="comments" rows="5" cols="25"></textarea>

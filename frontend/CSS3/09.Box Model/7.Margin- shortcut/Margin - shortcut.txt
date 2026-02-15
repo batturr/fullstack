@@ -1,0 +1,6 @@
+margin - shortcut
+=================
+• This property specifies the margin (gap) between element to element, all sides independently at-a-time.
+
+Syntax: margin: topmargin rightmargin bottommargin leftmargin;
+Example: margin: 10px 5px 15px 30px;

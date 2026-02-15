@@ -1,0 +1,10 @@
+3. Scale Transformation
+=======================
+• It shows the element in large size / small size, visually.
+
+Syntax: transform: scale(number);
+Example: transform: scale(2);
+1 = 100% size
+2 = 200% size
+0.5 = 50% size
+1.5 = 150% size

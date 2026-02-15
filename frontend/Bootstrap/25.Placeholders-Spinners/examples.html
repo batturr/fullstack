@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Placeholders & Spinners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="mb-4">Placeholders & Spinners Demo</h1>
+
+        <!-- Spinners Section -->
+        <section class="mb-5">
+            <h2>Spinners</h2>
+            
+            <div class="row g-4">
+                <!-- Border Spinners -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Border Spinners</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="spinner-border text-primary me-2" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <div class="spinner-border text-secondary me-2" role="status"></div>
+                            <div class="spinner-border text-success me-2" role="status"></div>
+                            <div class="spinner-border text-danger me-2" role="status"></div>
+                            <div class="spinner-border text-warning me-2" role="status"></div>
+                            <div class="spinner-border text-info me-2" role="status"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Growing Spinners -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Growing Spinners</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="spinner-grow text-primary me-2" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-secondary me-2" role="status"></div>
+                            <div class="spinner-grow text-success me-2" role="status"></div>
+                            <div class="spinner-grow text-danger me-2" role="status"></div>
+                            <div class="spinner-grow text-warning me-2" role="status"></div>
+                            <div class="spinner-grow text-info me-2" role="status"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small Spinners -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Small Spinners</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="spinner-border spinner-border-sm text-primary me-2" role="status"></div>
+                            <div class="spinner-border spinner-border-sm text-success me-2" role="status"></div>
+                            <div class="spinner-grow spinner-grow-sm text-danger me-2" role="status"></div>
+                            <div class="spinner-grow spinner-grow-sm text-warning me-2" role="status"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons with Spinners -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Buttons with Spinners</h5>
+                        </div>
+                        <div class="card-body">
+                            <button class="btn btn-primary mb-2" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm me-2"></span>
+                                Loading...
+                            </button>
+                            <br>
+                            <button class="btn btn-success mb-2" type="button" disabled>
+                                <span class="spinner-grow spinner-grow-sm me-2"></span>
+                                Processing...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Placeholders Section -->
+        <section class="mb-5">
+            <h2>Placeholders</h2>
+            
+            <div class="row g-4">
+                <!-- Glow Animation -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Glow Animation</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="placeholder-glow">
+                                <span class="placeholder col-12"></span>
+                                <span class="placeholder col-8"></span>
+                                <span class="placeholder col-6"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wave Animation -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Wave Animation</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="placeholder-wave">
+                                <span class="placeholder col-12"></span>
+                                <span class="placeholder col-8"></span>
+                                <span class="placeholder col-6"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Different Sizes -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Different Sizes</h5>
+                        </div>
+                        <div class="card-body">
+                            <span class="placeholder col-12 placeholder-lg mb-2"></span>
+                            <span class="placeholder col-12 mb-2"></span>
+                            <span class="placeholder col-12 placeholder-sm mb-2"></span>
+                            <span class="placeholder col-12 placeholder-xs"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colored Placeholders -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Colored Placeholders</h5>
+                        </div>
+                        <div class="card-body placeholder-glow">
+                            <span class="placeholder col-12 bg-primary mb-2"></span>
+                            <span class="placeholder col-10 bg-success mb-2"></span>
+                            <span class="placeholder col-8 bg-danger mb-2"></span>
+                            <span class="placeholder col-6 bg-warning"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Demo -->
+        <section class="mb-5">
+            <h2>Interactive Loading Demo</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Load User Data</h5>
+                        </div>
+                        <div class="card-body" id="userData">
+                            <button class="btn btn-primary" onclick="loadUserData()">Load Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Load Card Content</h5>
+                        </div>
+                        <div class="card-body" id="cardContent">
+                            <button class="btn btn-success" onclick="loadCard()">Load Card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Load Article List</h5>
+                        </div>
+                        <div class="card-body">
+                            <button class="btn btn-info mb-3" onclick="loadArticles()">Load Articles</button>
+                            <div id="articleList"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card with Placeholder Example -->
+        <section class="mb-5">
+            <h2>Card Placeholder Example</h2>
+            
+            <div class="row g-4">
+                <!-- Loading State -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loaded State -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="#20c997"></rect>
+                            <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle">Image</text>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loading State with Wave -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-wave">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-wave">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Load User Data with spinner
+        function loadUserData() {
+            const container = document.getElementById('userData');
+            
+            // Show spinner
+            container.innerHTML = `
+                <div class="text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-2">Loading user data...</p>
+                </div>
+            `;
+            
+            // Simulate API call
+            setTimeout(() => {
+                container.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="bi bi-person-fill"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h6 class="mb-0">John Doe</h6>
+                            <small class="text-muted">john.doe@example.com</small>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm mt-3" onclick="loadUserData()">Reload</button>
+                `;
+            }, 2000);
+        }
+
+        // Load Card with placeholder
+        function loadCard() {
+            const container = document.getElementById('cardContent');
+            
+            // Show placeholder
+            container.innerHTML = `
+                <div class="placeholder-glow">
+                    <h5 class="placeholder col-8"></h5>
+                    <p>
+                        <span class="placeholder col-12"></span>
+                        <span class="placeholder col-8"></span>
+                        <span class="placeholder col-6"></span>
+                    </p>
+                    <a class="btn btn-success disabled placeholder col-4"></a>
+                </div>
+            `;
+            
+            // Simulate API call
+            setTimeout(() => {
+                container.innerHTML = `
+                    <h5>Loaded Content</h5>
+                    <p>This is the actual content that was loaded from the server. It replaces the placeholder.</p>
+                    <button class="btn btn-success" onclick="loadCard()">Reload</button>
+                `;
+            }, 1500);
+        }
+
+        // Load Articles with combined loading states
+        function loadArticles() {
+            const container = document.getElementById('articleList');
+            
+            // Show spinner in button
+            const btn = event.target;
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Loading...';
+            
+            // Show placeholders
+            container.innerHTML = `
+                <div class="placeholder-glow">
+                    ${Array(3).fill(0).map(() => `
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5 class="placeholder col-6"></h5>
+                                <p>
+                                    <span class="placeholder col-12"></span>
+                                    <span class="placeholder col-8"></span>
+                                </p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            
+            // Simulate API call
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.innerHTML = 'Load Articles';
+                
+                container.innerHTML = `
+                    ${Array(3).fill(0).map((_, i) => `
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5>Article ${i + 1}</h5>
+                                <p>This is the content of article ${i + 1}. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <small class="text-muted">Posted ${i + 1} hours ago</small>
+                            </div>
+                        </div>
+                    `).join('')}
+                `;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

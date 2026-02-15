@@ -1,0 +1,14 @@
+Bold(or)strong
+    • <b> or <strong> tag is used to display the text in bold.
+    • The text enclosed within the <b> tag will be display as bold.
+    • Use <b> tag to display important text that you want to highlight.
+    • It is a paired tag.
+        Syntax:
+            <b>bold text</b>
+            <strong> text </strong> 
+        Example:
+
+            <b>Hello</b>
+            <strong> text appear in bold </strong> 
+
+

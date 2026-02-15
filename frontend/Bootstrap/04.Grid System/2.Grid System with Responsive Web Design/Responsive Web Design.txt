@@ -1,0 +1,49 @@
+Grid System with Responsive Web Design
+======================================
+• It is used to display the content differently on different devices, based on the screen resolution.
+• It makes the web page fit for the current resolution automatically.
+• We divide the devices into 5 types.
+
+Extra Small Devices:
+====================
+• Very-Low-range Phones: Screens between 1px to 575px width.
+• Ex: iPhone 2G, 3G (320px width / 480px height)
+    <div class=”col -n”>…</div>
+    <div class=”col -n”>…</div>
+    …
+
+Small Devices:
+==============
+• Low-range phones & Tablets: Screens between 576px to 767px width.
+• Ex: iPhone 4, 4s (640px width / 960px height)
+• Ex: iPhone 5, 5s, 5C, SE (640px width / 1136px height)
+• Ex: iPhone 6, 6s, 7, 8 (750px width / 1334px height)
+    <div class=”col-sm-n”>…</div>
+    <div class=”col-sm-n”>…</div>
+    …
+
+Medium Devices:
+===============
+• Lower-mid range phones & Small laptops: Screens between 768px to 991px width.
+• Ex: Samsung Note 1 (800px width / 1280px height)
+    <div class=”col-md-n”>…</div>
+    <div class=”col-md-n”>…</div>
+    …
+
+Large Devices:
+==============
+• Mid-range phones & Small laptops: Screens between 992px to 1199px width.
+• Ex: iPhone 6 Plus (1080px width / 1920px height)
+• Ex: iPhone 10 (1125px width / 2436px height)
+    <div class=”col-lg-n”>…</div>
+    <div class=”col-lg-n”>…</div>
+    …
+
+Extra Large Devices:
+====================
+• High-end phones & Most used laptops: Screens between 1200px to unlimited width.
+• Ex: iPhone 7+, 8+ (1242px width / 2208px height)
+• Ex: iPad (all types)
+    <div class=”col-lg-n”>…</div>
+    <div class=”col-lg-n”>…</div>
+    …

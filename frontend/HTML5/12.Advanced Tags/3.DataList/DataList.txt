@@ -1,0 +1,12 @@
+DataList
+========
+• <datalist> tag is used to display search suggestions in the textbox. 
+• When the user types some character in the textbox, the browser automatically searches the matching options from the datalist and display them as a search suggestions below the textbox.
+
+Syntax: 
+<datalist id=”id here”> 
+    <option value=”value 1”>text</option> 
+    <option value=”value 1”>text</option> 
+    … 
+ </datalist> 
+ <input type=”text” list=”id here”>

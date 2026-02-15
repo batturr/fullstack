@@ -1,0 +1,13 @@
+Min and Max Attributes
+=======================
+"min" attribute 
+• Specifies the minimum value that you want to accept. 
+• Applicable only for <input type=”number”>, <input type=”range”> and <input type=”date”>. 
+
+Syntax: <input type="number | range | date"  min="minimum value">
+
+"max" attribute 
+• Specifies the maximum value that you want to accept. 
+• Applicable only for <input type=”number”>, <input type=”range”> and <input type=”date”>.
+
+Syntax: <input type="number | range | date"  max="maximum value">.

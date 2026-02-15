@@ -1,0 +1,29 @@
+border - sides
+==============
+“border-top” property
+=====================
+• This property specifies border width, border style and border color for top side only.
+
+Syntax: border-top: borderwidth borderstyle bordercolor;
+Example: border-top: 5px solid red;
+
+“border-right” property
+=======================
+• This property specifies border width, border style and border color for right side only.
+
+Syntax: border-right: borderwidth borderstyle bordercolor;
+Example: border-right: 5px solid red;
+
+“border-bottom” property
+========================
+• This property specifies border width, border style and border color for bottom side only.
+
+Syntax: border-bottom: borderwidth borderstyle bordercolor;
+Example: border-bottom: 5px solid red;
+
+“border-left” property
+======================
+• This property specifies border width, border style and border color for left side only.
+
+Syntax: border-left: borderwidth borderstyle bordercolor;
+Example: border-left: 5px solid red;

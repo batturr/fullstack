@@ -1,0 +1,8 @@
+Novalidate Attribute
+=====================
+• HTML supports built-in validations such as required, min, max, email, date, number etc.
+• Disables the built-in HTML 5 validations, such as required, min, max, email, date, number etc.
+• If "novalidate" attribute is applied and the user has entered invalid values in the textboxes, and click on "Submit" button, the form will be automatically submitted to the server, without any validation.
+
+Syntax 1: <form novalidate="novalidate">
+Syntax 2: <input type="submit"  formnovalidate="novalidate">

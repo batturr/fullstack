@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Responsive Offcanvas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .sidebar-content {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Responsive Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Responsive Offcanvas (Shows as sidebar on lg+, offcanvas on smaller screens) -->
+    <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Navigation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column flex-lg-row">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="bi bi-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-grid"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-info-circle"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-envelope"></i> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content with Responsive Sidebar -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Sidebar Toggle for Large Screens -->
+            <div class="col-lg-3">
+                <button class="btn btn-primary d-lg-none mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+                    <i class="bi bi-list"></i> Toggle Sidebar
+                </button>
+
+                <!-- Responsive Sidebar -->
+                <div class="offcanvas-lg offcanvas-start sidebar-content" id="offcanvasSidebar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Sidebar Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasSidebar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <i class="bi bi-speedometer2"></i> Dashboard
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="bi bi-people"></i> Users
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="bi bi-bar-chart"></i> Analytics
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="bi bi-file-text"></i> Reports
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="bi bi-gear"></i> Settings
+                            </a>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h6 class="text-muted">RECENT ACTIVITY</h6>
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">New User Registered</h6>
+                                    <small>3 mins ago</small>
+                                </div>
+                                <p class="mb-1 small">john@example.com</p>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Report Generated</h6>
+                                    <small>1 hour ago</small>
+                                </div>
+                                <p class="mb-1 small">Monthly sales report</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-lg-9">
+                <h1>Responsive Offcanvas Demo</h1>
+                <p class="lead">Resize your browser window to see the responsive behavior!</p>
+
+                <div class="alert alert-info">
+                    <h5><i class="bi bi-info-circle"></i> How it works:</h5>
+                    <ul>
+                        <li><strong>Small screens (< 992px):</strong> Sidebar appears as an offcanvas (slides in)</li>
+                        <li><strong>Large screens (≥ 992px):</strong> Sidebar is always visible as a permanent sidebar</li>
+                    </ul>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="row g-4 mt-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Users</h5>
+                                <h2 class="mb-0">2,847</h2>
+                                <small class="text-success"><i class="bi bi-arrow-up"></i> 12% increase</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Revenue</h5>
+                                <h2 class="mb-0">$48,567</h2>
+                                <small class="text-success"><i class="bi bi-arrow-up"></i> 8% increase</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Orders</h5>
+                                <h2 class="mb-0">1,234</h2>
+                                <small class="text-danger"><i class="bi bi-arrow-down"></i> 3% decrease</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Sections -->
+                <section class="mt-5">
+                    <h2>Breakpoint Information</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Breakpoint</th>
+                                    <th>Behavior</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>offcanvas-sm</code></td>
+                                    <td>&lt; 576px</td>
+                                    <td>Offcanvas below sm, visible above</td>
+                                </tr>
+                                <tr>
+                                    <td><code>offcanvas-md</code></td>
+                                    <td>&lt; 768px</td>
+                                    <td>Offcanvas below md, visible above</td>
+                                </tr>
+                                <tr>
+                                    <td><code>offcanvas-lg</code></td>
+                                    <td>&lt; 992px</td>
+                                    <td>Offcanvas below lg, visible above</td>
+                                </tr>
+                                <tr>
+                                    <td><code>offcanvas-xl</code></td>
+                                    <td>&lt; 1200px</td>
+                                    <td>Offcanvas below xl, visible above</td>
+                                </tr>
+                                <tr>
+                                    <td><code>offcanvas-xxl</code></td>
+                                    <td>&lt; 1400px</td>
+                                    <td>Offcanvas below xxl, visible above</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Usage Example -->
+                <section class="mt-5">
+                    <h2>Code Example</h2>
+                    <pre class="bg-dark text-white p-3 rounded"><code>&lt;!-- Responsive Offcanvas --&gt;
+&lt;div class="offcanvas-lg offcanvas-start" id="sidebar"&gt;
+  &lt;div class="offcanvas-header"&gt;
+    &lt;h5 class="offcanvas-title"&gt;Sidebar&lt;/h5&gt;
+    &lt;button type="button" class="btn-close" 
+            data-bs-dismiss="offcanvas" 
+            data-bs-target="#sidebar"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="offcanvas-body"&gt;
+    &lt;!-- Sidebar content --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </section>
+
+                <!-- Dummy Content -->
+                <section class="mt-5">
+                    <h2>Additional Content</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

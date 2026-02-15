@@ -1,0 +1,8 @@
+Pagination Alignment
+====================
+• It is used to display pagination left / center / right side of the page.
+
+List of Classes
+===============
+• justify-content-center : Center alignment for pagination
+• justify-content-end : Right alignment for pagination

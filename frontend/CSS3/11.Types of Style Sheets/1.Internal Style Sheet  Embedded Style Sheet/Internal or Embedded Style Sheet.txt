@@ -1,0 +1,8 @@
+• The css styles are defined inside the “.html” file itself.
+• Advantage: Easy-to-understand.
+• Disadvantage: No re-usability. That means, the styles defined in one html file, can’t be accessed in another html file.
+
+Syntax:
+    <style type=”text/css”>
+        css code
+    </style>

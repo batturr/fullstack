@@ -1,0 +1,153 @@
+Objects in JavaScript
+=====================
+=> An object in JavaScript is a data structure used to store related data collections.
+=> It stores data as key-value pairs, where each key is a unique identifier for the associated value.
+=> Objects are dynamic, which means the properties can be added, modified, or deleted at runtime.
+
+There are two primary ways to create an object in JavaScript:
+1.Object Literal
+2.Object Constructor
+
+1. Creation string Object Literal
+=================================
+=> The object literal syntax allows you to define and initialize an object with curly braces {}, setting properties as key-value pairs.
+
+{
+  const student = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 29,
+    course: 'Intro to JavaScript',
+    ID: 'woxku-jlsod-xmpiosd',
+    hasGraduated: false,
+    year: 2022,
+    month: 'February'
+  };
+  console.log(student)
+}
+
+// output: { firstName: "John", lastName: "Doe", age: 29, course: "Intro to JavaScript", ID: "woxku-jlsod-xmpiosd", hasGraduated: false, year: 2022, month: "February" }
+
+{
+  let obj = {
+      name: "Prince",
+      age: 23,
+      job: "JavaScript Developer"
+  };
+  console.log(typeof obj); // object
+  console.log(obj); // { name: "Prince", age: 23, job: "JavaScript Developer" }
+}
+
+2. Creation Using new Object() Constructor
+============================================
+
+{
+  let obj = new Object();
+  obj.name= "Prince RonyArvin",
+  obj.age= 23,
+  obj.job= "JavaScript Developer"
+
+  console.log(obj); // { name: "Prince RonyArvin", age: 23, job: "JavaScript Developer" }
+}
+
+Basic Operations on JavaScript Objects
+
+1. Accessing Object Properties
+==============================
+=> You can access an object’s properties using either dot notation or bracket notation
+
+{
+  let obj = { name: "Prince", job: "JavaScript Developer" };
+
+  // Using Dot Notation
+  console.log(obj.name); // Prince
+
+  // Using Bracket Notation
+  console.log(obj["job"]); // JavaScript Developer
+}
+
+2. Modifying Object Properties
+==============================
+=> Properties in an object can be modified by reassigning their values.
+
+{
+  let obj = { name: "Prince", job: "JavaScript" };
+  console.log(obj); // { name: "Prince", job: "JavaScript" }
+
+  obj.job = "Python Developer"; // { name: "Prince", job: "Python Developer" }
+  console.log(obj);
+}
+
+3. Adding Properties to an Object
+=================================
+=> You can dynamically add new properties to an object using dot or bracket notation.
+
+{
+  let obj = { model: "Tesla" };
+  obj.color = "Red";
+
+  console.log(obj); // { model: "Tesla", color: "Red" }
+}
+
+4. Removing Properties from an Object
+=====================================
+=> The delete operator removes properties from an object.
+
+{
+  let obj = { model: "BMW", color: "Yellow" };
+  delete obj.color;
+
+  console.log(obj); // { model: "BMW" }
+}
+
+5. Checking if a Property Exists
+================================
+=> You can check if an object has a property using the in operator or hasOwnProperty() method.
+
+{
+  let obj = { model: "BMW" };
+  console.log("color" in obj); // false
+  console.log(obj.hasOwnProperty("model")); // true
+}
+
+6. Iterating Through Object Properties
+======================================
+=> Use for…in loop to iterate through the properties of an object.
+
+{
+  let obj = { name: "Prince", age: 23 };
+  for (let key in obj) {
+      console.log(key + ": " + obj[key]); // name: Prince age: 23
+  }
+}
+
+7. Merging Objects
+==================
+=> Objects can be merged using Object.assign() or the spread syntax { …obj1, …obj2 }.
+
+{
+  let obj1 = { name: "Prince" };
+  let obj2 = { age: 23};
+
+  let obj3 = { ...obj1, ...obj2 };
+  console.log(obj3); // { name: "Prince", age: 23 }
+}
+
+8. Object Length
+================
+=> You can find the number of properties in an object using Object.keys().
+
+{
+  let obj = { name: "Prince", age: 23, Job: "DevOps" };
+  console.log(Object.keys(obj).length); // 3
+}
+
+9.Recognizing a JavaScript Object
+=================================
+=> To check if a value is an object, use typeof and verify it’s not null.
+
+{
+  let obj = { name: "Prince" };
+  console.log(typeof obj === "object" && obj !== null); // true
+}
+

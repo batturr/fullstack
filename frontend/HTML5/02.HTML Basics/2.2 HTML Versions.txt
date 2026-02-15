@@ -1,0 +1,8 @@
+HTML Versions
+    • HTML 1.0 : Nov 1991
+    • HTML 2.0 : Mar 1995
+    • HTML 3.0 : Jan 1997
+    • HTML 4.0 : Dec 1997
+    • HTML 5.0 : Oct 2014
+    • HTML 5.1 : Nov 2016
+    • HTML 5.2 : Dec 2017

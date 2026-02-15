@@ -1,0 +1,17 @@
+Constructors
+• Constructor is a special method in the class, that executes every time when we created an object for 
+the class.
+• Constructor's name should be "constructor".
+• Constructor can receive arguments; but can't return any value.
+• It is not possible to call the constructor without creating an object.
+• Constructors are mainly used to create an initialize properties in the class.
+• Parameterized Constructor is a constructor that receives one or more arguments (parameters) and 
+initializes the same to the respective properties.
+Syntax of Constructor
+class classname
+{
+ constructor(arguments)
+{
+}
+}
+Example on Constructors

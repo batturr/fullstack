@@ -1,0 +1,7 @@
+Child Selector
+==============
+• It selects all the child tags (including grand children) of the specified parent tag.
+• "space" is the symbol of child selector.
+
+Syntax: parenttag childtag
+Example: div p

@@ -1,0 +1,45 @@
+Drag and Drop
+=============
+• “Drag and Drop” concept allows the user to drag an element and drop into another element. 
+• We can drag any element and drop into another element. 
+• When we start dragging the source element, it executes "dragstart" event. 
+• When we hover on the droppable element, it executes "dragover" event. 
+• When we release the mouse pointer on the droppable element, it executes "drop" event.
+
+Steps for development of Drag and Drop
+======================================
+Step-1: Create a draggable element: 
+    <div id=”div1” draggable=”true”> </div>
+
+Step-2: Create a droppable element: 
+    <div id=”div2”> </div> 
+
+Step-3: Handle “dragstart” event of draggable element: 
+    document.getElementById(“div1”).addEventListener(“dragstart”, fun1); 
+    function fun1(event) 
+    { 
+        event.dataTransfer.setData(“variablename”, event.target.id); 
+    } 
+    
+Note: The “dragstart” event executes when the user starts dragging the draggable element. 
+
+Step-4: Handle “dragover” event of droppable element: 
+    document.getElementById(“div2”).addEventListener(“dragover”, fun2); 
+    function fun2(event) 
+    { 
+        event.preventDefault( ); 
+    } 
+
+Note: The “dragover” event executes when the user drags the draggable element and places it on the top of droppable element. 
+
+
+Step-5: Handle “drop” event of droppable element: 
+    document.getElementById(“div2”).addEventListener(“drop”, fun3); 
+    function fun3(event) 
+    { 
+        var id = event.dataTransfer.getData(“variablename”); 
+        document.getElementById(“div2”).appendChild(document.getElementById(id”)); 
+    } 
+
+Note: The “drop” event executes when the user drops the draggable element on the droppable element. 
+

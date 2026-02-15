@@ -1,0 +1,5 @@
+Checked Attribute 
+=================
+• The "checked" attribute of checkbox makes the checkbox by default checked, while opening the 
+page. Of course, the user can uncheck it later, if required. 
+• This attribute has only one value, i.e. "checked".

@@ -1,0 +1,9 @@
+Button Sizes
+============
+• It is used to display large / small buttons.
+
+List of Classes
+===============
+• btn-block : Full-width button
+• btn-lg : Large button
+• btn-sm : Small button

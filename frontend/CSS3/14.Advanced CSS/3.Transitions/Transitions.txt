@@ -1,0 +1,15 @@
+Transitions
+===========
+• Transition is a process of changing a CSS property’s value gradually, based on the specified no. of seconds.
+• Transitions support only pixels based color based properties. Ex: width, height, opacity, font-size, border-width, background-color, color, border-color etc.
+
+• Syntax:
+selector
+{
+property: startvalue;
+transition: property seconds;
+}
+selector:hover
+{
+property: endvalue;
+}

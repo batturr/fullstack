@@ -1,0 +1,19 @@
+Images:
+    • <img> tag is used to display an image in the web page.
+    • It is strongly recommended to place the image file in the same folder, where the html file is present. For example, if the html file is present within "c:\html" folder, we have to place the image file either in the "c:\html" folder itself or in any subfolder of the "c:\html" folder.
+    • It is an unpaired tag.
+        Syntax:
+            <img src="image path here">
+        Example:
+            <img src="img1.jpg" width="200px" height="130px" title="this is tooltip">
+        Attributes:
+            1. src:
+                • It is used to specify path of the image file. If the image file and html file both are in the same folder, no need to specify the full path of the image.
+            2. width:
+                • It is used to specify width (horizontal size) of the image. It represents the value in the form of pixels. A pixel is a small "dot" (.) on the screen.
+            3. height
+                • It is used to specify height (vertical size) of the image.
+            4. title
+                • It is used to specify the tooltip (that appears when the user places mouse pointer on the image).
+            5. alt
+                • It is used to specify the alternate text (that appears when the image is not loaded in the browser at run time). It is strongly recommended to use "alt" for every <img> tag in real-time, because, if the image is not loaded, at least the "alt" text appears to the user.

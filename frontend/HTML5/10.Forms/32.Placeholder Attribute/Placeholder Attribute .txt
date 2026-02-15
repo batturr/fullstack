@@ -1,0 +1,8 @@
+Placeholder Attribute 
+=====================
+• Used to display watermark text in the textbox.
+• The watermark text explains what value should be entered in the textbox.
+• The watermark text automatically disappears if any value is entered in the textbox.
+
+Syntax: <input type="text"  placeholder="any text">
+

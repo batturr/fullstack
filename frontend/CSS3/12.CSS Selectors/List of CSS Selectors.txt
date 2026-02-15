@@ -1,0 +1,40 @@
+• First we have to select the element / elements, and then only we can apply some styles to it.
+• “Selector” is a “syntax to select”. It is used to select the desired elements in the web page.
+• When we use a selector, the browser searches the entire web page for the matching elements and returns the matching elements; and we apply styles only for those matching elements.
+
+1. Simple CSS selectors
+    1.Universal selector
+    2.Type selector
+    3.Class selector
+    4.ID selector
+2.Attribute selectors
+    1.The [attribute] selector
+    2.The [attribute="value"] selector
+    3.The [attribute^="value"] selector
+    4.The [attribute$="value"] selector
+    5.The [attribute*="value"] selector
+    6.The [attribute~="value"] selector
+3.Grouping CSS selector
+4.CSS combinators
+    1.Descendant combinator
+    2.Direct child combinator
+    3.General sibling combinator
+    4.Adjacent sibling combinator
+5.Pseudo-class selectors
+    1.Pseudo-class selectors for links
+    2.Pseudo-class selectors for inputs
+    3.Pseudo-class selectors for position
+6.Pseudo-element selectors
+    1.The ::before pseudo-element
+    2.The ::after pseudo-element
+    3.The ::first-letter pseudo-element
+    4.The ::first-line pseudo-element
+7.Other CSS Selectors
+    1. Compound Selector
+    2. Child Selector
+    3. Hover Selector
+    4. Focus Selector
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors#selectors
+
+https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/

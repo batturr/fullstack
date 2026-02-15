@@ -1,0 +1,7 @@
+font-size
+=========
+• This property specifies size of the font.
+• You can specify the font size in the form of pixels / percentage / "EM" size.
+
+Syntax: font-size: pixels;
+Example: font-size: 30px;

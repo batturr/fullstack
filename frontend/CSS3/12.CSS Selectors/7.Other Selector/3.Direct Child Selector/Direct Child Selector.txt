@@ -1,0 +1,7 @@
+Direct Child Selector
+=====================
+• It selects only the direct child tags (excluding the grand children) of the specified parent tag.
+• ">" is the symbol of direct child selector.
+
+• Syntax: parenttag>childtag
+• Example: div>p

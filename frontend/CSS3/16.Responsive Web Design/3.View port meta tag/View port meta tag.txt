@@ -1,0 +1,5 @@
+View port meta tag
+==================
+• This tag tells to the mobile browsers that we are using “responsive web design”, and don’t treat it as pc-based web page.
+• Without viewport meta tag, the mobile browsers treat the web page as pc-based web page and apply the pc-based media query.
+• With viewport meta tag, the mobile browsers apply the appropriate “mobile-based media query” to the web page.

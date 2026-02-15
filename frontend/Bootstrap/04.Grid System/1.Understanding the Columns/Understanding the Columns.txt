@@ -1,0 +1,10 @@
+Understanding the Columns
+=========================
+• It is used to divide the web page as rows.
+• Each row contains 12 equal blocks / columns.
+• A <div> tag can occupy one or more blocks.
+• A row can have maximum 12 <div> tags.
+
+List of Classes
+===============
+• .col-n : Specifies how may columns are occupied by the <div> tag

@@ -1,0 +1,10 @@
+Basic Badges
+=============
+• It is used to indication near heading / button.
+
+List of Classes
+===============
+• badge : Represents Badge
+
+Example:
+<h1>Badges Heading <span class="badge bg-secondary">New</span></h1>

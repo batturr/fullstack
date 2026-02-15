@@ -1,0 +1,7 @@
+Text-decoration
+===============
+• This property specifies underline / overline / strikeout for the text.
+• The default value is "none".
+
+Syntax: text-decoration: none | underline | overline | line-through;
+Example: text-decoration: underline;

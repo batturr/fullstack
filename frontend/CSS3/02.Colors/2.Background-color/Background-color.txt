@@ -1,0 +1,7 @@
+Background-color
+================
+• This property specifies background color of the element.
+• You can set any color as background color.
+
+Syntax: background-color: colorname;
+Example: background-color: green;

@@ -1,0 +1,9 @@
+Radio Button
+============
+• Radio button is used to display two or more options to the user and allow the user to select any one 
+of them. Ex: Gender - Male, Female 
+• The "name" attribute specifies common name of radio butotns. The “name” of radio buttons should 
+be same to group-up them. Within a group of radio buttons, only one radio button can be selected 
+by the user at-a-time. 
+
+Syntax: <input type="radio">

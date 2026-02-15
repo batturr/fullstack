@@ -1,0 +1,6 @@
+Transform-origin
+================
+• This property specifies the fixed point for rotate transformation and sale transformation etc.
+
+• Syntax: transform-origin: top left | top center | top right | center left | center center | center right | bottom left | bottom center | bottom right;
+• Example: transform-origin: top left;

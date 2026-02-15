@@ -1,0 +1,12 @@
+Tag
+    • A tag is a keyword, enclosed within “<” and “>” in HTML language.
+    • Tag is instruction / command to browser.
+    • Tag is used to display some specific output in the web page.
+
+• Syntax: <tag>
+
+Types of tags
+    • Tags are two types:
+        1. Paired tags: Contains opening tag and ending tag. The opening tag specifies starting point of the output. The closing tag specifies end point of the output. Ex: <h1> hello </h1>
+        2. Unpaired tags: Contains single tag only (no separate ending tag). Ex: <hr>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Listeners </title>
+</head>
+<body>
+    <!-- Example1 -->
+    <!-- <button onclick="alert('Button clicked!')">Click Me</button> -->
+    <!-- Example1 and Example2-->
+    <button type="button" id="myButton">Click here!</button>
+
+    <script>
+        const button = document.getElementById('myButton');
+        // Example1: addEventListener
+        /* button.addEventListener('click', function() {
+            alert('First listener');
+        });
+        button.addEventListener('click', function() {
+            alert('Second listener');
+        }); */
+
+        // Example2
+        /* button.addEventListener('click', function() {
+            alert('This listener will only fire once!');
+        }, { once: true }); */
+
+        // Example3
+        function handler() {
+            alert('Listener removed!');
+        }
+        button.addEventListener('click', handler);
+
+        // Remove the event listener
+        setTimeout(() => {
+            button.removeEventListener('click', handler);
+            alert('The event listener was removed!');
+        }, 5000); // Removes the listener after 5 seconds
+    </script>
+</body>
+</html>

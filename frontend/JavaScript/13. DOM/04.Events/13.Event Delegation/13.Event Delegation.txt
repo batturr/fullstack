@@ -1,0 +1,11 @@
+JavaScript Event Delegation
+===================================
+
+
+
+
+
+
+
+Reference:
+https://www.javascripttutorial.net/javascript-dom/javascript-event-delegation/

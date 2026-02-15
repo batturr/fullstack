@@ -1,0 +1,9 @@
+Details and Summary
+===================
+• <details> and <summary> tags are used to allow the user expand / collapse some information, when the user clicks on the heading. 
+
+Syntax: 
+<details> 
+    <summary>heading</summary> 
+    content
+</details>

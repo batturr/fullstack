@@ -1,0 +1,14 @@
+Badge Colors
+============
+• It is used to set background colors for the badges
+
+List of Classes
+===============
+• bg-primary : Blue color
+• bg-secondary : Grey color
+• bg-success : Green color
+• bg-info : Light blue color
+• bg-warning : Orange color
+• bg-danger : Red color
+• bg-dark : Black color
+• bg-light : Light grey color

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Examples (51-80)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .event-box {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .output {
+            margin-top: 10px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events Examples (51-80)</h1>
+    <div id="output" class="output"></div>
+
+    <script>
+        const output = document.getElementById('output');
+        function log(message) {
+            output.textContent += message + '\n';
+        }
+    </script>
+
+    <!-- 51. mouseleave -->
+    <div class="event-box" id="mouseleaveBox" style="background: lightyellow;">
+        51. mouseleave: Move the mouse out of this box
+    </div>
+
+    <!-- 52. mousemove -->
+    <div class="event-box" id="mousemoveBox" style="background: lightblue;">
+        52. mousemove: Move the mouse within this box
+    </div>
+
+    <!-- 53. mouseover -->
+    <div class="event-box" id="mouseoverBox" style="background: lightgreen;">
+        53. mouseover: Hover over this box
+    </div>
+
+    <!-- 54. mouseout -->
+    <div class="event-box" id="mouseoutBox" style="background: lightpink;">
+        54. mouseout: Move the mouse out of this box
+    </div>
+
+    <!-- 55. mouseup -->
+    <div class="event-box" id="mouseupBox" style="background: lightgray;">
+        55. mouseup: Release the mouse button here
+    </div>
+
+    <!-- 56. mousewheel -->
+    <div class="event-box" id="mousewheelBox" style="background: lightcoral;">
+        56. mousewheel: Scroll here
+    </div>
+
+    <!-- 57. offline -->
+    <p>57. offline: Disconnect your internet and see the console log.</p>
+
+    <!-- 58. online -->
+    <p>58. online: Reconnect your internet and see the console log.</p>
+
+    <!-- 59. open -->
+    <p>59. open: Check console for the open event during XMLHttpRequest.</p>
+
+    <!-- 60. pagehide -->
+    <p>60. pagehide: Navigate to another page and return to see this event.</p>
+
+    <!-- 61. pageshow -->
+    <p>61. pageshow: Refresh or revisit the page to trigger this event.</p>
+
+    <!-- 62. paste -->
+    <div class="event-box">
+        <input type="text" id="pasteBox" placeholder="62. paste: Paste something here">
+    </div>
+
+    <!-- 63. pause -->
+    <div class="event-box">
+        <video id="pauseVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>63. pause: Pause the video.</p>
+    </div>
+
+    <!-- 64. play -->
+    <div class="event-box">
+        <video id="playVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>64. play: Play the video.</p>
+    </div>
+
+    <!-- 65. playing -->
+    <div class="event-box">
+        <video id="playingVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>65. playing: Video started playing.</p>
+    </div>
+
+    <!-- 66. popstate -->
+    <p>66. popstate: Navigate using the back/forward browser button to see this event.</p>
+
+    <!-- 67. progress -->
+    <div class="event-box">
+        <progress id="progressBar" value="20" max="100"></progress>
+        <button id="progressButton">67. progress: Click to increase progress</button>
+    </div>
+
+    <!-- 68. ratechange -->
+    <div class="event-box">
+        <video id="rateChangeVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>68. ratechange: Change playback speed of the video.</p>
+    </div>
+
+    <!-- 69. resize -->
+    <p>69. resize: Resize the browser window to see this event.</p>
+
+    <!-- 70. reset -->
+    <div class="event-box">
+        <form id="resetForm">
+            <input type="text" placeholder="Enter text">
+            <button type="reset">70. reset: Reset the form</button>
+        </form>
+    </div>
+
+    <!-- 71. scroll -->
+    <div class="event-box" id="scrollBox" style="height: 100px; overflow-y: scroll;">
+        71. scroll: Scroll within this box<br>
+        <div style="height: 200px;">Scroll content</div>
+    </div>
+
+    <!-- 72. search -->
+    <div class="event-box">
+        <input type="search" id="searchBox" placeholder="72. search: Search here">
+    </div>
+
+    <!-- 73. seeked -->
+    <div class="event-box">
+        <video id="seekedVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>73. seeked: Finish seeking in the video.</p>
+    </div>
+
+    <!-- 74. seeking -->
+    <div class="event-box">
+        <video id="seekingVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>74. seeking: Start seeking in the video.</p>
+    </div>
+
+    <!-- 75. select -->
+    <div class="event-box">
+        <textarea id="selectBox" rows="4" cols="30">75. select: Select this text</textarea>
+    </div>
+
+    <!-- 76. show -->
+    <p>76. show: This event applies to the <dialog> element, not demonstrated here.</p>
+
+    <!-- 77. stalled -->
+    <div class="event-box">
+        <video id="stalledVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>77. stalled: Trigger when media download stalls.</p>
+    </div>
+
+    <!-- 78. storage -->
+    <p>78. storage: Open another tab and update localStorage to trigger this event.</p>
+
+    <!-- 79. submit -->
+    <div class="event-box">
+        <form id="submitForm">
+            <input type="text" required placeholder="Enter text">
+            <button type="submit">79. submit: Submit the form</button>
+        </form>
+    </div>
+
+    <!-- 80. suspend -->
+    <div class="event-box">
+        <video id="suspendVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>80. suspend: Media download suspended.</p>
+    </div>
+
+    <script>
+        // Add event listeners for each event here...
+        // Example: 
+        document.getElementById('mouseleaveBox').addEventListener('mouseleave', () => log('51. mouseleave: Mouse left the box.'));
+    </script>
+</body>
+</html>

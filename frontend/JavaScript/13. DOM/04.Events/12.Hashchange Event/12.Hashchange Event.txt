@@ -1,0 +1,22 @@
+JavaScript hashchange Event
+===========================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reference:
+https://www.javascripttutorial.net/javascript-dom/javascript-hashchange/

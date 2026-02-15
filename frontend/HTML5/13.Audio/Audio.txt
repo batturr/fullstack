@@ -1,0 +1,16 @@
+Audio 
+=====
+• The <audio> tag plays an audio file in the web page.
+• We have to maintain the audio file in the following formats, because different browsers support different audio formats:
+    • .mp3  : IE, Chrome, Firefox, Safari, Opera
+    • .ogg  : Chrome, Firefox, Opera
+• The autoplay="autoplay" attribute starts playing the audio file as soon as web page is loaded in the browser.
+• The controls="controls" attribute displays audio player skin in the web page.
+
+Syntax: 
+<audio autoplay=”autoplay” controls=”controls”> 
+    <source src=”filename.mp3” type=”audio/mp3”> 
+    <source src=”filename.ogg” type=”audio/ogg”> 
+</audio>
+
+Note: The browsers play the first possible file.

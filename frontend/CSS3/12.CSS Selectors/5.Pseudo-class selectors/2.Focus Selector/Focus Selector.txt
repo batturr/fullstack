@@ -1,0 +1,8 @@
+Focus Selector
+==============
+• It applies the style only when the focus (cursor) is inside the element.
+• It automatically removes the style when the cursor gets out of the element.
+• It is also called as “pseudo class”.
+
+Syntax: tag:focus
+Example: input:focus

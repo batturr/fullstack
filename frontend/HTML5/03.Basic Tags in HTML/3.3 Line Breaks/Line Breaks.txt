@@ -1,0 +1,9 @@
+Line Breaks:
+    • <br> tag is used to create "line breaks".
+    • It moves the cursor to the next line.
+    • The content next to the <br> will be display in the next line.
+    • It is an unpaired tag. That means no closing tag for <br> tag.
+        Syntax:
+            <br>
+        Example:
+            <br>

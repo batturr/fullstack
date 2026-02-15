@@ -1,0 +1,7 @@
+list-style-image
+================
+• This property specifies bullet image file path for the list.
+• It is recommended to place the image file in the same folder, where the html file is present.
+
+Syntax: list-style-image: url(“filename.extension”);
+Example: list-style-image: url(“tick.gif”);

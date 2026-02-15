@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Basic Offcanvas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="mb-4">Basic Offcanvas Examples</h1>
+        
+        <!-- Example 1: Left Offcanvas -->
+        <section class="mb-5">
+            <h2>1. Left Offcanvas (Default)</h2>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
+                <i class="bi bi-list"></i> Open Left Offcanvas
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Left Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="bi bi-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-person"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-gear"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-bell"></i> Notifications</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <p class="small text-muted">This is additional content in the offcanvas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example 2: Right Offcanvas -->
+        <section class="mb-5">
+            <h2>2. Right Offcanvas</h2>
+            <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                <i class="bi bi-cart"></i> Open Shopping Cart
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">Product 1</h6>
+                            <p class="card-text">$29.99</p>
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">Product 2</h6>
+                            <p class="card-text">$49.99</p>
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <strong>Total:</strong>
+                        <strong>$79.98</strong>
+                    </div>
+                    <button class="btn btn-primary w-100 mt-3">Checkout</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example 3: Top Offcanvas -->
+        <section class="mb-5">
+            <h2>3. Top Offcanvas</h2>
+            <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+                <i class="bi bi-arrow-down"></i> Open from Top
+            </button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" style="height: 200px;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Announcement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="alert alert-warning mb-0">
+                        <strong>Important Notice:</strong> This is a notification that slides from the top!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example 4: Bottom Offcanvas -->
+        <section class="mb-5">
+            <h2>4. Bottom Offcanvas</h2>
+            <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+                <i class="bi bi-arrow-up"></i> Open from Bottom
+            </button>
+
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" style="height: 50vh;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Filter Options</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Price Range</label>
+                            <input type="range" class="form-range" min="0" max="1000">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Category</label>
+                            <select class="form-select">
+                                <option>All Categories</option>
+                                <option>Electronics</option>
+                                <option>Clothing</option>
+                                <option>Books</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Apply Filters</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example 5: With Scrolling -->
+        <section class="mb-5">
+            <h2>5. Offcanvas with Body Scrolling</h2>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+                <i class="bi bi-list"></i> Open with Scrolling
+            </button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Scrollable Body</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Notice how you can scroll the page behind this offcanvas.</p>
+                    <p>This is useful when you want to reference content on the page while the offcanvas is open.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example 6: Static Backdrop -->
+        <section class="mb-5">
+            <h2>6. Static Backdrop</h2>
+            <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStatic">
+                <i class="bi bi-lock"></i> Static Backdrop
+            </button>
+
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasStatic">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Must Close Explicitly</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Clicking the backdrop won't close this offcanvas.</p>
+                    <p>You must use the close button or press ESC.</p>
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle"></i> This is useful for important forms or confirmations.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dummy content for scrolling -->
+        <div class="mt-5 p-4 bg-light rounded">
+            <h3>Page Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+HTML Versions
+    • HTML 1.0 : Nov 1991
+    • HTML 2.0 : Mar 1995
+    • HTML 3.0 : Jan 1997
+    • HTML 4.0 : Dec 1997
+    • HTML 5.0 : Oct 2014
+    • HTML 5.1 : Nov 2016
+    • HTML 5.2 : Dec 2017
+
+HTML5.2 (2017)
+HTML5.2 introduced new features, made adjustments to the HTML5 specification, and removed features that were no longer recommended. It aimed at further improving the language’s usability and interoperability.
+
+HTML Living Standard
+After HTML5.2, the W3C and the Web Hypertext Application Technology Working Group (WHATWG) decided to adopt a “living standard” model. This approach means HTML is continuously updated with new features and improvements, rather than being released in versions. The HTML Living Standard is updated regularly to reflect the ongoing evolution of the web.

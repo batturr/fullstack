@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Selectors - Compound selector Example</title>
+    <style>
+        /* selecting only <p> tags that have class="class1" */
+        p.class1,input.class1 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+    <body>
+        <h1> CSS Selectors - Compound selector Example </h1>
+        <p>Paragraph 1</p>
+        <p class="class1">Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p class="class1">Paragraph 4</p>
+        <p>Paragraph 5</p>
+        <p class="class1">Paragraph 6</p>
+        <input type="text" value="hello">
+        <input type="text" value="hello" class="class1">
+        <input type="text" value="hello" class="class1">
+    </body>
+</html>

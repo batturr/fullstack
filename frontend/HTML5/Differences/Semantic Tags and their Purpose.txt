@@ -1,0 +1,55 @@
+Semantic Tags and their Purpose/Meaning	
+🟢 Main Structure Semantic Tags	
+Tag					Meaning
+<header>			Top/heading section of a page or section
+<footer>			Bottom section of a page or section
+<main>				Main content of the webpage
+<nav>				Navigation menu/links
+<section>			Thematic group of content
+<article>			Independent piece of content like news, blog, post
+<aside>				Side content (ads, sidebars, related content)
+🟢 Text-Level Semantic Tags	
+Tag					Meaning
+<mark>				Highlighted text
+<time>				Date or time
+<figcaption>		Caption for a figure
+<cite>				Reference or citation
+<abbr>				Abbreviation
+<dfn>				Definition term
+<strong>			Important text
+<em>				Emphasized text
+<address>			Contact information
+<h1> – <h6>			Represent headings of text
+<p>					Represents a paragraph of text
+<blockquote>		Represents quoted text
+<code>				Represents code within text
+<pre>				Preformatted text, preserves spaces and line breaks
+🟢 Media/Grouping Semantic Tags	
+Tag					Meaning
+<figure>			Image, diagram, code block, etc.
+<details>			Expandable/collapsible content
+<summary>			Header used inside <details>
+<dialog>			Popup or dialog box
+<audio>				Audio content
+<video>				Video content
+<caption>			Caption for a table
+<canvas>			Used for drawing graphics, animations, charts
+<svg>				Vector graphics / shapes / illustrations
+🟢 Semantic Table Elements	
+Tag					Meaning
+<table>				Table
+<thead>				Table header
+<tbody>				Table body
+<tfoot>				Table footer
+<th>				Header cell
+<tr>				Table row
+<td>				Table data cell
+🟢 Other Semantic Form Elements	
+Tag					Meaning
+<form>				Form container
+<label>				Label for input field
+<fieldset>			Grouping related form fields
+<legend>			Title for <fieldset>
+<ul>,<li>			Unordered List (Parent), List item (Child)
+<ol>,<li>			Ordered List (Parent), List item (Child)
+<dl>, <dt>, <dd>	Description List (Parent), Definition Term (dt), Definition Description (dd)

@@ -1,0 +1,10 @@
+Basic Navigation Menu
+=====================
+• It is used to display a simple navigation bar with few hyperlinks
+• When the user clicks on any hyperlink, the corresponding web page (html file) will be opened.
+
+List of Classes
+===============
+• nav : Navigation menu
+• nav-item : Item in the navigation 
+• nav-link : Hyperlink in the nav item

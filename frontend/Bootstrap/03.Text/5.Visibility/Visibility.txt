@@ -1,0 +1,8 @@
+Visibility
+==========
+• It is used to show / hide the element in the web page.
+
+List of Classes
+===============
+• visible : Element is visible
+• invisible : Element is invisble

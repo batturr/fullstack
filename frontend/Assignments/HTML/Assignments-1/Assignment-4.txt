@@ -1,0 +1,57 @@
+HTML Assignment – 4
+====================
+Basic Questions
+Create a simple webpage with a <header> and <footer>.
+Write HTML to display a website title inside the <header>.
+Add a <nav> element with 3 links: Home, About, Contact.
+Display a paragraph inside the <main> element on a webpage.
+Create a page that uses <section> for displaying two different topics.
+Use an <article> tag to display a blog post with a heading and a paragraph.
+Write HTML to create an <aside> element showing related links.
+Insert an image inside a <figure> element with a <figcaption>.
+Use <time> tag to represent today’s date in an event description.
+Write HTML that displays your contact info using <address>.
+Create a webpage with <header>, <main>, and <footer> layout.
+Add a <nav> with links that display horizontally.
+Display the publication date of an article using <time>.
+Create a simple blog page with one <article> inside <main>.
+Write HTML to show two images with their captions using <figure> and <figcaption>.
+Display the website developer’s email address using <address>.
+Draw a rectangle using inline <svg>.
+Draw a circle using <svg>.
+Draw a line using SVG between two points.
+Create a simple <canvas> element with a border.
+
+Intermediate Questions
+Create a webpage layout with <header>, <nav>, <main>, <aside>, and <footer>.
+Write HTML with multiple <section> elements under <main> to display different categories.
+Build a blog post with <article> and show its author info in <address>.
+Create a page that uses <header> for navigation and <footer> for copyright.
+Use <article> tags to add two different blog posts inside <main>.
+Include one <aside> section showing related articles in a blog page.
+Display one image with a title using <figure> and <figcaption> inside <section>
+Use <time> to mark the date and time of an event (like “Published on 20 August 2025, 5:00 PM”).
+Design a company’s contact page using <address> with location, phone, and email.
+Write HTML to structure a magazine-like layout using <section> and <article>.
+Draw a blue rectangle inside an SVG.
+Create an SVG with both a circle and rectangle.
+Draw a triangle shape using <polygon> in SVG.
+Create an inline SVG with a line connecting two circles.
+Make a canvas with a red filled rectangle using JavaScript.
+Draw a diagonal line on a canvas from top-left to bottom-right.
+Use <canvas> to draw a filled blue circle.
+Display multiple shapes (circle, rectangle, line) inside a single <canvas>.
+Add an SVG ellipse and style it using fill=”green”.
+Write HTML with a <header>, <main>, <aside>, and <footer> plus an inline SVG below the main content.
+
+Advanced Questions
+Build a complete semantic webpage layout using <header>, <nav>, <main>, <article>, <aside>, <footer> with actual demo content.
+Create a blog webpage with 3 <article> posts, each with <time> and <address> info for the author.
+Combine <figure> with image thumbnails, each having captions (like a mini photo gallery).
+Design a newspaper layout using <section>, <article>, and <aside> with proper structure.
+Draw a sunset scene in SVG (sun = circle, ground = rectangle, rays = lines).
+Write JavaScript to draw a house shape on <canvas> (rectangle for house, triangle for roof, square for window).
+Use <canvas> to fill two rectangles with linear gradient colors.
+Create a small bouncing ball animation using <canvas> and JavaScript.
+Build a webpage that has a semantic structure and an inline SVG chart (e.g., bar chart using <rect>).
+Create a dashboard page with <header>, <nav>, <main>, <aside>, <footer>, plus an animated <canvas> graph.

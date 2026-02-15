@@ -1,0 +1,19 @@
+Inheritance
+• Inheritance is a concept of extending the parent class, by creating the child class.
+• When you create an object of child class, all the members of parent class will be automatically added to 
+the child class's object. 
+Syntax of Inheritance
+class parentclassname
+{
+ constructor(arguments)
+{
+}
+}
+class childclassname extends parentclassname
+{
+ constructor(arguments)
+{
+super(arguments);
+}
+}
+Example on Inheritance

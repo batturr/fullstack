@@ -1,0 +1,9 @@
+visibility
+==========
+• This property specifies whether the element is visible or invisible in the web page.
+• “visibility: visible” shows the element.
+• “visibility: hidden” hides the element and its space will be reserved as-it-is.
+
+Syntax: visibility: visible | hidden;
+Example: visibility: hidden;
+

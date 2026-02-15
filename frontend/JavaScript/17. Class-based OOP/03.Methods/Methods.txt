@@ -1,0 +1,10 @@
+Methods
+• Method is a function that manipulates data of the object.
+Syntax of Method
+class classname
+{
+ methodname(arguments)
+{
+}
+}
+Example on Methods

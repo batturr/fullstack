@@ -1,0 +1,9 @@
+line-height
+===========
+• This property specifies height of the line of text.
+• You can specify the value in the form of pixels or percentage.
+
+Note: By Default line-hight is 18px.
+
+Syntax: line-height: pixels;
+Example: line-height: 10px;

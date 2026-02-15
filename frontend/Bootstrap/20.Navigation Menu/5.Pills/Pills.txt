@@ -1,0 +1,8 @@
+Pills
+=====
+• It is used to display a set of tabs with more rounded corners and background color.
+
+List of Classes
+===============
+• nav-pills : Enables pills
+• data-toggle="pill" : Represents hyperlink for the pill

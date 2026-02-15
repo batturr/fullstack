@@ -1,0 +1,11 @@
+NavBar DropDown
+===============
+• It is used to display a dropdown menu for the navigation bar item.
+
+List of Classes
+================
+• dropdown : Menu item with dropdown
+• dropdown-toggle : Caret symbol
+• data-bs-toggle="dropdown" : Shows dropdown menu when clicked
+• dropdown-menu : Container for dropdown menu
+• dropdown-item : Item in the dropdown menu

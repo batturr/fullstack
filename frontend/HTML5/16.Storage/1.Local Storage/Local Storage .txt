@@ -1,0 +1,20 @@
+Local Storage
+==============
+• “Local Storage” is used to store some data in the browser memory permanently, until you manually delete the data (or) clear the browser history. 
+• Local storage is used to store only string data. 
+• Local storage can store unlimited data. 
+• Local storage data is visible in the browser's developer tools (Inspect Element) option. 
+• If you clear the browser history, the local storage will be deleted. 
+• Ex: Google login page automatically stores your name, email and photo on successful login. 
+
+Setting data into Local Storage
+===============================
+localStorage.property = value; 
+(or) 
+localStorage.setItem(“property”, “value”); 
+
+Getting data from Local Storage
+===============================
+localStorage.property 
+(or) 
+localStorage.getItem(“property”);

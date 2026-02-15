@@ -1,0 +1,5 @@
+ListBox
+=======
+• ListBox is also created using <select> tag, just like DropDownList.
+• But the difference is: DropDownList allows the user to select ONLY ONE element.
+• ListBox allows the user select multiple options, by using Ctrl+Click or Shift+Click on the keyboard.

@@ -1,0 +1,6 @@
+Value Attribute
+==================
+• Represents the current value of the input element. 
+• In case of checkbox and radio button, the "value" must be set by the developer; in other type of inputs, the user enters the value. 
+
+Syntax: <input type="…" value="some value"> 

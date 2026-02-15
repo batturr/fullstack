@@ -1,0 +1,5 @@
+Disabled Attribute 
+==================
+• Used to disable the element. If the element (button, textbox, checkbox, radio button) is disabled, the user can't modify or touch the value of the element. The disabled element will be out of TAB sequence. That means cursor will not stop at the disabled element 
+
+Syntax: <input type="…"  disabled="disabled">

@@ -1,0 +1,210 @@
+Window Object
+===============
+The global object of JavaScript in the web browser is the window object. It means that all variables and functions declared globally with the var keyword become the properties and methods of the window object.
+
+The window object represents an open window in a browser.
+
+If a document contain frames (<iframe> tags), the browser creates one window object for the HTML document, and one additional window object for each frame.
+
+1.Window Object Properties
+2.Window Object Methods
+
+==========================================================================================================
+                                1.Window Object Properties
+==========================================================================================================
+1.closed	    =>  Returns a boolean true if a window is closed.
+2.console	    => Returns the Console Object for the window.
+3.document	    => Returns the Document object for the window.
+4.frameElement	=> Returns the frame in which the window runs.
+5.frames	    => Returns all window objects running in the window.
+6.history	    => Returns the History object for the window.
+7.innerHeight	=> Returns the height of the window's content area (viewport) including scrollbars
+8.innerWidth	=> Returns the width of a window's content area (viewport) including scrollbars
+9.length	    => Returns the number of <iframe> elements in the current window
+10.localStorage	=> Allows to save key/value pairs in a web browser. Stores the data with no expiration date
+11.location	    => Returns the Location object for the window.
+12.name	        => Sets or returns the name of a window
+13.navigator	=> Returns the Navigator object for the window.
+14.opener	    => Returns a reference to the window that created the window
+15.outerHeight	=> Returns the height of the browser window, including toolbars/scrollbars
+16.outerWidth	=> Returns the width of the browser window, including toolbars/scrollbars
+17.pageXOffset	=> Returns the pixels the current document has been scrolled (horizontally) from the upper left corner of the window
+18.pageYOffset	=> Returns the pixels the current document has been scrolled (vertically) from the upper left corner of the window
+19.parent	    => Returns the parent window of the current window
+20.screen	    => Returns the Screen object for the window
+21.screenLeft	=> Returns the horizontal coordinate of the window relative to the screen
+22.screenTop	=> Returns the vertical coordinate of the window relative to the screen
+23.screenX	    => Returns the horizontal coordinate of the window relative to the screen
+24.screenY	    => Returns the vertical coordinate of the window relative to the screen
+25.sessionStorage	=> Allows to save key/value pairs in a web browser. Stores the data for one session
+26.scrollX	    => An alias of pageXOffset
+27.scrollY	    => An alias of pageYOffset
+28.self	        => Returns the current window
+29.status	    => Deprecated. Avoid using it.
+30.top	        => Returns the topmost browser window
+
+==========================================================================================================
+                                2.Window Object Methods
+==========================================================================================================
+
+1.addEventListener()	=> Attaches an event handler to the window
+2.alert()	            => Displays an alert box with a message and an OK button
+3.atob()	            => Decodes a base-64 encoded string
+4.blur()	            => Removes focus from the current window
+5.btoa()	            => Encodes a string in base-64
+6.clearInterval()	    => Clears a timer set with setInterval()
+7.clearTimeout()	    => Clears a timer set with setTimeout()
+8.close()	            => Closes the current window
+9.confirm()	            => Displays a dialog box with a message and an OK and a Cancel button
+10.focus()	            => Sets focus to the current window
+11.getComputedStyle()	=> Gets the current computed CSS styles applied to an element
+12.getSelection()	    => Returns a Selection object representing the range of text selected by the user
+13.matchMedia()	        => Returns a MediaQueryList object representing the specified CSS media query string
+14.moveBy()	            => Moves a window relative to its current position
+15.moveTo()	            => Moves a window to the specified position
+16.open()	            => Opens a new browser window
+17.print()	            => Prints the content of the current window
+18.prompt()	            => Displays a dialog box that prompts the visitor for input
+19.removeEventListener()=> Removes an event handler from the window
+20.requestAnimationFrame()=> Requests the browser to call a function to update an animation before the next repaint
+21.resizeBy()           => Resizes the window by the specified pixels
+22.resizeTo()           => Resizes the window to the specified width and height
+23.scroll()	            => Deprecated.
+24.Use                  => scrollTo() instead.	
+25.scrollBy()	        => Scrolls the document by the specified number of pixels
+26.scrollTo()	        => Scrolls the document to the specified coordinates
+27.setInterval()	    => Calls a function or evaluates an expression at specified intervals (in milliseconds)
+28.setTimeout()	        => Calls a function or evaluates an expression after a specified number of milliseconds
+29.stop()	            => Stops the window from loading
+
+1.The window object is global
+
+var counter = 1;
+var showCounter = () => console.log({ counter });
+
+console.log(window.counter); // 1
+window.showCounter(); // { counter: 1 }
+
+2.The window object exposes the browser’s functionality
+=======================================================
+1) Window size
+===============
+=> The window object has four properties related to the size of the window:
+=> The innerWidth and innerHeight properties return the size of the page viewport inside the browser window (not including the borders and toolbars).
+=> The outerWidth and outerHeight properties return the size of the browser window itself.
+
+Syntax: window.innerWidth or window.innerHeight
+
+Example:
+========
+{
+  const width = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+
+  const height = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+
+  console.log(`Viewport width: ${width}, height: ${height}`);
+}
+
+2) Open a new window
+=====================
+To open a new window or tab, you use the window.open() method:
+
+Syntax: window.open(url, windowName, [windowFeatures]);
+
+Example:
+========
+
+{
+  let url = 'http://localhost/js/about.html';
+	let jsWindow = window.open(url,'about');
+}
+
+{
+  let features = 'height=600,width=800',
+      url = 'http://localhost/js/about.html';
+
+  let jsWindow = window.open(url, 'about', features);
+
+  setTimeout(() => {
+      window.open('http://localhost/js/contact.html', 'about')
+  }, 3000);
+}
+
+
+3) Resize a window
+==================
+To resize a window you use the resizeTo() method of the window object:
+
+Syntax: resizeTo()
+
+{
+	let jsWindow = window.open(
+    'http://localhost/js/about.html',
+    'about',
+    'height=600,width=600');
+
+  // shrink the window, or resize the window 
+  // to 500x500
+  setTimeout(() => {
+      jsWindow.resizeBy(-100, -100);
+  }, 3000);
+}
+
+4) Move a window
+================
+To move a window to a specified coordinate, you use the moveTo() method.
+
+Syntax: moveTo()
+Syntax: moveBy()
+
+{
+  let jsWindow = window.open(
+      'http://localhost/js/about.html',
+      'about',
+      'height=600,width=600');
+
+  setTimeout(() => {
+      jsWindow.moveTo(500, 500);
+  }, 3000);
+}
+
+
+{
+  let jsWindow = window.open(
+      'http://localhost/js/about.html',
+      'about',
+      'height=600,width=600');
+
+  setTimeout(() => {
+      jsWindow.moveBy(100, -100);
+  }, 3000);
+}
+
+
+5) Close a window
+=================
+To close a window, you use the window.close() method:
+
+Syntax: window.close()
+
+{
+  let jsWindow = window.open(
+      'http://localhost/js/about.html',
+      'about',
+      'height=600,width=600');
+
+  setTimeout(() => {
+      jsWindow.close();
+  }, 3000);
+}
+
+6) The window.opener property
+=============================
+A newly created window can reference back to the window that opened it via the window.opener property. This allows you to exchange data between the two windows.
+
+Syntax: window.opener
+

@@ -1,0 +1,7 @@
+Vertical Navigation Menu
+========================
+• It is used to display the simple navigation bar in vertical mode.
+
+List of Classes
+===============
+• flex-column : Vertical navigation menu

@@ -1,0 +1,60 @@
+HTML Assignment – 1
+=====================
+Basic Questions
+Create a basic HTML document with <html>, <head>, and <body> tags.
+Write an HTML document that displays a heading using <h1> with your name.
+Add six headings (<h1> to <h6>) in a web page, each showing “Heading 1” to “Heading 6”.
+Create a paragraph using <p> that describes yourself in 2–3 sentences.
+Add a line break (<br>) in between two sentences inside a paragraph.
+Insert a horizontal line (<hr>) between two headings.
+Write a short paragraph and include an HTML comment describing the paragraph.
+Use <b> to make the text “Important” bold inside a sentence.
+Use <i> to make the text “Special” italic inside a paragraph.
+Use <u> to underline the word “Highlight”.
+Create a paragraph where the word “Warning” is inside a <strong> tag.
+Create a paragraph where the word “Note” is emphasized using <em>.
+Write a chemical formula for water (H<sub>2</sub>O) using subscript.
+Write a mathematical equation for square (x<sup>2</sup>) using superscript.
+Display a block of preformatted text using the <pre> tag.
+Highlight the word “HTML” inside a sentence using the <mark> tag.
+Use <small> to make the copyright notice small: “© 2025”.
+Use <del> to show deleted text “Old Price: $100”.
+Use <ins> to show inserted text “New Price: $80”.
+Display a famous quote inside a <blockquote> element.
+
+Intermediate Questions
+Create an HTML page with a title in <head> and display “Welcome to My Webpage” in <body>.
+Add two paragraphs on a page and insert a horizontal line between them.
+Create an HTML page that contains all heading levels <h1> to <h6> followed by a short paragraph for each.
+Write an HTML page with one comment at the top saying “This is my practice page”.
+Create a paragraph that contains a mix of bold, italic, and <u>underlined</u> text.
+Make a sentence that contains both <strong> and <em> tags.
+Show the following math formula in HTML: E = mc<sup>2</sup>.
+Write “log<sub>10</sub>” using subscript formatting.
+Display a block of text using <pre> that shows:
+    Name: Vivek
+    Age: 25
+    Country: India
+Highlight the word “Important” using <mark> inside a paragraph.
+Create a paragraph where one word is shown as <small>, another as <del>, and another as <ins>.
+Add a famous quote inside <blockquote> and cite the author using <cite>.
+Write an HTML page where you use <hr> to divide three different sections.
+Create a paragraph and insert two <br> tags to separate three sentences.
+Use multiple formatting tags together: make one word bold, italic, underlined, and marked.
+Write a paragraph with one part normal, another emphasized <em>, and another strong <strong>.
+Show an example where old price is shown using <del> and new price using <ins>.
+Insert your name inside <mark> and display it as highlighted text.
+Display a paragraph with a citation at the end using <cite>.
+Write a page that contains at least 5 formatting tags in one sentence (bold, italic, underline, subscript, superscript).
+
+Advanced Questions
+Create a complete HTML document that demonstrates all heading levels (<h1>–<h6>), paragraphs, <br>, <hr>, and comments.
+Build a formatted biography page of yourself using <p>, <b>, <i>, <u>, <strong>, <em>.
+Write an HTML page that shows a scientific formula with multiple subscripts and superscripts, e.g., C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + O<sub>2</sub> → CO<sub>2</sub> + H<sub>2</sub>O.
+Create an HTML article where you use <blockquote> for a quote and <cite> for the source.
+Make an HTML page that displays a paragraph with deleted, inserted, marked, and small text all in one example.
+Create a structured document with <head> (title & meta info), <body> (content), multiple headings, horizontal rules, and formatting.
+Show a block of preformatted poetry or code using <pre> and mix it with text formatting tags inside.
+Write an HTML page that combines text formatting: one word bold, italic, underlined, small, highlighted, deleted, and inserted — all in one sentence.
+Create an HTML page that explains HTML comments with an example — write comments before headings and paragraphs.
+Build a “Quotes Page” that contains at least 3 quotes in <blockquote>, each followed by <cite>.

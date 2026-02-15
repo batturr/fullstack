@@ -1,0 +1,16 @@
+Button Colors
+=============
+• It is used to display buttons with different colors.
+
+List of Classes
+===============
+• btn : Bootstrap button style
+• btn-primary : Blue color
+• btn-secondary : Grey color
+• btn-success : Green color
+• btn-info : Light blue color
+• btn-warning : Orange color
+• btn-danger : Red color
+• btn-dark : Black color
+• btn-light : Light grey color
+• btn-link : Link style

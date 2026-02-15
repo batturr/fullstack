@@ -1,0 +1,15 @@
+Progress Bar Colors
+===================
+• It is used to display progress bar with different colors
+
+List of Classes
+===============
+• bg-success : Green color
+• bg-info : Light blue color
+• bg-warning : Orange color
+• bg-danger : Red color
+• bg-secondary : Grey color
+• bg-light : Light grey color
+• bg-dark : Black color
+• progress-bar-striped : Striped progress bar
+• progress-bar-animated : Animated progress bar

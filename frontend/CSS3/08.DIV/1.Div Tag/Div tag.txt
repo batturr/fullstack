@@ -1,0 +1,12 @@
+<div> tag
+==============
+• <div> is the most important tag of html.
+• <div> tag represents a division (part) of the page.
+• <div> is a container, in which you can place any other elements.
+• A web page can have any no. of <div> tags.
+• A <div> tag can be placed in another <div> tag also.
+• <div> is a paired tag.
+• <div> is a block level element. That means it occupies 100% of the width, by default. So the content next to the <div> tag, appears in the next line.
+
+• Syntax: <div> any content </div>
+• Example: <div> Hello </div>

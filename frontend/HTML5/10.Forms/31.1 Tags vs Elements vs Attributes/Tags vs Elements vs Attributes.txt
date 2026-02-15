@@ -1,0 +1,45 @@
+Tags vs Elements vs Attributes
+==============================
+HTML Tags:
+==========
+HTML Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever is written inside < and > are called tags.
+
+Example:  In this example <b> is the starting tag and </b> is the ending tag.
+
+Example: <b> </b>
+
+HTML elements:
+==============
+The HTML element consists of both the opening and closing tags as well as what’s inside those tags. It normally consists of some structure that’s used to define the respective tags.
+
+Example: In this example <b> is the starting tag and </b> is the ending tag but with content inside it.
+
+<b>This is the content.</b>
+
+HTML Attributes:
+================
+HTML Attributes is used to define the character of an HTML element. It always placed in the opening tag of an element. It generally provides additional styling (attribute) to the element.
+
+Example:  In this example <p> is the starting tag and </p> is the ending tag with extra css attributes.
+
+<p align="center">This is paragraph.</p>
+
+Tags vs Elements vs Attributes difference
+=========================================
+HTML Tags	
+1.HTML tags are used to hold the HTML element.
+2.HTML tag starts with < and ends with >
+3.HTML tags are almost like keywords where every single tag has unique meaning.
+4.Tags define the type of HTML element (e.g., heading, paragraph).
+
+HTML Elements	
+1.HTML element holds the content.
+2.Whatever written within a HTML tag are HTML elements.
+3.HTML elements specifies the general content.
+4.Elements represent the complete, functional unit on a webpage.
+
+HTML Attributes
+1.HTML attributes are used to describe the characteristic of an HTML element in detail.
+2.HTML attributes are found only in the starting tag.
+3.HTML attributes specify various additional properties to the existing HTML element.
+4.Attributes provide extra information or settings for elements.

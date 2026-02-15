@@ -1,0 +1,13 @@
+Classes
+• "Object" is a "physical item", which is a collection of properties (details) and methods (manipulations).
+• "Class" is a "model" of objects, which defines the list of properties and methods of the objects.
+
+Steps for working with Classes and Objects
+Create a class
+class classname
+{
+}
+Create an object
+new classname();
+Example on Classes and Objects
+

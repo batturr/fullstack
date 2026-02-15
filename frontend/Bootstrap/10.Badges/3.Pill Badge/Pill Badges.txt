@@ -1,0 +1,7 @@
+Pill Badges
+===========
+• It is used to display more rounded badges.
+
+List of Classes
+===============
+• rounded-pill : More rounded badge

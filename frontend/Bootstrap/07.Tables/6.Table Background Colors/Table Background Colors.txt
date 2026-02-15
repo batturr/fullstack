@@ -1,0 +1,16 @@
+Table Background Colors
+=======================
+• It is used to display table / rows with different background colors.
+• These classes can be applicable for <table>, <tr> or <td> tags.
+
+List of Classes
+===============
+• table-primary : Blue color
+• table-success : Green color
+• table-danger : Red color
+• table-info : Light blue color
+• table-warning : Orange color
+• table-active : Very light Grey color
+• table-secondary : Grey color
+• table-light : Light grey color
+• table-dark : Dark grey color

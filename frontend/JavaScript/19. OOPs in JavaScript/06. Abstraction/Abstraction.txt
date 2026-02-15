@@ -1,0 +1,30 @@
+Abstraction
+============
+=> Definition: Hiding the implementation details and showing only the functionality to the user.
+=> Achieved using abstract classes or interfaces (though JavaScript does not natively support abstract classes, you can mimic them).
+
+Example on Abstraction
+======================
+{
+  class Vehicle {
+    constructor(name) {
+      if (this.constructor === Vehicle) {
+        throw new Error("Abstract classes can't be instantiated.");
+      }
+      this.name = name;
+    }
+
+    move() {
+      throw new Error('Method "move()" must be implemented.');
+    }
+  }
+
+  class Car extends Vehicle {
+    move() {
+      console.log(`${this.name} drives on the road.`);
+    }
+  }
+
+  const car = new Car('Sedan');
+  car.move();
+}

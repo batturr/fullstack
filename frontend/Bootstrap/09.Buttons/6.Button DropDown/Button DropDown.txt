@@ -1,0 +1,11 @@
+Button DropDown
+===============
+• It is used to display dropdownlist for the button.
+
+List of Classes
+===============
+• dropdown-toggle : Dropdown button
+• dropdown-toggle-split : Split button
+• caret : Caret symbol
+• dropdown-menu : Represents the menu
+• dropdown-item : Represents item in the menu

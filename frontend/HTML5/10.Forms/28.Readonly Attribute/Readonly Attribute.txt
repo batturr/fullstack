@@ -1,0 +1,6 @@
+Readonly Attribute 
+===================
+• Makes the textbox as readonly; so that the user can see the value but can’t type anything the textbox. 
+• In the readonly textbox, the user can see, select, copy the text value. 
+• Cursor can be placed inside the readonly textbox. 
+Syntax: <input type="text" value="some value" readonly="readonly"> 

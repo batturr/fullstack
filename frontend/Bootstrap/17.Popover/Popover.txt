@@ -1,0 +1,13 @@
+Popover
+=======
+• It is used to display message (some text) when the user clicks an element.
+• The popover can show when the cursor focuses the element.
+• The popover can have title and content also.
+
+List of Classes
+===============
+• data-bs-toggle="popover" : Enables popover
+• title : Title of popover
+• data-bs-content="some text" : Text of popover
+• data-bs-placement="top | bottom | left | right" : Position of popover
+• data-bs-trigger="focus" : Show popover on focus

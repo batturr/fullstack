@@ -1,0 +1,44 @@
+body {
+    font-size: 20px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#outercontainer {
+    background-color: yellow;
+    width: 100%;
+    margin: auto;
+}
+#header {
+    background-color: red;
+    height: 200px;
+    width: 100%;
+}
+#nav {
+    background-color: aqua;
+    height: 80px;
+    width: 100%;
+}
+#container {
+    height: 500px;
+    width: 100%;
+}
+#leftcol {
+    height: 500px;
+    background-color: #66ccff;
+    width: 20%;
+    float: left;
+}
+#pagecontent {
+    height: 500px;
+    background-color: #ccffcc;
+    width: 80%;
+    float: left;
+}
+#footer {
+    height: 50px;
+    background-color: #ff0099;
+    width: 100%;
+    clear: left;
+}

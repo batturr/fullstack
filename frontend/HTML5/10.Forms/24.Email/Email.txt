@@ -1,0 +1,5 @@
+Email 
+======
+• Used to create an email textbox, where the user can enter a valid email address. 
+• It displays error message automatically, if the given email address is invalid. 
+Syntax: <input type="email">

@@ -1,0 +1,34 @@
+Document Object Model in JavaScript
+====================================
+DOM stands for Document Object Model.
+
+The Document Object Model (DOM) is a programming interface that allows developers to interact with and manipulate HTML and XML documents. It represents the document as a structured tree of nodes, where each node corresponds to a part of the document (like elements, attributes, or text).
+
+DOM API provides a set of functions and methods to modify the HTML document dynamically via JavaScript.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reference:
+https://www.javascripttutorial.net/javascript-dom/
+https://javascripttoday.com/blog/javascript-interview-dom/
+https://www.w3schools.com/js/js_htmldom.asp
+https://software.hixie.ch/utilities/js/live-dom-viewer/
+https://bioub.github.io/dom-visualizer/
+

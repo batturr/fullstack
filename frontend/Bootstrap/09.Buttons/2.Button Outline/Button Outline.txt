@@ -1,0 +1,14 @@
+Button Outline
+==============
+• It is used to display buttons with only border (white background).
+
+List of Classes
+===============
+• btn-outline-primary : Blue color
+• btn-outline-secondary : Grey color
+• btn-outline-success : Green color
+• btn-outline-info : Light blue color
+• btn-outline-warning : Orange color
+• btn-outline-danger : Red color
+• btn-outline-dark : Black color
+• btn-outline-light : Light grey color

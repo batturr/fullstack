@@ -1,0 +1,7 @@
+Tag or Type Selector
+============
+• It selects all the instances of the specified tag.
+• You can specify any tag name.
+
+Syntax: tag
+Example: p

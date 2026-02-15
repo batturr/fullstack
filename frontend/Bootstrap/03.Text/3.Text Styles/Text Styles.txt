@@ -1,0 +1,12 @@
+Text Styles
+============
+• The following set of bootstrap classes are used to set text styles such as bold, italic, uppercase etc.
+
+List of Classes
+================
+• fw-bold : Bold text
+• fw-light : Light weight text
+• fst-italic : Italic text
+• text-lowercase : Lowercase
+• text-uppercase : Uppercase
+• text-capitalize : Every word's first letter is capita

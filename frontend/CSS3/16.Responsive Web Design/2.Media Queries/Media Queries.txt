@@ -1,0 +1,34 @@
+Media Queries
+=============
+• We use “Media Queries” to create responsive web design.
+• The media queries apply the styles only when the current device / browser's width meet the given condition / requirements.
+
+1. Extra Small devices (1px to 575px):
+======================================
+@media (min-width: 1px) and (max-width: 575px)
+{
+}
+
+2. Small devices (576px to 767px):
+==================================
+@media (min-width: 576pxpx) and (max-width: 767px)
+{
+}
+
+3. Medium devices (767px to 991px):
+===================================
+@media (min-width: 767pxpx) and (max-width: 991px)
+{
+}
+
+4. Large devices (992px to 1199px):
+===================================
+@media (min-width: 992px) and (max-width: 1199px)
+{
+}
+
+5. Extra Large devices (1200px to unlimited):
+=============================================
+@media (min-width: 1200px)
+{
+}

@@ -1,0 +1,8 @@
+list-style-type for <ul>
+========================
+• This property specifies type of the bullet for the <ul> tag.
+• <ul> tag is used to display a list of names. <li> tag represents an item in the <ul>
+• The default value is "disc", in case of <ul> tag.
+
+Syntax: list-style-type: none | disc | square | circle;
+Example: list-style-type: disc;

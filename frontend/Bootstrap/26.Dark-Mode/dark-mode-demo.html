@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Dark Mode Complete Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .card, .navbar, .btn, .form-control, .form-select {
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .hero-section {
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        /* Custom colors for dark mode */
+        [data-bs-theme="dark"] .custom-card {
+            background-color: #2b3035;
+            border-color: #495057;
+        }
+        
+        [data-bs-theme="light"] .custom-card {
+            background-color: #f8f9fa;
+            border-color: #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-bootstrap-fill"></i> DarkMode Demo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-palette-fill"></i> Theme
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <button class="dropdown-item" onclick="setTheme('light')">
+                                    <i class="bi bi-sun-fill"></i> Light
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" onclick="setTheme('dark')">
+                                    <i class="bi bi-moon-fill"></i> Dark
+                                </button>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <button class="dropdown-item" onclick="setTheme('auto')">
+                                    <i class="bi bi-circle-half"></i> Auto
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section bg-light">
+        <div class="container">
+            <h1 class="display-4 mb-4">Bootstrap 5.3+ Dark Mode</h1>
+            <p class="lead mb-4">Experience seamless dark mode with built-in Bootstrap 5.3+ support</p>
+            <div class="d-flex justify-content-center gap-2">
+                <button class="btn btn-primary btn-lg" onclick="setTheme('light')">
+                    <i class="bi bi-sun-fill"></i> Light Mode
+                </button>
+                <button class="btn btn-secondary btn-lg" onclick="setTheme('dark')">
+                    <i class="bi bi-moon-fill"></i> Dark Mode
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Features Grid -->
+        <section class="mb-5">
+            <h2 class="mb-4">Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightning-fill text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Fast Performance</h5>
+                            <p class="card-text">Instant theme switching with CSS variables</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-palette-fill text-success display-4 mb-3"></i>
+                            <h5 class="card-title">Customizable</h5>
+                            <p class="card-text">Easy to customize colors and styles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-eye-fill text-info display-4 mb-3"></i>
+                            <h5 class="card-title">Eye Friendly</h5>
+                            <p class="card-text">Reduce eye strain in low-light environments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components Showcase -->
+        <section class="mb-5">
+            <h2 class="mb-4">Components in Dark Mode</h2>
+            
+            <!-- Alerts -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <div class="alert alert-primary" role="alert">
+                        <i class="bi bi-info-circle"></i> This is a primary alert
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-success" role="alert">
+                        <i class="bi bi-check-circle"></i> This is a success alert
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-warning" role="alert">
+                        <i class="bi bi-exclamation-triangle"></i> This is a warning alert
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-danger" role="alert">
+                        <i class="bi bi-x-circle"></i> This is a danger alert
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mb-4">
+                <h5>Buttons</h5>
+                <button class="btn btn-primary me-2">Primary</button>
+                <button class="btn btn-secondary me-2">Secondary</button>
+                <button class="btn btn-success me-2">Success</button>
+                <button class="btn btn-danger me-2">Danger</button>
+                <button class="btn btn-warning me-2">Warning</button>
+                <button class="btn btn-info me-2">Info</button>
+                <button class="btn btn-light me-2">Light</button>
+                <button class="btn btn-dark me-2">Dark</button>
+            </div>
+
+            <!-- Form -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Form Example</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Category</label>
+                                <select class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        I agree to the terms and conditions
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-outline-secondary ms-2">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Table Example</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>John Doe</td>
+                                    <td>john@example.com</td>
+                                    <td><span class="badge bg-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jane Smith</td>
+                                    <td>jane@example.com</td>
+                                    <td><span class="badge bg-warning">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Bob Johnson</td>
+                                    <td>bob@example.com</td>
+                                    <td><span class="badge bg-danger">Inactive</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bars -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Progress Bars</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-primary" style="width: 25%">25%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success" style="width: 50%">50%</div>
+                        </div>
+                    </div>
+                    <div class="mb-0">
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-info" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Theme Information -->
+        <section class="mb-5">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <h3 class="mb-3">Current Theme Information</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Active Theme:</span>
+                            <strong id="currentTheme">Light</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Saved Preference:</span>
+                            <strong id="savedTheme">None</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>System Preference:</span>
+                            <strong id="systemTheme">Light</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Bootstrap Dark Mode Demo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Toggle Button -->
+    <button onclick="toggleDarkMode()" class="btn btn-primary theme-toggle-btn" id="floatingToggle" title="Toggle theme">
+        <i class="bi bi-moon-fill" id="themeIcon"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme && savedTheme !== 'auto') {
+                setTheme(savedTheme);
+            } else {
+                setTheme(getSystemTheme());
+            }
+            updateThemeInfo();
+        });
+
+        // Get system theme preference
+        function getSystemTheme() {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        // Set theme
+        function setTheme(theme) {
+            let appliedTheme = theme;
+            
+            if (theme === 'auto') {
+                localStorage.removeItem('theme');
+                appliedTheme = getSystemTheme();
+            } else {
+                localStorage.setItem('theme', theme);
+            }
+            
+            document.documentElement.setAttribute('data-bs-theme', appliedTheme);
+            updateThemeIcon(appliedTheme);
+            updateThemeInfo();
+        }
+
+        // Toggle between light and dark
+        function toggleDarkMode() {
+            const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        }
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            const icon = document.getElementById('themeIcon');
+            icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+        }
+
+        // Update theme information display
+        function updateThemeInfo() {
+            const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+            const savedTheme = localStorage.getItem('theme') || 'auto';
+            const systemTheme = getSystemTheme();
+            
+            document.getElementById('currentTheme').textContent = 
+                currentTheme.charAt(0).toUpperCase() + currentTheme.slice(1);
+            document.getElementById('savedTheme').textContent = 
+                savedTheme.charAt(0).toUpperCase() + savedTheme.slice(1);
+            document.getElementById('systemTheme').textContent = 
+                systemTheme.charAt(0).toUpperCase() + systemTheme.slice(1);
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('theme')) {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+            updateThemeInfo();
+        });
+    </script>
+</body>
+</html>

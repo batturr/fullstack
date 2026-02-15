@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Examples (81-91)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .event-box {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .output {
+            margin-top: 10px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events Examples (81-91)</h1>
+    <div id="output" class="output"></div>
+
+    <script>
+        const output = document.getElementById('output');
+        function log(message) {
+            output.textContent += message + '\n';
+        }
+    </script>
+
+    <!-- 81. timeupdate -->
+    <div class="event-box">
+        <video id="timeupdateVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>81. timeupdate: Listen for the timeupdate event while playing the video.</p>
+    </div>
+
+    <!-- 82. toggle -->
+    <div class="event-box">
+        <details>
+            <summary>82. toggle: Click to expand or collapse</summary>
+            Toggle event fires when you open or close this details element.
+        </details>
+    </div>
+
+    <!-- 83. touchcancel -->
+    <div class="event-box" id="touchCancelBox" style="background: lightcoral;">
+        83. touchcancel: Triggered when a touch is interrupted.
+    </div>
+
+    <!-- 84. touchend -->
+    <div class="event-box" id="touchEndBox" style="background: lightblue;">
+        84. touchend: Triggered when a touch ends.
+    </div>
+
+    <!-- 85. touchmove -->
+    <div class="event-box" id="touchMoveBox" style="background: lightgreen;">
+        85. touchmove: Move your finger across this box.
+    </div>
+
+    <!-- 86. touchstart -->
+    <div class="event-box" id="touchStartBox" style="background: lightyellow;">
+        86. touchstart: Touch this box to trigger the event.
+    </div>
+
+    <!-- 87. transitionend -->
+    <div class="event-box" id="transitionBox" style="background: lightpink; width: 100px; height: 100px; transition: width 1s;">
+        87. transitionend: Resize this box by clicking it.
+    </div>
+
+    <!-- 88. unload -->
+    <p>88. unload: This event fires when you leave the page (check console).</p>
+
+    <!-- 89. volumechange -->
+    <div class="event-box">
+        <video id="volumeChangeVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>89. volumechange: Change the volume of the video.</p>
+    </div>
+
+    <!-- 90. waiting -->
+    <div class="event-box">
+        <video id="waitingVideo" width="300" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>90. waiting: This event fires when playback is stalled.</p>
+    </div>
+
+    <!-- 91. wheel -->
+    <div class="event-box" id="wheelBox" style="background: lightgray; height: 200px; overflow: auto;">
+        91. wheel: Scroll within this box using the mouse wheel.<br>
+        <div style="height: 500px;">Scrollable content here.</div>
+    </div>
+
+    <script>
+        // 81. timeupdate
+        document.getElementById('timeupdateVideo').addEventListener('timeupdate', () => log('81. timeupdate: Video time updated.'));
+
+        // 82. toggle
+        document.querySelector('details').addEventListener('toggle', () => log('82. toggle: Details element toggled.'));
+
+        // 83. touchcancel
+        document.getElementById('touchCancelBox').addEventListener('touchcancel', () => log('83. touchcancel: Touch interrupted.'));
+
+        // 84. touchend
+        document.getElementById('touchEndBox').addEventListener('touchend', () => log('84. touchend: Touch ended.'));
+
+        // 85. touchmove
+        document.getElementById('touchMoveBox').addEventListener('touchmove', () => log('85. touchmove: Touch moving.'));
+
+        // 86. touchstart
+        document.getElementById('touchStartBox').addEventListener('touchstart', () => log('86. touchstart: Touch started.'));
+
+        // 87. transitionend
+        const transitionBox = document.getElementById('transitionBox');
+        transitionBox.addEventListener('transitionend', () => log('87. transitionend: Transition completed.'));
+        transitionBox.addEventListener('click', () => transitionBox.style.width = transitionBox.style.width === '100px' ? '200px' : '100px');
+
+        // 88. unload
+        window.addEventListener('unload', () => log('88. unload: Page is unloading.'));
+
+        // 89. volumechange
+        document.getElementById('volumeChangeVideo').addEventListener('volumechange', () => log('89. volumechange: Volume changed.'));
+
+        // 90. waiting
+        document.getElementById('waitingVideo').addEventListener('waiting', () => log('90. waiting: Playback stalled.'));
+
+        // 91. wheel
+        document.getElementById('wheelBox').addEventListener('wheel', () => log('91. wheel: Mouse wheel used.'));
+    </script>
+</body>
+</html>

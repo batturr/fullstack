@@ -1,0 +1,9 @@
+Scrollspy
+=========
+• It is used to change the "active" class to the current menu item, when the web page is scrolled vertically.
+
+List of Classes
+===============
+• data-spy="scroll" : Sets "active" class for the menu item when the content is scrolled.
+• data-target=".navbar" : Creates connection with navigation bar.
+• data-offset="pixels" : Ignores the specified pixels at top.

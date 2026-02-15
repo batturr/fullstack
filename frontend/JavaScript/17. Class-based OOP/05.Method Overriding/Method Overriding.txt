@@ -1,0 +1,18 @@
+Method Overriding
+• Method Overriding is a concept of extending the "parent class method", by creating similar method in 
+the "child class", with same signature (name and arguments).
+Syntax of Method Overriding
+class parentclassname
+{
+ method(arguments)
+{
+}
+}
+class childclassname extends parentclassname
+{
+ method(arguments)
+{
+super.method(arguments);
+}
+}
+Example on Method Overriding

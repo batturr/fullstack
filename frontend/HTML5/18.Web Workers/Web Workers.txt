@@ -1,0 +1,27 @@
+Web Workers
+===========
+• “Web Workers” concept is used to execute a javascript file in background, without effecting the actual performance of the page. 
+• It is mainly used to do some background process, such as uploading the file, processing some records etc. 
+• The specified javascript file executes asynchronously; the code present within the javascript file can't access the DOM; but it can use postMessage( ) function to pass value from the javascript to regular script of the web page; then the script present within the web page can receive the value and do some process for it.
+
+Steps for development of Web Workers 
+=====================================
+Step-1: Create a javascript file (for async execution): 
+
+    filename.js 
+    Any js code here 
+    postMessage(value); 
+
+Note: We can’t access DOM in the async javascript file. We have to use postMessage() function to pass data from the javascript file to the web page. 
+
+Step-2: Create an object for “Worker” class: 
+    var w = new Worker(“filename.js”); 
+    The “Worker” class represents an async javascript file. 
+
+Step-3: Receive message (data) from async javascript file: 
+    w.onmessage = functionname; 
+    function functionname(event) 
+    { 
+    event.data 
+    }
+

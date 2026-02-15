@@ -1,0 +1,6 @@
+Required Attribute
+==================
+• Used to make the field (for example, textbox) as mandatory. 
+• If the textbox is empty, it shows error message automatically and the form will not be submitted to server. 
+
+Syntax: <input type="…"  required="required">

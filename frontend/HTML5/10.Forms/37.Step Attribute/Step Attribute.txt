@@ -1,0 +1,7 @@
+Step Attribute
+==============
+• Specifies increment / decrement value for <input type=”number”>. 
+• If the user clicks on "up" button in number textbox, the "step" value will be increased. 
+• If the user clicks on "down" button in number textbox, the "step" value will be decreased.
+
+Syntax: <input type="number"  step="value here">

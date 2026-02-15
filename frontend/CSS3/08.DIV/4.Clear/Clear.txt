@@ -1,0 +1,9 @@
+clear
+=====
+• This property cancels the effect of “float” and push the current element to next line.
+• It stops the sequence of “float”.
+• Top stop “float:left” sequence, we use “clear:left”.
+• Top stop “float:right” sequence, we use “clear:right”.
+
+Syntax: clear: left | right;
+Example: clear: left;

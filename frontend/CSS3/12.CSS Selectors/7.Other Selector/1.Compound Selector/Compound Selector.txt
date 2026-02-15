@@ -1,0 +1,6 @@
+Compound Selector
+=================
+• It selects the instances of specific tag, which have specified class.
+
+Syntax: tag.class
+Example: p.c1

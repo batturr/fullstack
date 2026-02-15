@@ -1,0 +1,4 @@
+Datetime-Local
+=================
+• Used to create a date-cum-time box, where the user can select a date and time also. 
+Syntax: <input type="datetime-local">

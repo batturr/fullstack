@@ -1,0 +1,7 @@
+Date
+====
+• Used to create a date box (date picker / popup calendar), where the user can select a date. 
+• The browser by default provides a built-in date picker. 
+• It lacks of customization; for example, you can't block some dates in the calendar etc. 
+
+Syntax: <input type="date"> 

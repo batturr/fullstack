@@ -1,0 +1,13 @@
+Card Colors
+===========
+• It is used to display some content (box) with header and footer.
+
+List of Classes
+===============
+• bg-primary : Blue color
+• bg-success : Green color
+• bg-info : Light blue color
+• bg-warning : Orange color
+• bg-danger : Red color
+• bg-secondary : Grey color
+• bg-dark : Black color

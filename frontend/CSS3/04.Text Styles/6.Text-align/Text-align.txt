@@ -1,0 +1,7 @@
+text-align
+==========
+• This property specifies alignment for the text.
+• The default value is "left".
+
+Syntax: text-align: left | right | center | justify;
+Example: text-align: left;

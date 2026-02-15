@@ -1,0 +1,23 @@
+Introduction to OOP in JavaScript
+=================================
+JavaScript is a prototype-based, multi-paradigm language that supports object-oriented, imperative, and functional programming styles.
+
+Key OOP Concepts:
+=================
+Objects
+Classes
+Constructors
+Methods
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+Method Overriding
+Static Methods and Properties
+Prototypes and Prototype Chain
+Mixins
+
+
+
+Reference:
+https://www.honeybadger.io/blog/javascript-oop/

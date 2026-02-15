@@ -1,0 +1,11 @@
+“opacity” property
+===================
+• This property makes the element transparent (background information is visible through the element).
+• You can specify any number between 0 to 1.
+• Any middle number between 0 and 1 is recommended. For example, "0.6".
+
+Syntax: opacity: 0 to 1;
+Example: opacity: 0.6;
+1           : fully visible
+0.9, …, 0.1 : transparent
+0           : fully transparent / invisible

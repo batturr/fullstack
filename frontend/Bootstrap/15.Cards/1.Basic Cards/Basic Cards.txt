@@ -1,0 +1,10 @@
+Basic Cards
+===========
+• It is used to display some content (box) with header and footer.
+
+List of Classes
+===============
+• card : Represents entire card
+• card-header : Header of card
+• card-body : Content of card
+• card-footer : Footer of card

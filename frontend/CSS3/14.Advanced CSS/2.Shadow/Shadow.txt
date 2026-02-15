@@ -1,0 +1,14 @@
+Shadow
+========
+1.Box-Shadow
+===========
+• It is used to apply shadow for the element.
+• Syntax: box-shadow: HorizontalPosition VerticalPosition BlurRadius Spread 
+ShadowColor;
+• Example: box-shadow: 5px 5px 5px 2px red;
+
+2.Text-Shadow
+===========
+• It is used to apply shadow for the text of the element.
+• Syntax: text-shadow: HorizontalPosition VerticalPosition BlurRadius ShadowColor;
+• Example: text-shadow: 2px 2px 5px 1px red;
