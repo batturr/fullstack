@@ -3479,5 +3479,3 @@
 | **Advanced** | 141–200 | Complex Layouts, TW4 Features (Container Queries, Subgrid, OKLCH, @theme), Component Patterns, Performance, Production Optimization |
 
 ---
-
-*Created for TailwindCSS v4.x — All examples use Tailwind 4 utility classes and features.*
