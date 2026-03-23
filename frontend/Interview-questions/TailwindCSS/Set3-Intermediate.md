@@ -1,579 +1,593 @@
-# Tailwind CSS MCQ - Set 3 (Intermediate Level)
+# Tailwind CSS v4 MCQ - Set 3 (Intermediate Level)
 
-**1. Where should you add new theme tokens without replacing Tailwind’s defaults?**
+**1. In Tailwind CSS v4, what is the default way to pull Tailwind into your stylesheet?**
 
-a) `theme.replace`
-b) `theme.extend`
-c) `theme.override`
-d) `theme.merge`
+a) `@tailwind base;` `@tailwind components;` `@tailwind utilities;`  
+b) `@import "tailwindcss";`  
+c) `require('tailwindcss')` in `postcss.config.js` only  
+d) A mandatory `tailwind.config.js` with `content` and `theme`
 
-**Answer: b) `theme.extend`**
+**Answer: b) `@import "tailwindcss";`**
 
 ---
 
-**2. What does this config fragment accomplish?**
+**2. Where do you primarily define design tokens like brand colors in Tailwind v4’s CSS-first setup?**
 
-```js
-theme: {
-  extend: {
-    colors: {
-      brand: { DEFAULT: '#0ea5e9', dark: '#0369a1' },
-    },
-  },
-},
+a) Only in `tailwind.config.js` under `theme.extend`  
+b) In JavaScript `theme()` callbacks  
+c) Using the `@theme` directive in CSS  
+d) In `package.json` under `"tailwind"`
+
+**Answer: c) Using the `@theme` directive in CSS**
+
+---
+
+**3. Which snippet correctly adds a custom color token `brand` in v4?**
+
+```css
+@theme {
+  --color-brand: #0ea5e9;
+}
 ```
 
-a) `Replaces every Tailwind color with only brand`
-b) `Adds custom brand color tokens alongside defaults`
-c) `Sets the browser default color`
-d) `Disables the color palette`
+a) `@theme { color-brand: #0ea5e9; }`  
+b) `@theme { --color-brand: #0ea5e9; }`  
+c) `@import theme { brand: #0ea5e9 };`  
+d) `@config { colors: { brand: '#0ea5e9' } }`
 
-**Answer: b) `Adds brand color tokens alongside the default palette`**
-
----
-
-**3. How do you define a custom spacing key `128` in the theme?**
-
-a) `Only by editing node_modules`
-b) `Under theme.extend.spacing`
-c) `Under content.spacing (wrong place)`
-d) `Using @spacing directive`
-
-**Answer: b) `Under theme.extend.spacing`**
+**Answer: b) `@theme { --color-brand: #0ea5e9; }`**
 
 ---
 
-**4. Where are custom font families typically registered?**
+**4. What does `@theme inline` do compared to a regular `@theme` block?**
 
-a) `theme.extend.fontFamily`
-b) `theme.fonts`
-c) `postcss.fontFamily`
-d) `@tailwind fonts`
+a) It deletes all default Tailwind tokens  
+b) It inlines theme values so they resolve directly as custom properties without extra indirection  
+c) It disables dark mode  
+d) It replaces `@import "tailwindcss"`
 
-**Answer: a) `theme.extend.fontFamily`**
-
----
-
-**5. How can you customize default breakpoints?**
-
-a) `Only in HTML`
-b) `theme.screens or theme.extend.screens`
-c) `vite.config.js only`
-d) `Cannot customize`
-
-**Answer: b) `theme.screens or theme.extend.screens`**
+**Answer: b) It inlines theme values so they resolve directly as custom properties without extra indirection**
 
 ---
 
-**6. What is `@apply` used for?**
+**5. After defining `--spacing-18: 4.5rem` in `@theme`, which class uses that token?**
 
-a) `Import JavaScript modules`
-b) `Inline Tailwind utilities into custom CSS rules`
-c) `Apply ESLint fixes`
-d) `Polyfill CSS`
+a) `gap-18`  
+b) `spacing-18`  
+c) `m-spacing-18`  
+d) `space-18`
 
-**Answer: b) `Inline Tailwind utilities into custom CSS rules`**
-
----
-
-**7. Which `@layer` name is intended for element resets/base styles?**
-
-a) `utilities`
-b) `components`
-c) `base`
-d) `global`
-
-**Answer: c) `base`**
+**Answer: a) `gap-18`**
 
 ---
 
-**8. Which `@layer` is appropriate for reusable composed classes like `.btn`?**
+**6. Custom font families in v4 are exposed as which CSS variable pattern?**
 
-a) `base`
-b) `components`
-c) `utilities`
-d) `tokens`
+a) `--family-display`  
+b) `--font-display`  
+c) `--typography-display`  
+d) `--text-display`
 
-**Answer: b) `components`**
-
----
-
-**9. What is a key constraint of using `@apply` with variants?**
-
-a) `Variants cannot be used with @apply in v3+`
-b) `You can @apply variant-prefixed utilities in many setups, but complex ordering can be tricky`
-c) `Only hover variants work with @apply`
-d) `Requires Sass`
-
-**Answer: b) `Variant-prefixed utilities can be used with care; ordering and source files matter`**
+**Answer: b) `--font-display`**
 
 ---
 
-**10. What does an arbitrary value like `w-[137px]` do?**
+**7. How do you define a custom breakpoint `3xl` at `120rem` in v4?**
 
-a) `Throws a build error`
-b) `Generates width: 137px without adding a permanent theme key`
-c) `Sets 137rem width`
-d) `Requires a plugin`
+```css
+@theme {
+  --breakpoint-3xl: 120rem;
+}
+```
 
-**Answer: b) `Generates width: 137px without adding a permanent theme key`**
+a) `--screen-3xl: 120rem`  
+b) `--breakpoint-3xl: 120rem`  
+c) `--mq-3xl: 120rem`  
+d) `@media-3xl: 120rem`
+
+**Answer: b) `--breakpoint-3xl: 120rem`**
 
 ---
 
-**11. Which arbitrary value syntax sets a custom hex background?**
+**8. Radius tokens use which prefix in the theme?**
 
-a) `bg-hex[#1a1a1a]`
-b) `bg-[#1a1a1a]`
-c) `bg(#1a1a1a)`
-d) `background:#1a1a1a` as class name
+a) `--radius-*`  
+b) `--corner-*`  
+c) `--rounded-*`  
+d) `--border-radius-*`
+
+**Answer: a) `--radius-*`**
+
+---
+
+**9. What is the role of the `--spacing` base variable in v4?**
+
+a) It sets the default font size  
+b) It scales the spacing scale so utilities like `p-4` derive from it  
+c) It controls z-index only  
+d) It replaces OKLCH entirely
+
+**Answer: b) It scales the spacing scale so utilities like `p-4` derive from it**
+
+---
+
+**10. Which directive creates a new utility class from CSS in v4?**
+
+a) `@apply`  
+b) `@utility`  
+c) `@layer utilities` only  
+d) `@tailwind utility`
+
+**Answer: b) `@utility`**
+
+---
+
+**11. Which block defines a custom utility `tab-4` for tab-size?**
+
+```css
+@utility tab-4 {
+  tab-size: 4;
+}
+```
+
+a) `@variant tab-4 { tab-size: 4; }`  
+b) `@plugin tab-4 { tab-size: 4; }`  
+c) `@utility tab-4 { tab-size: 4; }`  
+d) `@theme tab-4 { tab-size: 4; }`
+
+**Answer: c) `@utility tab-4 { tab-size: 4; }`**
+
+---
+
+**12. Which directive registers a custom variant such as `theme-midnight:`?**
+
+a) `@plugin`  
+b) `@source`  
+c) `@variant`  
+d) `@utility`**
+
+**Answer: c) `@variant`**
+
+---
+
+**13. How do you load the official typography plugin from CSS in v4?**
+
+a) `plugins: [require('@tailwindcss/typography')]` in `tailwind.config.js` only  
+b) `@plugin "@tailwindcss/typography";`  
+c) `@import typography`  
+d) `npm install tailwind-typography` without CSS
+
+**Answer: b) `@plugin "@tailwindcss/typography";`**
+
+---
+
+**14. What is `@source` used for in v4?**
+
+a) Defining color sources in OKLCH  
+b) Adding extra paths for Tailwind’s automatic content detection  
+c) Importing Google Fonts  
+d) Enabling SSR
+
+**Answer: b) Adding extra paths for Tailwind’s automatic content detection**
+
+---
+
+**15. By default in v4, how does Tailwind discover class names in your project?**
+
+a) You must list every file in `tailwind.config.js` `content`  
+b) Automatic content detection scans your project; `@source` augments paths  
+c) Only files named `*.tw.css`  
+d) Only inline styles in HTML
+
+**Answer: b) Automatic content detection scans your project; `@source` augments paths**
+
+---
+
+**16. Which class applies a width of exactly 137 pixels using arbitrary syntax?**
+
+a) `w-137px`  
+b) `w-[137px]`  
+c) `width-[137]`  
+d) `arbitrary-w-137`
+
+**Answer: b) `w-[137px]`**
+
+---
+
+**17. Which class sets an arbitrary background color `#1a1a1a`?**
+
+a) `bg-hex-1a1a1a`  
+b) `bg-[#1a1a1a]`  
+c) `bg-color-[1a1a1a]`  
+d) `bg-arbitrary-1a1a1a`
 
 **Answer: b) `bg-[#1a1a1a]`**
 
 ---
 
-**12. Which class uses an arbitrary property to set a custom CSS property?**
+**18. Which class uses `clamp()` for fluid font size?**
 
-a) `prop-[mask-type:luminance]`
-b) `[mask-type:luminance]` via arbitrary property form like `[mask-type:luminance]` on element
-c) `arbitrary-[mask-type:luminance]`
-d) `Not supported`
+a) `text-fluid`  
+b) `text-[clamp(1rem,3vw,2rem)]`  
+c) `clamp-text-3`  
+d) `text-size-[1rem-3vw-2rem]`
 
-**Answer: b) `Square-bracket arbitrary property classes like [mask-type:luminance]`**
-
----
-
-**13. What does the important modifier `!` do in a class like `!mt-4`?**
-
-a) `Marks the class optional`
-b) `Adds CSS !important to the generated declaration`
-c) `Imports a module`
-d) `Disables the utility`
-
-**Answer: b) `Adds !important to the generated declaration`**
+**Answer: b) `text-[clamp(1rem,3vw,2rem)]`**
 
 ---
 
-**14. In Tailwind v3, which `darkMode` strategy uses a class on a root element (e.g. `dark`)?**
+**19. How do you set an arbitrary CSS property like `mask-type: luminance`?**
 
-a) `media`
-b) `class`
-c) `prefers`
-d) `system`
+a) `mask-luminance`  
+b) `[mask-type:luminance]`  
+c) `arbitrary-mask:luminance`  
+d) `utility-mask-luminance`
 
-**Answer: b) `class`**
-
----
-
-**15. Which strategy uses `prefers-color-scheme` without a manual toggle class?**
-
-a) `class`
-b) `media`
-c) `auto`
-d) `root`
-
-**Answer: b) `media`**
+**Answer: b) `[mask-type:luminance]`**
 
 ---
 
-**16. How do you style for dark mode when `darkMode: 'class'`?**
+**20. Which class forces `color: var(--color-red-500)` to win with the important modifier?**
 
-a) `night:`
-b) `dark:`
-c) `theme-dark:`
-d) `invert:`
+a) `important-text-red-500`  
+b) `!text-red-500`  
+c) `text-red-500!`  
+d) `priority-text-red-500`
 
-**Answer: b) `dark:`**
-
----
-
-**17. What does the `container` class do by default?**
-
-a) `Full viewport width always`
-b) `Sets a responsive max-width and horizontal centering pattern (plugin/core behavior depends on version)`
-c) `Creates CSS container queries automatically everywhere`
-d) `Hides overflow`
-
-**Answer: b) `Provides a responsive fixed max-width container pattern (centered with mx-auto typically added separately)`**
+**Answer: b) `!text-red-500`**
 
 ---
 
-**18. Where is `container` centering/padding often customized?**
+**21. How does `dark:` behave by default in Tailwind v4?**
 
-a) `theme.container` / `theme.extend.container` in config
-b) `package.json`
-c) `Only in HTML`
-d) `Cannot customize`
+a) It always requires a `.dark` class on `<html>`  
+b) It uses `prefers-color-scheme: dark` unless you configure a selector strategy  
+c) It is disabled until you add `darkMode: 'class'` in `tailwind.config.js`  
+d) It only works with `@media print`
 
-**Answer: a) `theme.container / theme.extend.container in config`**
-
----
-
-**19. How do you include a first-party plugin in `tailwind.config.js`?**
-
-a) `import only; no config`
-b) `plugins: [require('@tailwindcss/typography')]`
-c) `plugins: ['typography']` string only
-d) `use tailwind/plugin`
-
-**Answer: b) `plugins: [require('@tailwindcss/typography')]`**
+**Answer: b) It uses `prefers-color-scheme: dark` unless you configure a selector strategy**
 
 ---
 
-**20. In a custom plugin, which API registers element resets?**
+**22. Which pattern switches dark mode to a class-based strategy using `@variant`?**
 
-a) `addUtilities`
-b) `addBase`
-c) `addComponents`
-d) `addReset`
+```css
+@variant dark (&:where(.dark, .dark *));
+```
 
-**Answer: b) `addBase`**
+a) `@dark class .dark;`  
+b) `@variant dark (&:where(.dark, .dark *));`  
+c) `@theme dark { selector: '.dark'; }`  
+d) `@plugin darkMode 'class';`
 
----
-
-**21. Which API adds reusable “component-level” rules from a plugin?**
-
-a) `addUtilities`
-b) `addComponents`
-c) `addLayer`
-d) `registerCSS`
-
-**Answer: b) `addComponents`**
+**Answer: b) `@variant dark (&:where(.dark, .dark *));`**
 
 ---
 
-**22. Which API is used to register new utility classes programmatically?**
+**23. On which element do you typically add `@container` to enable container queries for descendants?**
 
-a) `addUtilities`
-b) `addBase`
-c) `addTheme`
-d) `pushUtility`
+a) The `<body>` only  
+b) Any ancestor you want to measure; often a card or layout wrapper  
+c) Only `<main>`  
+d) Only elements with `position: fixed`
 
-**Answer: a) `addUtilities`**
-
----
-
-**23. Why must the `content` globs be correct in production?**
-
-a) `So Vite starts faster`
-b) `So Tailwind can scan files and tree-shake unused CSS`
-c) `So images load`
-d) `So TypeScript compiles`
-
-**Answer: b) `So Tailwind can scan files and tree-shake unused CSS`**
+**Answer: b) Any ancestor you want to measure; often a card or layout wrapper**
 
 ---
 
-**24. Which glob is typical for a React app in `content`?**
+**24. Which variant applies styles when the container is at least the `sm` breakpoint?**
 
-a) `content: ['./src/**/*.{js,jsx,ts,tsx}']`
-b) `content: ['node_modules/**']`
-c) `content: ['./public/**']` only
-d) `content: []`
+a) `@sm:`  
+b) `@min-sm:`  
+c) `container-sm:`  
+d) `cq-sm:`
 
-**Answer: a) `content: ['./src/**/*.{js,jsx,ts,tsx}']`**
-
----
-
-**25. Mobile-first in Tailwind means:**
-
-a) `Desktop styles are default; mobile uses max-width queries`
-b) `Unprefixed utilities apply everywhere; larger breakpoints add overrides`
-c) `Only mobile devices are supported`
-d) `You must write raw CSS for desktop`
-
-**Answer: b) `Unprefixed utilities apply everywhere; larger breakpoints add overrides`**
+**Answer: b) `@min-sm:`**
 
 ---
 
-**26. Which pattern hides on small screens and shows from the md breakpoint up?**
+**25. Which variant targets a container at most `lg` width?**
+
+a) `@at-most-lg:`  
+b) `@max-lg:`  
+c) `@lg-down:`  
+d) `@container-lg:`
+
+**Answer: b) `@max-lg:`**
+
+---
+
+**26. What does the `not-*` variant do?**
+
+a) Negates a media query or condition (e.g. `not-hover:`)  
+b) Removes all styles  
+c) Inverts OKLCH chroma only  
+d) Disables `@container`
+
+**Answer: a) Negates a media query or condition (e.g. `not-hover:`)**
+
+---
+
+**27. The `in-*` variant matches when:**
+
+a) The element itself has the state  
+b) Some ancestor matches the given variant selector  
+c) The user is inside an iframe  
+d) The color is in P3 gamut
+
+**Answer: b) Some ancestor matches the given variant selector**
+
+---
+
+**28. Composable variants in v4 let you:**
+
+a) Chain variant prefixes like `hover:focus:` on a single class  
+b) Only use one variant per element  
+c) Replace `@theme`  
+d) Avoid cascade layers
+
+**Answer: a) Chain variant prefixes like `hover:focus:` on a single class**
+
+---
+
+**29. Which class applies a left-to-right linear gradient in v4 naming?**
+
+a) `bg-gradient-to-r`  
+b) `bg-linear-to-r`  
+c) `linear-bg-r`  
+d) `gradient-x`**
+
+**Answer: b) `bg-linear-to-r`**
+
+---
+
+**30. Which utilities set gradient color stops?**
+
+a) `start-*` `middle-*` `end-*`  
+b) `from-*` `via-*` `to-*`  
+c) `color-1-*` `color-2-*`  
+d) `stop-a-*` `stop-b-*`**
+
+**Answer: b) `from-*` `via-*` `to-*`**
+
+---
+
+**31. Which class applies a 45° linear gradient using angle syntax?**
+
+a) `bg-linear-45`  
+b) `rotate-gradient-45`  
+c) `from-45-deg`  
+d) `angle-bg-45`
+
+**Answer: a) `bg-linear-45`**
+
+---
+
+**32. After adding `@plugin "@tailwindcss/typography";`, which class styles article prose?**
+
+a) `article`  
+b) `prose`  
+c) `typography`  
+d) `rich-text`
+
+**Answer: b) `prose`**
+
+---
+
+**33. OKLCH as the default color space in v4 primarily helps with:**
+
+a) Faster gzip  
+b) Perceptually uniform adjustments and predictable lightness  
+c) Removing the need for CSS variables  
+d) Disabling dark mode
+
+**Answer: b) Perceptually uniform adjustments and predictable lightness**
+
+---
+
+**34. `@property` rules in v4 are used to:**
+
+a) Declare typed custom properties for smoother transitions and inheritance behavior  
+b) Replace `@import "tailwindcss"`  
+c) Define React props  
+d) Load npm plugins only
+
+**Answer: a) Declare typed custom properties for smoother transitions and inheritance behavior**
+
+---
+
+**35. Native CSS cascade layers in Tailwind v4 mean utilities generally live in:**
+
+a) Unlayered CSS only  
+b) Ordered layers such as `theme`, `base`, `components`, `utilities`  
+c) Inline styles only  
+d) Shadow DOM exclusively
+
+**Answer: b) Ordered layers such as `theme`, `base`, `components`, `utilities`**
+
+---
+
+**36. Why is there often no `tailwind.config.js` by default in new v4 projects?**
+
+a) Tailwind no longer supports configuration  
+b) Configuration moves to CSS (`@theme`, `@plugin`, `@source`, etc.)  
+c) Config must be in TypeScript only  
+d) Webpack forbids config files
+
+**Answer: b) Configuration moves to CSS (`@theme`, `@plugin`, `@source`, etc.)**
+
+---
+
+**37. To reference your theme color `brand` inside custom CSS, you typically use:**
+
+a) `var(--brand)`  
+b) `var(--color-brand)`  
+c) `theme('colors.brand')` only  
+d) `$color-brand`**
+
+**Answer: b) `var(--color-brand)`**
+
+---
+
+**38. Which is true about `theme.extend` from v3 vs v4?**
+
+a) They are identical; `theme.extend` is required  
+b) `@theme` replaces extending the JS theme for most tokens  
+c) `theme.extend` is the only way to add plugins  
+d) `theme.extend` controls container queries
+
+**Answer: b) `@theme` replaces extending the JS theme for most tokens**
+
+---
+
+**39. Spacing utilities like `p-4` map to:**
+
+a) Fixed px values hardcoded in Tailwind only  
+b) Derived scale based on `--spacing` and related tokens  
+c) Only `rem` with no variables  
+d) Container width only
+
+**Answer: b) Derived scale based on `--spacing` and related tokens**
+
+---
+
+**40. Which HTML snippet marks a container and uses a container-query variant?**
 
 ```html
-<div class="hidden md:block">Panel</div>
+<div class="@container">
+  <p class="@min-md:text-lg">Responsive to this box</p>
+</div>
 ```
 
-a) `hidden md:block`
-b) `block md:hidden`
-c) `invisible md:visible` always correct
-d) `display-none md:show`
+a) `container @md:text-lg` on the same element  
+b) `@container` on parent and `@min-md:text-lg` on child  
+c) `data-container` attribute only  
+d) `@source` on `<p>`
 
-**Answer: a) `hidden md:block`**
-
----
-
-**27. What is wrong conceptually with putting Tailwind classes only in `.css` files but not listing those files in `content`?**
-
-a) `Nothing`
-b) `Those class strings may not be detected, so utilities may not be generated`
-c) `It doubles bundle size automatically`
-d) `PostCSS will refuse to run`
-
-**Answer: b) `Class strings may not be scanned, so utilities might be missing in production`**
+**Answer: b) `@container` on parent and `@min-md:text-lg` on child**
 
 ---
 
-**28. Arbitrary values can include spaces if you:**
+**41. `not-disabled:opacity-100` means:**
 
-a) `Never; spaces are forbidden`
-b) `Use underscores instead of spaces in many cases`
-c) `Use commas only`
-d) `Use URL encoding always`
+a) Always full opacity  
+b) Full opacity when the element is not `:disabled`  
+c) Opacity only when disabled  
+d) Opacity only in print
 
-**Answer: b) `Often replace spaces with underscores per Tailwind arbitrary value rules`**
-
----
-
-**29. What does `theme()` function do inside custom CSS processed by Tailwind?**
-
-a) `Runs unit tests`
-b) `Pulls values from the Tailwind theme in CSS`
-c) `Imports React components`
-d) `Minifies HTML`
-
-**Answer: b) `Pulls values from the Tailwind theme in CSS`**
+**Answer: b) Full opacity when the element is not `:disabled`**
 
 ---
 
-**30. Which file extension is commonly used for the Tailwind config in JS ecosystems?**
+**42. `in-data-[open=true]:block` is useful when:**
 
-a) `tailwind.json`
-b) `tailwind.config.js` or `tailwind.config.ts`
-c) `tailwind.yml`
-d) `postcss.tailwind`
+a) A descendant should show when an ancestor has `data-open="true"`  
+b) The element itself toggles `open`  
+c) You use only media queries  
+d) OKLCH is disabled
 
-**Answer: b) `tailwind.config.js or tailwind.config.ts`**
-
----
-
-**31. In `@layer components`, will utilities always override component rules?**
-
-a) `Yes, because of layer ordering in Tailwind’s CSS architecture`
-b) `Never`
-c) `Only in Safari`
-d) `Only if important modifier is banned`
-
-**Answer: a) `Generally yes—utilities layer comes later unless specificity/important differs`**
+**Answer: a) A descendant should show when an ancestor has `data-open="true"`**
 
 ---
 
-**32. What is a common use of `preflight`?**
+**43. 3D transforms in v4 include utilities like:**
 
-a) `Aviation styles`
-b) `Tailwind’s base reset/normalize layer`
-c) `Image optimization`
-d) `Server routing`
+a) `rotate-3d-45` only  
+b) `rotate-x-*`, `rotate-y-*`, and `perspective-*`  
+c) `transform-none` exclusively  
+d) `matrix3d()` only via plugins
 
-**Answer: b) `Tailwind’s base reset/normalize layer`**
-
----
-
-**33. Which directive imports Tailwind’s preflight/base styles in v3 entry CSS?**
-
-a) `@tailwind base;`
-b) `@import tailwind/base`
-c) `@use base`
-d) `@layer reset`
-
-**Answer: a) `@tailwind base;`**
+**Answer: b) `rotate-x-*`, `rotate-y-*`, and `perspective-*`**
 
 ---
 
-**34. Can you extend `maxWidth` with arbitrary keys in `theme.extend`?**
+**44. Which import is invalid for a v4 entry CSS file?**
 
-a) `No`
-b) `Yes, for example 7xl or custom names`
-c) `Only in v1`
-d) `Only with CDN`
+a) `@import "tailwindcss";`  
+b) `@import "tailwindcss/preflight";` (if exposed in your setup)  
+c) `@tailwind utilities;` as the sole v4 entry  
+d) `@theme { ... }` after import**
 
-**Answer: b) `Yes via theme.extend.maxWidth`**
-
----
-
-**35. What does `screens` customization affect?**
-
-a) `Only font sizes`
-b) `Responsive variant prefixes such as md:`
-c) `Only colors`
-d) `Only z-index`
-
-**Answer: b) `Breakpoint definitions used by responsive variants`**
+**Answer: c) `@tailwind utilities;` as the sole v4 entry**
 
 ---
 
-**36. Which snippet correctly extends a color as a nested scale?**
+**45. `@plugin` in CSS is closest in purpose to v3’s:**
 
-```js
-extend: {
-  colors: {
-    ocean: { 500: '#0ea5e9', 700: '#0369a1' },
-  },
-},
-```
+a) `content` array  
+b) `plugins: []` in `tailwind.config.js`  
+c) `corePlugins`  
+d) `presets` only
 
-a) `Invalid`
-b) `Valid: enables classes like text-ocean-500`
-c) `Only works with Sass`
-d) `Requires a plugin`
-
-**Answer: b) `Valid: creates ocean-500 / ocean-700 tokens`**
+**Answer: b) `plugins: []` in `tailwind.config.js`**
 
 ---
 
-**37. What is a downside of overusing `@apply` in large apps?**
-
-a) `It always breaks dark mode`
-b) `You can lose some of Tailwind’s colocation benefits and increase indirection`
-c) `It disables JIT`
-d) `It removes responsive variants`
-
-**Answer: b) `More indirection vs colocated utilities; harder to grep usage`**
-
----
-
-**38. Which class uses arbitrary arbitrary value for font size?**
-
-a) `text-size-[1.125rem]`
-b) `text-[1.125rem]`
-c) `font-[1.125rem]`
-d) `size-text-[1.125rem]`
-
-**Answer: b) `text-[1.125rem]`**
-
----
-
-**39. What does `clamp` in `text-[clamp(1rem,3vw,2rem)]` provide?**
-
-a) `Fixed px text only`
-b) `Fluid typography bounded between min and max`
-c) `Animation timing`
-d) `Grid clamping`
-
-**Answer: b) `Fluid typography bounded between min and max`**
-
----
-
-**40. Dark mode class strategy often pairs `dark:` with which root pattern?**
+**46. Arbitrary properties can combine with variants—for example:**
 
 ```html
-<html class="dark">
-  <body class="bg-white dark:bg-slate-950">...</body>
-</html>
+<div class="hover:[outline:2px_solid_var(--color-brand)]">...</div>
 ```
 
-a) `A dark class on the html element or a wrapper toggled by JS`
-b) `meta viewport`
-c) `rel="dark"`
-d) `data-router`
+a) False, arbitrary properties cannot use variants  
+b) True, variants can wrap arbitrary property classes  
+c) Only `dark:` works  
+d) Only in `@apply`
 
-**Answer: a) `A dark class toggled on html or a root wrapper`**
-
----
-
-**41. Which is true about `plugins: []` in config?**
-
-a) `Disables Tailwind entirely`
-b) `Means no extra Tailwind plugins beyond core processing`
-c) `Enables every official plugin`
-d) `Required to be non-empty`
-
-**Answer: b) `No additional Tailwind plugins are registered`**
+**Answer: b) True, variants can wrap arbitrary property classes**
 
 ---
 
-**42. What is `addVariant` used for in plugin authoring?**
+**47. Cascade layers help prevent:**
 
-a) `Add a custom variant prefix such as hocus:`
-b) `Add npm dependencies`
-c) `Add HTML templates`
-d) `Add ESLint rules`
+a) Build-time errors only  
+b) Specificity wars where custom CSS accidentally beats utilities  
+c) OKLCH parsing  
+d) Container queries
 
-**Answer: a) `Register a custom variant (e.g. hocus:) for utilities`**
-
----
-
-**43. Content scanning applies to which kinds of strings?**
-
-a) `Only inline styles`
-b) `Complete class names as substrings in scanned files (heuristics)`
-c) `Only JSON`
-d) `Only comments`
-
-**Answer: b) `Detects utility candidates in file contents per extractor rules`**
+**Answer: b) Specificity wars where custom CSS accidentally beats utilities**
 
 ---
 
-**44. Why might dynamic class names like `text-${color}-500` fail?**
+**48. To add a font token and use it, you might write:**
 
-a) `Tailwind always supports any template string`
-b) `Scanners may not see full class strings, so utilities won’t be generated`
-c) `Browsers block them`
-d) `PostCSS forbids templates`
+```css
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+```
 
-**Answer: b) `Build-time scanning may miss dynamically constructed class names`**
+```html
+<body class="font-sans">...</body>
+```
 
----
+a) `font-sans` maps from `--font-sans`  
+b) You must use `font-[family-name:var(--font-sans)]` always  
+c) `--font-sans` is only for `@apply`  
+d) `font-sans` is removed in v4
 
-**45. `theme.extend` merges with defaults using:**
-
-a) `Shallow merge only for all keys`
-b) `Deep merge for most nested objects like colors`
-c) `No merge; defaults are deleted`
-d) `Random merge`
-
-**Answer: b) `Deep merge for nested theme objects in typical cases`**
-
----
-
-**46. Which utility centers a `container` horizontally in common patterns?**
-
-a) `container mx-auto`
-b) `container only` always centers
-c) `center-container`
-d) `flex-center`
-
-**Answer: a) `container mx-auto`**
+**Answer: a) `font-sans` maps from `--font-sans`**
 
 ---
 
-**47. What does disabling `corePlugins` for a utility category do?**
+**49. Content detection “automatic” implies you should still:**
 
-a) `Speeds up network only`
-b) `Prevents generation of those utilities even if present in content`
-c) `Enables more utilities`
-d) `Changes HTML semantics`
+a) Never use dynamic class strings Tailwind cannot see  
+b) Use `@source` for paths outside normal scans if needed  
+c) Always commit `node_modules` for scanning  
+d) Disable layers
 
-**Answer: b) `Stops generating those utilities`**
-
----
-
-**48. Which `@tailwind` directive injects utilities layer?**
-
-a) `@tailwind utilities;`
-b) `@tailwind utility;`
-c) `@import utilities`
-d) `@layer tailwind-utilities`
-
-**Answer: a) `@tailwind utilities;`**
+**Answer: b) Use `@source` for paths outside normal scans if needed**
 
 ---
 
-**49. In a design system, `theme.extend` is useful for:**
+**50. Which statement best describes v4 configuration philosophy?**
 
-a) `Removing accessibility`
-b) `Aligning tokens (colors, spacing, fonts) with brand guidelines`
-c) `Deleting responsive breakpoints`
-d) `Bundling images`
+a) JS config is mandatory for every token  
+b) CSS-first with `@theme`, directives, and CSS variables; optional JS when needed  
+c) No CSS variables exist  
+d) Only arbitrary values are supported
 
-**Answer: b) `Aligning design tokens with brand guidelines`**
-
----
-
-**50. Best practice for monorepo shared tokens often includes:**
-
-a) `Duplicating full config in every package with no sharing`
-b) `A shared preset or base config extended per app`
-c) `Removing content globs`
-d) `Hardcoding colors only in components`
-
-**Answer: b) `A shared preset or base config extended per app`**
+**Answer: b) CSS-first with `@theme`, directives, and CSS variables; optional JS when needed**
 
 ---

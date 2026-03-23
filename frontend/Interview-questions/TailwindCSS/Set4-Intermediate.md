@@ -1,555 +1,579 @@
-# Tailwind CSS MCQ - Set 4 (Intermediate Level)
+# Tailwind CSS v4 MCQ - Set 4 (Intermediate Level)
 
-**1. Which built-in animation utility rotates an element continuously?**
+**1. Which utility applies a continuous rotation animation?**
 
-a) `spin-slow`
-b) `animate-spin`
-c) `rotate-loop`
+a) `animate-rotate`  
+b) `animate-spin`  
+c) `spin-360`  
 d) `motion-spin`
 
 **Answer: b) `animate-spin`**
 
 ---
 
-**2. Which animation creates a radar-like expanding ping effect?**
+**2. Which utility creates a radar-like expanding ring effect?**
 
-a) `animate-pulse`
-b) `animate-ping`
-c) `animate-bounce`
-d) `animate-wave`
+a) `animate-ping`  
+b) `animate-pulse`  
+c) `animate-bounce`  
+d) `animate-ring`
 
-**Answer: b) `animate-ping`**
+**Answer: a) `animate-ping`**
 
 ---
 
-**3. Which animation subtly fades opacity in and out (often used for skeletons)?**
+**3. Which utility softly fades opacity on a repeating cycle?**
 
-a) `animate-bounce`
-b) `animate-pulse`
-c) `animate-ping`
-d) `animate-fade`
+a) `animate-bounce`  
+b) `animate-pulse`  
+c) `animate-ping`  
+d) `animate-wiggle`
 
 **Answer: b) `animate-pulse`**
 
 ---
 
-**4. Which animation applies a vertical bouncing motion?**
+**4. Which utility applies a vertical bouncing keyframe?**
 
-a) `animate-bounce`
-b) `animate-jump`
-c) `animate-boing`
-d) `animate-spring`
+a) `animate-spring`  
+b) `animate-bounce`  
+c) `animate-jump`  
+d) `animate-elastic`
 
-**Answer: a) `animate-bounce`**
-
----
-
-**5. Where are custom keyframes typically defined for Tailwind animations?**
-
-a) `Only in HTML`
-b) `theme.extend.keyframes and theme.extend.animation`
-c) `package.json`
-d) `Cannot customize`
-
-**Answer: b) `theme.extend.keyframes and theme.extend.animation`**
+**Answer: b) `animate-bounce`**
 
 ---
 
-**6. Which gradient direction class goes to the right?**
+**5. In v4, custom named animations are typically wired through theme tokens like:**
 
-a) `bg-gradient-to-r`
-b) `bg-gradient-right`
-c) `from-left-to-right`
-d) `linear-to-r`
+```css
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+}
+```
 
-**Answer: a) `bg-gradient-to-r`**
+a) `animation-wiggle: ...` in `@theme`  
+b) `--animate-wiggle` mapping to keyframes name and timing  
+c) `@keyframes` inside `tailwind.config.js`  
+d) `@utility animate-wiggle only` without `@theme`
 
----
-
-**7. In a gradient utility chain, what does `from-blue-500` set?**
-
-a) `The ending color`
-b) `The starting color stop`
-c) `Border color`
-d) `Text color only`
-
-**Answer: b) `The starting color stop`**
+**Answer: b) `--animate-wiggle` mapping to keyframes name and timing**
 
 ---
 
-**8. What does `via-purple-500` do in a gradient class list?**
+**6. Where should `@keyframes wiggle` live in a v4 CSS-first project?**
 
-a) `Defines a middle color stop`
-b) `Removes the gradient`
-c) `Sets background size`
-d) `Applies only to SVG`
+a) Only in `tailwind.config.js` `theme.extend.keyframes`  
+b) In your CSS stylesheet alongside `@import "tailwindcss"` and `@theme`  
+c) Inside `node_modules` only  
+d) It is not supported in v4
 
-**Answer: a) `Defines a middle color stop`**
-
----
-
-**9. What does `to-pink-500` typically represent?**
-
-a) `Starting color`
-b) `Ending color stop`
-c) `Text underline`
-d) `Outline color`
-
-**Answer: b) `Ending color stop`**
+**Answer: b) In your CSS stylesheet alongside `@import "tailwindcss"` and `@theme`**
 
 ---
 
-**10. Which plugin provides the `prose` classes for long-form typography?**
+**7. After defining keyframes and `--animate-fade` in CSS (see below), which class uses the animation?**
 
-a) `@tailwindcss/forms`
-b) `@tailwindcss/typography`
-c) `@tailwindcss/line-clamp`
-d) `@tailwindcss/aspect-ratio`
+```css
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@theme {
+  --animate-fade: fade 0.2s ease-out both;
+}
+```
 
-**Answer: b) `@tailwindcss/typography`**
+a) `transition-fade`  
+b) `animate-fade`  
+c) `motion-fade`  
+d) `keyframes-fade`
 
----
-
-**11. What is a typical use of `prose`?**
-
-a) `3D transforms`
-b) `Styling markdown or blog HTML with sensible typographic defaults`
-c) `Form validation`
-d) `Image cropping only`
-
-**Answer: b) `Styling markdown or blog HTML with sensible typographic defaults`**
-
----
-
-**12. Which plugin normalizes and improves default form control styling?**
-
-a) `@tailwindcss/forms`
-b) `@tailwindcss/typography`
-c) `@tailwindcss/container-queries`
-d) `@tailwindcss/animate`
-
-**Answer: a) `@tailwindcss/forms`**
+**Answer: b) `animate-fade`**
 
 ---
 
-**13. Before native support was widespread, which plugin commonly added aspect-ratio utilities?**
+**8. Which class applies a conic gradient background?**
 
-a) `@tailwindcss/aspect-ratio` (historical; core now includes aspect utilities)
-b) `@tailwindcss/grid`
-c) `@tailwindcss/flex`
-d) `@tailwindcss/position`
+a) `bg-conic-180`  
+b) `bg-radial-to-r`  
+c) `bg-linear-to-t`  
+d) `conic-from-red`
 
-**Answer: a) `@tailwindcss/aspect-ratio` (historical; core now includes aspect utilities)`**
-
----
-
-**14. Which plugin enables container query utilities when installed?**
-
-a) `@tailwindcss/container-queries`
-b) `@tailwindcss/breakpoints`
-c) `@tailwindcss/media`
-d) `@tailwindcss/viewport`
-
-**Answer: a) `@tailwindcss/container-queries`**
+**Answer: a) `bg-conic-180`**
 
 ---
 
-**15. What does the `required:` variant target?**
+**9. Radial gradients in v4 use utilities such as:**
 
-a) `Elements with the HTML required attribute`
-b) `Required npm packages`
-c) `HTTPS only`
-d) `Print stylesheets`
+a) `bg-radial-*`  
+b) `bg-circle-*` only  
+c) `radial-bg` without variants  
+d) `gradient-radial` only in plugins
 
-**Answer: a) `Elements with the HTML required attribute`**
-
----
-
-**16. What does `disabled:` style?**
-
-a) `Elements with the disabled attribute or disabled state`
-b) `Users without JavaScript`
-c) `Dark mode off`
-d) `Low battery devices`
-
-**Answer: a) `Elements with the disabled attribute or disabled state`**
+**Answer: a) `bg-radial-*`**
 
 ---
 
-**17. What does `checked:` apply to?**
+**10. For a radial gradient, color stops still use:**
 
-a) `Checked checkboxes and radio inputs`
-b) `Visited links`
-c) `Focused inputs only`
-d) `Invalid forms only`
+a) `from-*` / `via-*` / `to-*`  
+b) `inner-*` / `outer-*`  
+c) `start-*` / `finish-*`  
+d) Only `color-*` without stops
 
-**Answer: a) `Checked checkboxes and radio inputs`**
-
----
-
-**18. What is the purpose of `has-[...]` style variants?**
-
-a) `Hash-based routing`
-b) `Parent styling when a descendant matches`
-c) `Service workers`
-d) `CSS counters only`
-
-**Answer: b) `Parent styling when a descendant matches`**
+**Answer: a) `from-*` / `via-*` / `to-*`**
 
 ---
 
-**19. What do `group-has-` variants enable?**
+**11. Which utilities hide content visually but keep it available to assistive tech?**
 
-a) `Styling a group when it contains a matching descendant`
-b) `Grouping z-index`
-c) `Hashing class names`
-d) `Server components only`
-
-**Answer: a) `Styling a group when it contains a matching descendant`**
-
----
-
-**20. What are `data-[state=open]:` variants used for?**
-
-a) `Attribute-driven styling via data-* attributes`
-b) `Fetching JSON only`
-c) `WebSockets`
-d) `Cookies`
-
-**Answer: a) `Attribute-driven styling via data-* attributes`**
-
----
-
-**21. Which classes visually hide content but keep it available to screen readers?**
-
-a) `hidden`
-b) `sr-only`
-c) `invisible`
+a) `hidden`  
+b) `sr-only`  
+c) `invisible`  
 d) `opacity-0`
 
 **Answer: b) `sr-only`**
 
 ---
 
-**22. Which class undoes screen-reader-only clipping for responsive patterns?**
+**12. Which utility undoes screen-reader-only clipping for a breakpoint?**
 
-a) `sr-visible`
-b) `not-sr-only`
-c) `show-sr`
-d) `aria-show`
+a) `sr-visible`  
+b) `not-sr-only`  
+c) `show-all`  
+d) `a11y-show`
 
 **Answer: b) `not-sr-only`**
 
 ---
 
-**23. Which utility enables multi-column layout for text content?**
+**13. Which class sets CSS multi-column layout to 3 columns?**
 
-a) `columns-2`
-b) `col-count-2`
-c) `multicolumn-2`
-d) `text-columns-2`
+a) `cols-3`  
+b) `columns-3`  
+c) `column-count-3`  
+d) `multicolumn-3`
 
-**Answer: a) `columns-2`**
-
----
-
-**24. Which utility clamps text to a maximum number of lines (modern Tailwind)?**
-
-a) `truncate-lines-3`
-b) `line-clamp-3`
-c) `clamp-text-3`
-d) `ellipsis-3`
-
-**Answer: b) `line-clamp-3`**
+**Answer: b) `columns-3`**
 
 ---
 
-**25. Which class sets smooth scrolling for anchor navigation?**
+**14. Which class uses a Tailwind column width token like `columns-sm`?**
 
-a) `scroll-smooth`
-b) `smooth-scroll`
-c) `anchor-smooth`
-d) `scroll-behavior-smooth` as one word class
+a) It sets `column-width` using the `sm` scale token  
+b) It forces exactly 12 columns  
+c) It disables columns  
+d) It only works with flexbox
+
+**Answer: a) It sets `column-width` using the `sm` scale token**
+
+---
+
+**15. Which utility clamps text to 2 lines with ellipsis?**
+
+a) `truncate-2`  
+b) `line-clamp-2`  
+c) `ellipsis-2`  
+d) `clamp-lines-2`
+
+**Answer: b) `line-clamp-2`**
+
+---
+
+**16. Which class removes line clamping?**
+
+a) `line-clamp-none`  
+b) `unclamp`  
+c) `line-clamp-0`  
+d) `text-wrap-all`
+
+**Answer: a) `line-clamp-none`**
+
+---
+
+**17. Which utility opts into smooth scrolling for anchor navigation?**
+
+a) `scroll-smooth`  
+b) `smooth-scroll`  
+c) `behavior-smooth`  
+d) `anchor-smooth`
 
 **Answer: a) `scroll-smooth`**
 
 ---
 
-**26. Which utility applies scroll snapping to the y axis on a container?**
+**18. Which utility restores default instant scrolling?**
 
-a) `snap-y`
-b) `scroll-snap-y`
-c) `snap-axis-y`
-d) `y-snap`
+a) `scroll-instant`  
+b) `scroll-auto`  
+c) `scroll-normal`  
+d) `scroll-default`
 
-**Answer: a) `snap-y`**
-
----
-
-**27. What does `snap-mandatory` describe?**
-
-a) `Mandatory scroll snapping strictness`
-b) `Required forms`
-c) `Forced colors`
-d) `Print margins`
-
-**Answer: a) `Mandatory scroll snapping strictness`**
+**Answer: b) `scroll-auto`**
 
 ---
 
-**28. Which utilities map to the CSS `touch-action` property?**
+**19. Which class aligns snap children to the start of the scroll container?**
 
-a) `pointer-none`
-b) `touch-pan-x`, `touch-none`, etc.
-c) `gesture-lock`
-d) `mobile-only`
+```html
+<div class="flex snap-x snap-mandatory overflow-x-auto">
+  <section class="snap-start shrink-0 w-full">A</section>
+</div>
+```
 
-**Answer: b) `touch-* utilities map to touch-action`**
+a) `snap-align-start`  
+b) `snap-start`  
+c) `scroll-snap-left`  
+d) `snap-to-start-only`
 
----
-
-**29. What is `will-change` used for in CSS?**
-
-a) `Hints upcoming animated properties for browser optimization`
-b) `Forces dark mode`
-c) `Sets z-index`
-d) `Defines content security policy`
-
-**Answer: a) `Hints upcoming animated properties for browser optimization`**
+**Answer: b) `snap-start`**
 
 ---
 
-**30. Which utilities set pseudo-element `content` in Tailwind?**
+**20. Which class centers the snapped item in the viewport along the scroll axis?**
 
-a) `before:content-['']` and related content utilities
-b) `content-auto`
-c) `pseudo-text`
-d) `Not supported`
+a) `snap-middle`  
+b) `snap-center`  
+c) `snap-mid`  
+d) `snap-align-center`
 
-**Answer: a) `before:/after: content utilities such as before:content-none`**
+**Answer: b) `snap-center`**
 
 ---
 
-**31. Which variant applies styles only when printing?**
+**21. Which utility makes scroll snapping strict (must land on a snap point)?**
 
-a) `screen:`
-b) `print:`
-c) `paper:`
+a) `snap-mandatory`  
+b) `snap-strict`  
+c) `snap-required`  
+d) `snap-lock`
+
+**Answer: a) `snap-mandatory`**
+
+---
+
+**22. Which utility allows snapping but tolerates in-between positions?**
+
+a) `snap-loose`  
+b) `snap-proximity`  
+c) `snap-soft`  
+d) `snap-flex`
+
+**Answer: b) `snap-proximity`**
+
+---
+
+**23. Which utility sets `touch-action: manipulation` to reduce double-tap zoom delay on buttons?**
+
+a) `touch-pinch`  
+b) `touch-manipulation`  
+c) `tap-manipulation`  
+d) `gesture-manipulation`
+
+**Answer: b) `touch-manipulation`**
+
+---
+
+**24. Which utility allows panning on the x-axis only?**
+
+a) `touch-pan-x`  
+b) `pan-x-only`  
+c) `scroll-touch-x`  
+d) `touch-horizontal`
+
+**Answer: a) `touch-pan-x`**
+
+---
+
+**25. `will-change-transform` is used to:**
+
+a) Disable GPU compositing  
+b) Hint the browser to optimize for upcoming `transform` changes  
+c) Force `position: fixed`  
+d) Remove animations in v4
+
+**Answer: b) Hint the browser to optimize for upcoming `transform` changes**
+
+---
+
+**26. Which variant targets only the first child among siblings?**
+
+a) `child-first:`  
+b) `first:`  
+c) `nth-1:`  
+d) `begin:`
+
+**Answer: b) `first:`**
+
+---
+
+**27. Which variant targets only the last child among siblings?**
+
+a) `end:`  
+b) `last:`  
+c) `final:`  
+d) `nth-last:`
+
+**Answer: b) `last:`**
+
+---
+
+**28. Which variant applies to odd-indexed children (1-based)?**
+
+a) `odd:`  
+b) `alternate:`  
+c) `stripe:`  
+d) `odd-child:`
+
+**Answer: a) `odd:`**
+
+---
+
+**29. Which variant applies to even-indexed children?**
+
+a) `even:`  
+b) `pair:`  
+c) `even-row:`  
+d) `dual:`
+
+**Answer: a) `even:`**
+
+---
+
+**30. Which variant styles an input only when it has the `required` attribute?**
+
+a) `needs-required:`  
+b) `required:`  
+c) `attr-required:`  
+d) `is-required:`
+
+**Answer: b) `required:`**
+
+---
+
+**31. Which variant applies when a form control is `:disabled`?**
+
+a) `inactive:`  
+b) `disabled:`  
+c) `off:`  
+d) `unusable:`
+
+**Answer: b) `disabled:`**
+
+---
+
+**32. Which variant targets a checked checkbox or radio?**
+
+a) `toggled:`  
+b) `checked:`  
+c) `on:`  
+d) `selected:`
+
+**Answer: b) `checked:`**
+
+---
+
+**33. Which variant applies when an input matches `:valid` constraints?**
+
+a) `ok:`  
+b) `valid:`  
+c) `success:`  
+d) `good:`
+
+**Answer: b) `valid:`**
+
+---
+
+**34. Which variant applies when constraints fail (`:invalid`)?**
+
+a) `bad:`  
+b) `invalid:`  
+c) `error:`  
+d) `fail:`
+
+**Answer: b) `invalid:`**
+
+---
+
+**35. Which variant styles an input while placeholder text is shown?**
+
+a) `empty:`  
+b) `placeholder-shown:`  
+c) `has-placeholder:`  
+d) `placeholder-visible:`
+
+**Answer: b) `placeholder-shown:`**
+
+---
+
+**36. Which variant targets autofilled fields?**
+
+a) `autofill:`  
+b) `filled-by-browser:`  
+c) `chrome-autofill:`  
+d) `auto:`
+
+**Answer: a) `autofill:`**
+
+---
+
+**37. Which variant styles controls in a read-only state?**
+
+a) `readonly:`  
+b) `read-only:`  
+c) `locked:`  
+d) `no-edit:`
+
+**Answer: b) `read-only:`**
+
+---
+
+**38. `has-[:focus-visible]:ring-2` means:**
+
+a) The element rings when it focuses itself  
+b) The element gets a ring when any descendant matches `:focus-visible`  
+c) It requires `@container`  
+d) It only works with `print:`
+
+**Answer: b) The element gets a ring when any descendant matches `:focus-visible`**
+
+---
+
+**39. `group-has-[svg]:flex` typically requires on the parent:**
+
+a) `group` class (or group variant context) so child can use `group-has-*`  
+b) Only `flex` on the parent  
+c) `data-group` attribute without `group`  
+d) `@plugin` for `group`
+
+**Answer: a) `group` class (or group variant context) so child can use `group-has-*`**
+
+---
+
+**40. Which variant reacts to a `data-state="open"` attribute?**
+
+a) `attr-[state=open]:`  
+b) `data-[state=open]:`  
+c) `aria-open:`  
+d) `dataset-open:`
+
+**Answer: b) `data-[state=open]:`**
+
+---
+
+**41. Which variant applies styles when a CSS feature is supported?**
+
+a) `feature-[display:grid]:`  
+b) `supports-[display:grid]:`  
+c) `@supports:`  
+d) `if-supports:`
+
+**Answer: b) `supports-[display:grid]:`**
+
+---
+
+**42. Which variant applies rules only for printed media?**
+
+a) `media-print:`  
+b) `print:`  
+c) `paper:`  
 d) `pdf:`
 
 **Answer: b) `print:`**
 
 ---
 
-**32. Which variant applies when viewport is portrait-oriented?**
+**43. Which variant matches portrait orientation?**
 
-a) `portrait:`
-b) `vertical:`
-c) `phone:`
+a) `vertical:`  
+b) `portrait:`  
+c) `phone:`  
 d) `tall:`
 
-**Answer: a) `portrait:`**
+**Answer: b) `portrait:`**
 
 ---
 
-**33. Which variant applies when viewport is landscape-oriented?**
+**44. Which variant matches landscape orientation?**
 
-a) `wide:`
-b) `landscape:`
-c) `desktop:`
-d) `horizontal:`
+a) `horizontal:`  
+b) `landscape:`  
+c) `wide:`  
+d) `desktop:`
 
 **Answer: b) `landscape:`**
 
 ---
 
-**34. What does the `supports-[...]:` variant do?**
+**45. Which variant is useful for Windows High Contrast / forced-colors modes?**
 
-a) `Wraps CSS @supports feature queries`
-b) `Checks npm support`
-c) `Checks TLS version`
-d) `Checks screen reader presence`
+a) `high-contrast:`  
+b) `forced-colors:`  
+c) `contrast-forced:`  
+d) `a11y-colors:`
 
-**Answer: a) `Wraps CSS @supports feature queries`**
-
----
-
-**35. Advanced responsive pattern: “fluid grid” often combines:**
-
-a) `grid with gap and responsive grid-cols-*`
-b) `float:left everywhere`
-c) `tables only`
-d) `absolute positioning only`
-
-**Answer: a) `grid with gap and responsive grid-cols-*`**
+**Answer: b) `forced-colors:`**
 
 ---
 
-**36. Why combine `prose` with `prose-invert` (or dark variants)?**
+**46. Which variant applies when the user has not requested reduced motion?**
 
-a) `Improve typography on dark backgrounds`
-b) `Disable headings`
-c) `Remove links`
-d) `Force monospace only`
+a) `motion-ok:`  
+b) `motion-safe:`  
+c) `animate-allowed:`  
+d) `prefers-motion:`
 
-**Answer: a) `Improve typography on dark backgrounds`**
+**Answer: b) `motion-safe:`**
 
 ---
 
-**37. Which snippet applies a left-to-right gradient background?**
+**47. Which variant applies when `prefers-reduced-motion: reduce` is set?**
+
+a) `motion-reduce:`  
+b) `reduce-motion:`  
+c) `no-animate:`  
+d) `static:`
+
+**Answer: a) `motion-reduce:`**
+
+---
+
+**48. Which variant targets users who prefer higher contrast?**
+
+a) `contrast-high:`  
+b) `contrast-more:`  
+c) `more-contrast:`  
+d) `a11y-contrast:`
+
+**Answer: b) `contrast-more:`**
+
+---
+
+**49. Which variant targets users who prefer less contrast?**
+
+a) `contrast-low:`  
+b) `contrast-less:`  
+c) `soft:`  
+d) `muted-theme:`
+
+**Answer: b) `contrast-less:`**
+
+---
+
+**50. Putting it together: which markup shows composable variants, 3D transform, and `field-sizing`?**
 
 ```html
-<div class="bg-gradient-to-r from-indigo-500 to-purple-500">...</div>
+<div class="motion-safe:hover:rotate-x-12 perspective-distant">
+  <textarea class="field-sizing-content min-h-16"></textarea>
+</div>
 ```
 
-a) `Solid indigo only`
-b) `Gradient from indigo on the left to purple on the right`
-c) `Text gradient only`
-d) `Border gradient only`
+a) `rotate-x-12` and `perspective-distant` are invalid in v4  
+b) `motion-safe:hover:` composes variants; `rotate-x-*` / `perspective-*` are 3D utilities; `field-sizing-content` sets `field-sizing: content`  
+c) `field-sizing-content` requires `tailwind.config.js`  
+d) Composable variants are not allowed with `motion-safe:`
 
-**Answer: b) `Gradient from indigo on the left to purple on the right`**
-
----
-
-**38. Which class is commonly used with `snap-y` on children?**
-
-a) `snap-start`
-b) `snap-child`
-c) `snap-point`
-d) `scroll-child`
-
-**Answer: a) `snap-start`**
-
----
-
-**39. `motion-reduce:` variants are mainly for:**
-
-a) `Respecting the prefers-reduced-motion media query`
-b) `Disabling hover`
-c) `Safari-only fixes`
-d) `Print styles`
-
-**Answer: a) `Respecting the prefers-reduced-motion media query`**
-
----
-
-**40. `first:` vs `first-of-type:` differs because:**
-
-a) `They are identical`
-b) `first-of-type matches the first element of that tag type among siblings`
-c) `first: only works on tables`
-d) `first-of-type: only works on forms`
-
-**Answer: b) `first-of-type matches the first element of that tag type`**
-
----
-
-**41. Which gradient utility rotates gradient direction to the bottom?**
-
-a) `bg-gradient-to-b`
-b) `bg-gradient-down`
-c) `bg-gradient-to-bottom`
-d) `bg-to-b`
-
-**Answer: a) `bg-gradient-to-b`**
-
----
-
-**42. Which theme keys link an animation utility name to keyframes?**
-
-a) `theme.extend.animation references defined keyframes`
-b) `keyframes only in HTML`
-c) `vite.animations`
-d) `postcss keyframes`
-
-**Answer: a) `theme.extend.animation references defined keyframes`**
-
----
-
-**43. `animate-none` is useful to:**
-
-a) `Disable inherited animations`
-b) `Force spin`
-c) `Enable ping`
-d) `Increase contrast`
-
-**Answer: a) `Disable inherited animations`**
-
----
-
-**44. `line-clamp` works best when understood as:**
-
-a) `A utility that clips overflow to N lines (with required overflow behavior)`
-b) `position: fixed`
-c) `float: right`
-d) `grid only`
-
-**Answer: a) `Clips overflow to N lines via the line-clamp utility behavior`**
-
----
-
-**45. Container query workflows typically require:**
-
-a) `@container on an ancestor and container breakpoint variants`
-b) `No configuration`
-c) `jQuery`
-d) `Inline styles only`
-
-**Answer: a) `@container on an ancestor and container breakpoint variants`**
-
----
-
-**46. `data-[size=large]:text-xl` illustrates:**
-
-a) `Styling based on a data attribute value`
-b) `Fetching remote data`
-c) `LocalStorage`
-d) `WebGL`
-
-**Answer: a) `Styling based on a data attribute value`**
-
----
-
-**47. `print:hidden` is useful for:**
-
-a) `Hiding chrome when printing`
-b) `Hiding screens`
-c) `Disabling dark mode`
-d) `Removing fonts`
-
-**Answer: a) `Hiding elements in print output`**
-
----
-
-**48. `supports-[display:grid]:grid` means:**
-
-a) `Apply grid only if the browser passes an @supports check for display:grid`
-b) `Always grid`
-c) `Never grid`
-d) `Only for IE`
-
-**Answer: a) `Apply grid when the browser passes the @supports check`**
-
----
-
-**49. Combining `columns-*` with `gap-*` relates to:**
-
-a) `Multi-column layout spacing`
-b) `Flex gap only`
-c) `Grid template areas`
-d) `Table borders`
-
-**Answer: a) `Multi-column layout and gap between columns`**
-
----
-
-**50. `sr-only` differs from `hidden` because:**
-
-a) `They are identical`
-b) `sr-only is visually hidden but still exposed to assistive tech`
-c) `sr-only removes from DOM`
-d) `hidden is only for images`
-
-**Answer: b) `sr-only is visually hidden but still exposed to assistive tech`**
+**Answer: b) `motion-safe:hover:` composes variants; `rotate-x-*` / `perspective-*` are 3D utilities; `field-sizing-content` sets `field-sizing: content`**
 
 ---

@@ -1,292 +1,403 @@
-# Tailwind CSS MCQ - Set 1 (Beginner Level)
+# Tailwind CSS v4 MCQ - Set 1 (Beginner Level)
 
-**1. What is the primary philosophy of Tailwind CSS?**
+**1. What best describes Tailwind CSS’s core approach to styling?**
 
-a) `Component-first: ship prebuilt UI components`
-b) `Utility-first: compose UIs with small single-purpose classes`
-c) `Semantic-first: name classes after page meaning only`
-d) `Inline-style-first: avoid classes entirely`
+a) `You write mostly custom CSS classes named after components`
+b) `You compose interfaces from small, single-purpose utility classes`
+c) `You download a large library of prebuilt React components`
+d) `You rely on a grid system with fixed column classes only`
 
-**Answer: b) `Utility-first: compose UIs with small single-purpose classes`**
-
----
-
-**2. Which package is typically installed alongside `tailwindcss` for a standard PostCSS build?**
-
-a) `webpack-only`
-b) `postcss` and `autoprefixer`
-c) `sass` and `less`
-d) `babel-core`
-
-**Answer: b) `postcss` and `autoprefixer`**
+**Answer: b) `You compose interfaces from small, single-purpose utility classes`**
 
 ---
 
-**3. In a Play CDN or quick prototype setup, which HTML attribute is used to configure Tailwind (v3-style CDN usage)?**
+**2. Compared to Bootstrap, what is a typical difference in day-to-day styling?**
 
-a) `data-theme`
-b) `tailwind.config` inside a script tag
-c) `rel="tailwind"`
-d) `vite-plugin-tailwind`
+a) `Bootstrap emphasizes utility classes only; Tailwind ships prebuilt components`
+b) `Bootstrap ships opinionated components; Tailwind focuses on composable utilities`
+c) `Both require identical HTML structure for every project`
+d) `Neither supports responsive breakpoints`
 
-**Answer: b) `tailwind.config` inside a script tag**
-
----
-
-**4. What does the `content` array in `tailwind.config.js` control?**
-
-a) `Maximum bundle size of JavaScript`
-b) `Which files Tailwind scans to decide which utilities to generate`
-c) `Blog post markdown paths`
-d) `Image asset locations`
-
-**Answer: b) `Which files Tailwind scans to decide which utilities to generate`**
+**Answer: b) `Bootstrap ships opinionated components; Tailwind focuses on composable utilities`**
 
 ---
 
-**5. In your CSS entry file, which directive pulls in Tailwind’s component layer?**
+**3. In Tailwind CSS v4, which PostCSS plugin package should you use in a PostCSS pipeline?**
 
-a) `@import "tailwind/components";`
-b) `@tailwind components;`
-c) `@use tailwind/components;`
-d) `@layer tailwind.components;`
+a) `tailwindcss/postcss`
+b) `@tailwindcss/postcss`
+c) `postcss-tailwind`
+d) `@tailwind/postcss-plugin`
 
-**Answer: b) `@tailwind components;`**
-
----
-
-**6. What does the utility class `p-4` typically apply?**
-
-a) `padding: 1rem` (using the default spacing scale)
-b) `padding: 4px`
-c) `padding: 4rem`
-d) `position: page-4`
-
-**Answer: a) `padding: 1rem` (using the default spacing scale)**
+**Answer: b) `@tailwindcss/postcss`**
 
 ---
 
-**7. Which class horizontally centers a block-level element with automatic left/right margins?**
+**4. For a Vite project using Tailwind CSS v4, which official plugin package integrates Tailwind into the bundler?**
 
-a) `mx-center`
-b) `m-auto`
-c) `center-x`
-d) `margin-inline: auto` (not a Tailwind class)
+a) `vite-plugin-windicss`
+b) `@tailwindcss/vite`
+c) `@vitejs/plugin-tailwind`
+d) `tailwind-vite-bridge`
 
-**Answer: b) `m-auto`**
-
----
-
-**8. What is the purpose of `space-x-4` on a flex container?**
-
-a) `Adds horizontal gap using margin between child elements`
-b) `Sets letter-spacing on text`
-c) `Adds padding inside each child`
-d) `Collapses margins between siblings`
-
-**Answer: a) `Adds horizontal gap using margin between child elements`**
+**Answer: b) `@tailwindcss/vite`**
 
 ---
 
-**9. What does `w-full` set?**
+**5. Which package provides the official Tailwind CSS v4 command-line interface?**
 
-a) `width: 100%`
-b) `width: 100vw` always
-c) `max-width: 100%`
-d) `width: auto`
+a) `@tailwindcss/cli`
+b) `tailwind-cli`
+c) `tw-cli`
+d) `@tailwind/cli-tools`
 
-**Answer: a) `width: 100%`**
-
----
-
-**10. Which utility makes an element at least as tall as the viewport?**
-
-a) `h-screen`
-b) `h-full`
-c) `min-h-dvh` only
-d) `height: viewport` (invalid)
-
-**Answer: a) `h-screen`**
+**Answer: a) `@tailwindcss/cli`**
 
 ---
 
-**11. What does `min-w-0` often help fix in flex/grid layouts?**
+**6. What is the correct v4 entry pattern in your main CSS file?**
 
-a) `Forces zero minimum font size`
-b) `Allows shrinking below intrinsic content width (overflow behavior)`
-c) `Removes borders`
-d) `Disables responsive breakpoints`
+```css
+/* main.css */
+```
 
-**Answer: b) `Allows shrinking below intrinsic content width (overflow behavior)`**
+a) `@tailwind base; @tailwind components; @tailwind utilities;`
+b) `@import "tailwindcss";`
+c) `@use "tailwind";`
+d) `@include tailwind(all);`
+
+**Answer: b) `@import "tailwindcss";`**
 
 ---
 
-**12. Which class constrains width to a comfortable reading measure (Tailwind’s prose-like max width)?**
+**7. By default in v4, how is project configuration typically handled compared to v3’s `tailwind.config.js`?**
+
+a) `v4 requires a larger tailwind.config.cjs file`
+b) `v4 is CSS-first by default—no tailwind.config.js is required`
+c) `v4 removes all customization options`
+d) `v4 only works with inline JSON in HTML`
+
+**Answer: b) `v4 is CSS-first by default—no tailwind.config.js is required`**
+
+---
+
+**8. In v4, which CSS directive is used to define design tokens (similar in spirit to `theme.extend` in older config files)?**
+
+a) `@tokens`
+b) `@theme`
+c) `@config`
+d) `@extend-theme`
+
+**Answer: b) `@theme`**
+
+---
+
+**9. Tailwind CSS v4 automatically detects class usage in your source files. What directive can you add in CSS when you need to register extra content paths?**
+
+a) `@content`
+b) `@source`
+c) `@scan`
+d) `@paths`
+
+**Answer: b) `@source`**
+
+---
+
+**10. Design tokens in v4 are exposed as CSS custom properties. Which variable name matches Tailwind’s blue 500 color token?**
+
+a) `--blue-500`
+b) `--color-blue-500`
+c) `--tailwind-blue-500`
+d) `--tw-color-blue500`
+
+**Answer: b) `--color-blue-500`**
+
+---
+
+**11. What does `p-4` apply, assuming the default spacing scale?**
+
+a) `Padding on left and right only`
+b) `Padding on all sides using the spacing scale (e.g. tied to --spacing-4)`
+c) `Only padding-top`
+d) `Percentage padding based on viewport width`
+
+**Answer: b) `Padding on all sides using the spacing scale (e.g. tied to --spacing-4)`**
+
+---
+
+**12. In this markup, what is the effect of `-m-2`?**
+
+```html
+<div class="-m-2">Box</div>
+```
+
+a) `Negative margin on all sides using the spacing scale`
+b) `Margin removed entirely`
+c) `Only margin-top becomes negative`
+d) `Invalid class; Tailwind ignores it`
+
+**Answer: a) `Negative margin on all sides using the spacing scale`**
+
+---
+
+**13. Which utility adds horizontal spacing between **direct child** elements?**
+
+a) `gap-x-4`
+b) `space-x-4`
+c) `divide-x-4`
+d) `px-4`
+
+**Answer: b) `space-x-4`**
+
+---
+
+**14. For a vertical stack of siblings, which class adds vertical spacing between children?**
+
+a) `space-y-6`
+b) `gap-y-6` on the parent without flex/grid
+c) `my-6 on each child automatically`
+d) `stack-gap-6`
+
+**Answer: a) `space-y-6`**
+
+---
+
+**15. In a flex container, what does `gap-4` control?**
+
+a) `Only the gap between text lines`
+b) `The gap between flex items along both row and column according to flex direction/wrap`
+c) `The page’s global gutter outside the flex container`
+d) `Border width between cells in a table only`
+
+**Answer: b) `The gap between flex items along both row and column according to flex direction/wrap`**
+
+---
+
+**16. Which class makes an element span the full width of its containing block?**
+
+a) `w-screen`
+b) `w-full`
+c) `w-max`
+d) `w-auto`
+
+**Answer: b) `w-full`**
+
+---
+
+**17. Which height utility typically makes an element as tall as the viewport?**
+
+a) `h-full`
+b) `h-screen`
+c) `h-dvh`
+d) `Both b and c are common viewport-height utilities in modern Tailwind usage`
+
+**Answer: d) `Both b and c are common viewport-height utilities in modern Tailwind usage`**
+
+---
+
+**18. What does `min-w-0` often help fix in flex/grid layouts?**
+
+a) `It forces the element to disappear`
+b) `It allows flex items to shrink below their intrinsic content width`
+c) `It sets minimum width to the viewport`
+d) `It disables responsive behavior`
+
+**Answer: b) `It allows flex items to shrink below their intrinsic content width`**
+
+---
+
+**19. Which class caps an element’s width near a comfortable reading measure on large screens?**
 
 a) `max-w-screen`
 b) `max-w-prose`
-c) `w-prose`
-d) `container-prose`
+c) `max-w-full`
+d) `max-w-min`
 
 **Answer: b) `max-w-prose`**
 
 ---
 
-**13. What does `text-xl` primarily change?**
+**20. What does `size-10` set?**
 
-a) `Font family`
-b) `Font size`
-c) `Font weight`
-d) `Text transform`
+a) `Only width: 2.5rem`
+b) `Equal width and height using the spacing scale (e.g. 2.5rem each)`
+c) `Font size only`
+d) `Border size only`
 
-**Answer: b) `Font size`**
+**Answer: b) `Equal width and height using the spacing scale (e.g. 2.5rem each)`**
 
 ---
 
-**14. Which class sets font weight to 700 in the default theme?**
+**21. Which text size utility sits between `text-sm` and `text-lg` in the default scale?**
+
+a) `text-md`
+b) `text-base`
+c) `text-regular`
+d) `text-normal`
+
+**Answer: b) `text-base`**
+
+---
+
+**22. Which class sets a semi-bold font weight?**
 
 a) `font-medium`
-b) `font-bold`
-c) `font-black` (900)
-d) `weight-700`
+b) `font-semibold`
+c) `font-heavy`
+d) `font-thick`
 
-**Answer: b) `font-bold`**
+**Answer: b) `font-semibold`**
 
 ---
 
-**15. What does `leading-relaxed` adjust?**
+**23. Which utility increases line height for more airy paragraph text?**
 
-a) `Letter spacing`
-b) `Line height`
-c) `Word spacing`
+a) `leading-none`
+b) `leading-tight`
+c) `leading-relaxed`
+d) `leading-0`
+
+**Answer: c) `leading-relaxed`**
+
+---
+
+**24. What does `tracking-wider` adjust?**
+
+a) `Word spacing only`
+b) `Letter spacing (tracking)`
+c) `Line length in characters`
 d) `Paragraph indentation`
 
-**Answer: b) `Line height`**
+**Answer: b) `Letter spacing (tracking)`**
 
 ---
 
-**16. Which utility increases letter spacing?**
+**25. Which class centers inline content horizontally inside a block?**
 
-a) `tracking-wide`
-b) `leading-wide`
-c) `spacing-wide`
-d) `kern-wide`
+a) `align-center`
+b) `text-center`
+c) `justify-center` (without flex on the same element)
+d) `center-text`
 
-**Answer: a) `tracking-wide`**
-
----
-
-**17. How do you set text color to a default red at shade 500?**
-
-a) `color-red-500`
-b) `text-red-500`
-c) `fg-red-500`
-d) `font-red-500`
-
-**Answer: b) `text-red-500`**
+**Answer: b) `text-center`**
 
 ---
 
-**18. How do you set a light blue background using the default palette at shade 200?**
+**26. Tailwind v4 uses OKLCH as its default color space for palettes. What is a valid text color utility?**
 
-a) `background-blue-200`
-b) `bg-blue-200`
-c) `fill-blue-200`
-d) `color-bg-blue-200`
+a) `text-red-500`
+b) `text-red-rgb`
+c) `text-oklch-only`
+d) `color-red-500`
 
-**Answer: b) `bg-blue-200`**
-
----
-
-**19. In Tailwind’s default color system, what does the numeric suffix (e.g. `500`) generally represent?**
-
-a) `Opacity only`
-b) `A position on a lightness scale for that hue`
-c) `Z-index pairing`
-d) `Number of columns in grid`
-
-**Answer: b) `A position on a lightness scale for that hue`**
+**Answer: a) `text-red-500`**
 
 ---
 
-**20. Which class adds a 1px border on all sides (default border style/width as configured)?**
+**27. In this snippet, what does the `/80` suffix mean?**
 
-a) `outline`
-b) `border`
-c) `ring`
-d) `stroke`
+```html
+<p class="text-white/80">Muted</p>
+```
 
-**Answer: b) `border`**
+a) `It sets width to 80%`
+b) `It applies 80% opacity to the color`
+c) `It sets z-index to 80`
+d) `It is invalid in Tailwind v4`
 
----
-
-**21. What does `border-2` change compared to default `border` width behavior?**
-
-a) `Border radius`
-b) `Border width`
-c) `Border color`
-d) `Box shadow`
-
-**Answer: b) `Border width`**
+**Answer: b) `It applies 80% opacity to the color`**
 
 ---
 
-**22. Which class applies large border radius corners?**
+**28. Default palette shades run from 50 to 950. Which shade is generally the lightest?**
 
-a) `radius-lg`
-b) `rounded-lg`
+a) `950`
+b) `50`
+c) `100`
+d) `0`
+
+**Answer: b) `50`**
+
+---
+
+**29. Which class adds a 2px border width on all sides?**
+
+a) `border-wide`
+b) `border-2`
+c) `border-double`
+d) `border-thick`
+
+**Answer: b) `border-2`**
+
+---
+
+**30. How do you give a border a red color from the default palette?**
+
+a) `border-color-red-500`
+b) `border-red-500`
+c) `outline-red-500`
+d) `stroke-red-500`
+
+**Answer: b) `border-red-500`**
+
+---
+
+**31. Border radius in v4 can be tied to scale variables like `--radius`. Which class applies a large rounded corner preset?**
+
+a) `rounded-lg`
+b) `radius-large`
 c) `corner-lg`
-d) `round-lg`
+d) `round-big`
 
-**Answer: b) `rounded-lg`**
-
----
-
-**23. Which display value does `inline-block` approximate?**
-
-a) `display: inline-block`
-b) `display: block`
-c) `display: flex`
-d) `display: grid`
-
-**Answer: a) `display: inline-block`**
+**Answer: a) `rounded-lg`**
 
 ---
 
-**24. Which class sets `display: flex`?**
+**32. Which class makes an element a perfect circle (or pill for non-square elements)?**
 
-a) `flexbox`
+a) `rounded-md`
+b) `rounded-full`
+c) `rounded-pill`
+d) `circle`
+
+**Answer: b) `rounded-full`**
+
+---
+
+**33. Which display value creates a flex formatting context?**
+
+a) `grid`
 b) `flex`
-c) `d-flex`
-d) `display-flex`
+c) `block`
+d) `table`
 
 **Answer: b) `flex`**
 
 ---
 
-**25. Which class sets `display: grid`?**
+**34. Which class removes an element from the layout flow entirely (including visually)?**
 
-a) `grids`
-b) `grid`
-c) `display-grid`
-d) `layout-grid`
+a) `invisible`
+b) `hidden`
+c) `opacity-0`
+d) `sr-only`
 
-**Answer: b) `grid`**
-
----
-
-**26. What does `hidden` do?**
-
-a) `visibility: hidden` only
-b) `display: none`
-c) `opacity: 0` only
-d) `Removes the node from the DOM`
-
-**Answer: b) `display: none`**
+**Answer: b) `hidden`**
 
 ---
 
-**27. Which background sizing utility scales the image to cover the entire box while cropping if needed?**
+**35. Which display combines inline behavior with flex item layout for children?**
+
+a) `inline-block`
+b) `inline-flex`
+c) `inline-grid`
+d) `flex-inline`
+
+**Answer: b) `inline-flex`**
+
+---
+
+**36. Which background utility scales the image to cover the entire box while preserving aspect ratio?**
 
 a) `bg-contain`
 b) `bg-cover`
@@ -297,108 +408,81 @@ d) `bg-stretch`
 
 ---
 
-**28. Which utility centers a background image within its box?**
+**37. Which class pins the background relative to the viewport so it does not scroll with content?**
 
-a) `bg-middle`
-b) `bg-center`
-c) `bg-middle-center`
-d) `place-bg-center`
+a) `bg-local`
+b) `bg-scroll`
+c) `bg-fixed`
+d) `bg-sticky`
 
-**Answer: b) `bg-center`**
-
----
-
-**29. Which class prevents a background image from repeating?**
-
-a) `bg-once`
-b) `bg-no-repeat`
-c) `bg-single`
-d) `bg-repeat-none`
-
-**Answer: b) `bg-no-repeat`**
+**Answer: c) `bg-fixed`**
 
 ---
 
-**30. Which class sets flex direction to row (default in Tailwind flex utilities)?**
+**38. Which flex direction stacks items vertically?**
 
 a) `flex-row`
-b) `flex-horizontal`
-c) `direction-row`
-d) `row-flex`
-
-**Answer: a) `flex-row`**
-
----
-
-**31. Which class stacks flex items vertically?**
-
-a) `flex-vertical`
 b) `flex-col`
-c) `flex-down`
-d) `flex-stack`
+c) `flex-stack`
+d) `flex-vertical`
 
 **Answer: b) `flex-col`**
 
 ---
 
-**32. Which utility distributes flex items with space between them?**
+**39. In this flex row, how are items spaced along the main axis?**
 
-a) `justify-around`
-b) `justify-between`
-c) `justify-even`
-d) `content-between`
+```html
+<div class="flex flex-row justify-between items-center">
+  <span>A</span><span>B</span><span>C</span>
+</div>
+```
 
-**Answer: b) `justify-between`**
+a) `Packed to the start`
+b) `Even space between items; first at start, last at end`
+c) `Centered as a group with equal gaps on both outer sides`
+d) `Stacked vertically`
+
+**Answer: b) `Even space between items; first at start, last at end`**
 
 ---
 
-**33. Which utility vertically centers flex items in a row flex container (cross-axis alignment)?**
+**40. Which pair aligns flex items to the start of the cross axis?**
 
 a) `items-center`
-b) `justify-center`
-c) `align-center`
-d) `cross-center`
+b) `items-start`
+c) `items-stretch`
+d) `items-baseline`
 
-**Answer: a) `items-center`**
-
----
-
-**34. In modern Tailwind, which is the preferred way to set consistent spacing between flex/grid children?**
-
-a) `gap-4`
-b) `space-inner-4`
-c) `gutter-4`
-d) `split-4`
-
-**Answer: a) `gap-4`**
+**Answer: b) `items-start`**
 
 ---
 
-**35. What does the `md:` prefix mean?**
+**41. Tailwind’s responsive prefixes follow which general philosophy?**
 
-a) `Apply only on print media`
-b) `Apply at the `md` breakpoint and above (min-width)`
-c) `Apply only below `md``
-d) `Apply only in dark mode`
+a) `Desktop-first: unprefixed styles apply to large screens only`
+b) `Mobile-first: unprefixed styles apply to small screens, larger breakpoints add overrides`
+c) `Random breakpoints with no order`
+d) `Print-first`
 
-**Answer: b) `Apply at the `md` breakpoint and above (min-width)`**
+**Answer: b) `Mobile-first: unprefixed styles apply to small screens, larger breakpoints add overrides`**
 
 ---
 
-**36. Which breakpoint prefix is the smallest among Tailwind’s default `sm`, `md`, `lg`?**
+**42. At which breakpoint does `md:text-xl` begin to apply (conceptually)?**
+
+a) `Only on screens smaller than phones`
+b) `At the medium breakpoint and up`
+c) `Only in dark mode`
+d) `Only when printing`
+
+**Answer: b) `At the medium breakpoint and up`**
+
+---
+
+**43. Which prefix targets extra-large screens in the default scale?**
 
 a) `lg:`
-b) `md:`
-c) `sm:`
-d) `xs:`
-
-**Answer: c) `sm:`**
-
----
-
-**37. Which default breakpoint prefix targets extra-large screens?**
-
-a) `2xl:`
 b) `xl:`
 c) `xxl:`
 d) `wide:`
@@ -407,149 +491,79 @@ d) `wide:`
 
 ---
 
-**38. Which prefix targets very large screens in the default scale (after `xl:`)?**
+**44. Which prefix targets the largest default breakpoint tier?**
 
 a) `3xl:`
 b) `2xl:`
-c) `mega:`
+c) `max-xl:`
 d) `ultra:`
 
 **Answer: b) `2xl:`**
 
 ---
 
-**39. In Tailwind’s responsive design model, unprefixed utilities apply at which range by default?**
+**45. Spacing utilities map to the shared spacing scale, often reflected in variables like `--spacing-*`. What does `m-4` use conceptually?**
 
-a) `Only at `sm` and up`
-b) `All sizes (base), then overridden by larger breakpoints`
-c) `Only desktop`
-d) `Only mobile portrait`
+a) `A one-off pixel value unrelated to the scale`
+b) `The same spacing scale step as p-4 and gap-4 at that step`
+c) `Only margin-left`
+d) `Viewport-based margin only`
 
-**Answer: b) `All sizes (base), then overridden by larger breakpoints`**
-
----
-
-**40. What will this markup do visually on medium screens and up?**
-
-```html
-<div class="text-sm md:text-lg">Hi</div>
-```
-
-a) `Always `text-lg``
-b) `Always `text-sm``
-c) `Small text by default; large text from `md` upward`
-d) `Large text by default; small from `md` upward`
-
-**Answer: c) `Small text by default; large text from `md` upward`**
+**Answer: b) `The same spacing scale step as p-4 and gap-4 at that step`**
 
 ---
 
-**41. Which padding utility sets padding on the left and right only?**
+**46. Font families can be customized via theme tokens such as `--font-*`. Which utility applies a sans-serif stack from the default theme?**
 
-a) `py-4`
-b) `px-4`
-c) `ps-4`
-d) `plr-4`
+a) `font-serif`
+b) `font-sans`
+c) `font-default`
+d) `text-sans`
 
-**Answer: b) `px-4`**
-
----
-
-**42. Which margin utility sets only top margin?**
-
-a) `m-top-4`
-b) `mt-4`
-c) `my-4`
-d) `margin-t-4`
-
-**Answer: b) `mt-4`**
+**Answer: b) `font-sans`**
 
 ---
 
-**43. What does `text-center` do?**
+**47. v4 organizes utilities using native CSS cascade layers for base, components, and utilities. What is the main benefit for authors?**
 
-a) `Centers a block element horizontally`
-b) `Sets `text-align: center``
-c) `Vertically centers flex children`
-d) `Centers the viewport`
+a) `It removes the need for any CSS file`
+b) `It gives predictable ordering between resets, component layers, and utilities`
+c) `It disables the main tailwindcss import entirely`
+d) `It only works with Sass`
 
-**Answer: b) `Sets `text-align: center``**
-
----
-
-**44. Which class italicizes text?**
-
-a) `font-italic`
-b) `italic`
-c) `style-italic`
-d) `text-italic`
-
-**Answer: b) `italic`**
+**Answer: b) `It gives predictable ordering between resets, component layers, and utilities`**
 
 ---
 
-**45. Which class underlines text?**
+**48. Newer gradient APIs in v4 support angled linear gradients. Which class represents a 45° linear gradient background?**
 
-a) `text-underline`
-b) `underline`
-c) `decoration-underline`
-d) `u-line`
+a) `bg-gradient-45`
+b) `bg-linear-45`
+c) `from-linear-45`
+d) `linear-bg-45`
 
-**Answer: b) `underline`**
-
----
-
-**46. Which border color utility sets a gray border using shade 300?**
-
-a) `border-gray-300`
-b) `text-gray-300`
-c) `outline-gray-300`
-d) `stroke-gray-300`
-
-**Answer: a) `border-gray-300`**
+**Answer: b) `bg-linear-45`**
 
 ---
 
-**47. Which class allows flex items to wrap to the next line?**
+**49. Which utility lets a form control grow vertically with its content (useful for textareas)?**
 
-a) `flex-wrap`
-b) `flex-multiline`
-c) `wrap-flex`
-d) `flex-flow-wrap`
+a) `resize-y`
+b) `field-sizing-content`
+c) `h-auto-only`
+d) `overflow-text`
 
-**Answer: a) `flex-wrap`**
-
----
-
-**48. What does `flex-1` commonly mean in Tailwind’s flex shorthand utilities?**
-
-a) `flex: none`
-b) `flex: 1 1 0%` (grow/shrink/basis pattern)`
-c) `flex-direction: column`
-d) `order: 1`
-
-**Answer: b) `flex: 1 1 0%` (grow/shrink/basis pattern)**
+**Answer: b) `field-sizing-content`**
 
 ---
 
-**49. Which class prevents a flex item from shrinking?**
+**50. Container queries are built into v4. What must you typically add on an ancestor to use `@min-*` / `@max-*` container variants on descendants?**
 
-a) `grow-0`
-b) `shrink-0`
-c) `flex-none` only
-d) `no-shrink`
+a) `The @container class on the ancestor`
+b) `container-type-normal on the body only`
+c) `data-container on every child`
+d) `cq:wrapper on the html element`
 
-**Answer: b) `shrink-0`**
-
----
-
-**50. Which stack adds vertical spacing between direct children?**
-
-a) `space-y-4`
-b) `stack-y-4`
-c) `gap-y-4` on non-flex parent without grid
-d) `divide-y-4` always equals gap
-
-**Answer: a) `space-y-4`**
+**Answer: a) `The @container class on the ancestor`**
 
 ---
