@@ -6,6 +6,41 @@
 
 ---
 
+## **TABLE OF CONTENTS**
+
+1. [Introduction to JavaScript](#1-introduction-to-javascript-12-subtopics) (12 subtopics)
+2. [JavaScript Basics](#2-javascript-basics-45-subtopics) (45 subtopics)
+3. [Control Flow](#3-control-flow-18-subtopics) (18 subtopics)
+4. [Functions](#4-functions-52-subtopics) (52 subtopics)
+5. [Objects](#5-objects-48-subtopics) (48 subtopics)
+6. [Arrays](#6-arrays-62-subtopics) (62 subtopics)
+7. [Strings](#7-strings-45-subtopics) (45 subtopics)
+8. [Regular Expressions](#8-regular-expressions-28-subtopics) (28 subtopics)
+9. [Numbers and Math](#9-numbers-and-math-32-subtopics) (32 subtopics)
+10. [Date and Time](#10-date-and-time-26-subtopics) (26 subtopics)
+11. [Error Handling](#11-error-handling-22-subtopics) (22 subtopics)
+12. [Asynchronous JavaScript](#12-asynchronous-javascript-48-subtopics) (48 subtopics)
+13. [This Keyword and Context](#13-this-keyword-and-context-18-subtopics) (18 subtopics)
+14. [Object-Oriented Programming (OOP)](#14-object-oriented-programming-oop-42-subtopics) (42 subtopics)
+15. [ES6+ Modern Features](#15-es6-modern-features-38-subtopics) (38 subtopics)
+16. [Collections](#16-collections-32-subtopics) (32 subtopics)
+17. [Functional Programming](#17-functional-programming-28-subtopics) (28 subtopics)
+18. [Browser APIs](#18-browser-apis-58-subtopics) (58 subtopics)
+19. [AJAX and HTTP](#19-ajax-and-http-24-subtopics) (24 subtopics)
+20. [JSON](#20-json-12-subtopics) (12 subtopics)
+21. [Modules and Bundlers](#21-modules-and-bundlers-22-subtopics) (22 subtopics)
+22. [Testing](#22-testing-26-subtopics) (26 subtopics)
+23. [Performance Optimization](#23-performance-optimization-32-subtopics) (32 subtopics)
+24. [Security](#24-security-24-subtopics) (24 subtopics)
+25. [Advanced Topics](#25-advanced-topics-35-subtopics) (35 subtopics)
+
+**Additional Sections:**
+- [Learning Path Recommendations](#learning-path-recommendations)
+- [Practice Recommendations](#practice-recommendations)
+- [Resources Checklist](#resources-checklist)
+
+---
+
 ## **1. INTRODUCTION TO JAVASCRIPT** (12 subtopics)
 
 ### 1.1 What is JavaScript?
