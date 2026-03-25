@@ -410,7 +410,7 @@
 ### 7.5 String Methods - Modification
 - 7.5.1 concat()
 - 7.5.2 repeat() (ES6)
-- 7.3 padStart() (ES2017)
+- 7.5.3 padStart() (ES2017)
 - 7.5.4 padEnd() (ES2017)
 - 7.5.5 trim()
 - 7.5.6 trimStart() / trimLeft()
