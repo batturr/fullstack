@@ -8,6 +8,44 @@
 
 ---
 
+## **TABLE OF CONTENTS**
+
+1. [Introduction to Tailwind CSS](#1-introduction-to-tailwind-css-22-subtopics) (22 subtopics)
+2. [Core Concepts](#2-core-concepts-32-subtopics) (32 subtopics)
+3. [Layout](#3-layout-38-subtopics) (38 subtopics)
+4. [Flexbox](#4-flexbox-42-subtopics) (42 subtopics)
+5. [Grid](#5-grid-36-subtopics) (36 subtopics)
+6. [Spacing](#6-spacing-28-subtopics) (28 subtopics)
+7. [Sizing](#7-sizing-32-subtopics) (32 subtopics)
+8. [Typography](#8-typography-52-subtopics) (52 subtopics)
+9. [Colors](#9-colors-36-subtopics) (36 subtopics)
+10. [Backgrounds](#10-backgrounds-38-subtopics) (38 subtopics)
+11. [Borders](#11-borders-46-subtopics) (46 subtopics)
+12. [Effects](#12-effects-32-subtopics) (32 subtopics)
+13. [Filters](#13-filters-42-subtopics) (42 subtopics)
+14. [Tables](#14-tables-16-subtopics) (16 subtopics)
+15. [Transitions and Animations](#15-transitions-and-animations-28-subtopics) (28 subtopics)
+16. [Transforms](#16-transforms-32-subtopics) (32 subtopics)
+17. [Interactivity](#17-interactivity-46-subtopics) (46 subtopics)
+18. [SVG](#18-svg-18-subtopics) (18 subtopics)
+19. [Accessibility](#19-accessibility-22-subtopics) (22 subtopics)
+20. [Responsive Design](#20-responsive-design-32-subtopics) (32 subtopics)
+21. [Dark Mode](#21-dark-mode-24-subtopics) (24 subtopics)
+22. [Pseudo-Classes and Pseudo-Elements](#22-pseudo-classes-and-pseudo-elements-48-subtopics) (48 subtopics)
+23. [Customization](#23-customization-42-subtopics) (42 subtopics)
+24. [Plugins](#24-plugins-32-subtopics) (32 subtopics)
+25. [JIT Mode (Just-in-Time)](#25-jit-mode-just-in-time-22-subtopics) (22 subtopics)
+26. [Best Practices](#26-best-practices-38-subtopics) (38 subtopics)
+27. [Production Optimization](#27-production-optimization-28-subtopics) (28 subtopics)
+28. [Advanced Topics](#28-advanced-topics-32-subtopics) (32 subtopics)
+
+**Additional Sections:**
+- [Learning Path Recommendations](#learning-path-recommendations)
+- [Project Ideas](#project-ideas)
+- [Resources](#resources)
+
+---
+
 ## **1. INTRODUCTION TO TAILWIND CSS** (22 subtopics)
 
 ### 1.1 What is Tailwind CSS?
