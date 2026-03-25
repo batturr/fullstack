@@ -8,6 +8,43 @@
 
 ---
 
+## **TABLE OF CONTENTS**
+
+1. [Introduction to Next.js](#1-introduction-to-nextjs-24-subtopics) (24 subtopics)
+2. [Project Structure](#2-project-structure-28-subtopics) (28 subtopics)
+3. [App Router (Next.js 13+)](#3-app-router-nextjs-13-52-subtopics) (52 subtopics)
+4. [Server Components](#4-server-components-38-subtopics) (38 subtopics)
+5. [Client Components](#5-client-components-26-subtopics) (26 subtopics)
+6. [Routing (Pages Router)](#6-routing-pages-router-32-subtopics) (32 subtopics)
+7. [Navigation and Linking](#7-navigation-and-linking-24-subtopics) (24 subtopics)
+8. [Data Fetching](#8-data-fetching-56-subtopics) (56 subtopics)
+9. [Caching](#9-caching-32-subtopics) (32 subtopics)
+10. [API Routes and Route Handlers](#10-api-routes-and-route-handlers-34-subtopics) (34 subtopics)
+11. [Middleware](#11-middleware-22-subtopics) (22 subtopics)
+12. [Rendering Strategies](#12-rendering-strategies-28-subtopics) (28 subtopics)
+13. [Image Optimization](#13-image-optimization-26-subtopics) (26 subtopics)
+14. [Font Optimization](#14-font-optimization-18-subtopics) (18 subtopics)
+15. [Metadata and SEO](#15-metadata-and-seo-36-subtopics) (36 subtopics)
+16. [Styling](#16-styling-38-subtopics) (38 subtopics)
+17. [Authentication](#17-authentication-32-subtopics) (32 subtopics)
+18. [Database Integration](#18-database-integration-34-subtopics) (34 subtopics)
+19. [Forms and Validation](#19-forms-and-validation-28-subtopics) (28 subtopics)
+20. [State Management](#20-state-management-26-subtopics) (26 subtopics)
+21. [Internationalization (i18n)](#21-internationalization-i18n-24-subtopics) (24 subtopics)
+22. [Testing](#22-testing-36-subtopics) (36 subtopics)
+23. [Performance Optimization](#23-performance-optimization-42-subtopics) (42 subtopics)
+24. [Deployment](#24-deployment-32-subtopics) (32 subtopics)
+25. [TypeScript](#25-typescript-28-subtopics) (28 subtopics)
+26. [Advanced Topics](#26-advanced-topics-38-subtopics) (38 subtopics)
+
+**Additional Sections:**
+- [Learning Path Recommendations](#learning-path-recommendations)
+- [Practice Projects](#practice-projects)
+- [Essential Resources](#essential-resources)
+- [Next.js Ecosystem](#nextjs-ecosystem)
+
+---
+
 ## **1. INTRODUCTION TO NEXT.JS** (24 subtopics)
 
 ### 1.1 What is Next.js?
