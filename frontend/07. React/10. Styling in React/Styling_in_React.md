@@ -216,9 +216,9 @@ export function MetricCard({ title }: { title: string }) {
 
 **Integrate** **with** **CSS** **Modules** **and** **minifiers** **in** **Vite**/**Webpack** **for** **deterministic** **output**.
 
-```js
-// postcss.config.cjs (illustrative)
-module.exports = {
+```typescript
+// postcss.config.ts (illustrative)
+export default {
   plugins: {
     autoprefixer: {},
   },

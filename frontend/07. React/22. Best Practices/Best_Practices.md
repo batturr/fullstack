@@ -780,8 +780,8 @@ Use **`eslint-plugin-react`**, **`eslint-plugin-react-hooks`**, **`@typescript-e
 
 **Import resolver** + **`eslint-plugin-import`** for **barrel** cycles; **`eslint-plugin-jsx-a11y`** for accessibility.
 
-```javascript
-// eslint.config.js (excerpt)
+```typescript
+// eslint.config.ts (excerpt)
 import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import reactHooks from "eslint-plugin-react-hooks";

@@ -800,8 +800,8 @@ Use **`eslint-config-prettier`** to avoid rule conflicts. Type-aware linting wit
 
 **CI** runs `eslint .` and `prettier --check`. **Husky + lint-staged** for pre-commit. **Incremental** linting in large repos; **ESLint flat config** (`eslint.config.js`) on newer setups.
 
-```javascript
-// eslint.config.js (illustrative flat config sketch)
+```typescript
+// eslint.config.ts (illustrative flat config sketch)
 import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import reactHooks from "eslint-plugin-react-hooks";
