@@ -445,10 +445,11 @@ Add `postcss-import` only if you need CSS `@import` ordering before Tailwind—c
 **Expert Level**  
 Custom plugins (e.g., `postcss-nesting`) must be ordered correctly: nesting before Tailwind if you author nested CSS in non-module files.
 
-```javascript
-// postcss.config.mjs
-/** @type {import('postcss-load-config').Config} */
-const config = {
+```typescript
+// postcss.config.ts
+import type { Config } from "postcss-load-config";
+
+const config: Config = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
@@ -664,9 +665,9 @@ Configure in `.babelrc` or `babel.config.js` alongside `next/babel` if you are n
 **Expert Level**  
 Next.js defaults to SWC; enabling a custom Babel config opts out of some SWC optimizations—evaluate tradeoffs for a large dashboard bundle.
 
-```javascript
-// babel.config.js (example when Babel is required)
-module.exports = {
+```typescript
+// babel.config.ts (example when Babel is required)
+export default {
   presets: ["next/babel"],
   plugins: [["styled-components", { ssr: true, displayName: true }]],
 };
