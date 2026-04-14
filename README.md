@@ -15,3 +15,10 @@ create a comprehensive notes for each sub topic indetail and give me the real-ti
 - Add the best practices
 - Add i im missing anything you have a freedom to add more
 
+
+
+frontend/06. TypeScript/01. Introduction to TypeScript/Introduction_to_TypeScript.md
+
+can you modified above file to undestand for beginners 
+
+Expain every concepts and examples with baby steps.
