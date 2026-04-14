@@ -21,4 +21,4 @@ frontend/06. TypeScript/01. Introduction to TypeScript/Introduction_to_TypeScrip
 
 can you modified above file to undestand for beginners 
 
-Expain every concepts and examples with baby steps.
+Explain every concepts and examples with baby steps.
